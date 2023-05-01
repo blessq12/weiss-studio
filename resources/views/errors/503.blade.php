@@ -14,12 +14,20 @@
             justify-content: center;
             align-content: center;
         }
+        .content{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+        .service .content object{
+            max-width: 350px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="row service">
-            <div class="col-12 col-md-6 col-lg-6">
+            <div class="col-12 col-md-6 col-lg-6 content">
                 <object data="/assets/icons/logo-text.svg" type=""></object>
             </div>
         </div>
