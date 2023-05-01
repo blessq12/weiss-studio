@@ -21,6 +21,7 @@
         }
         .service .content object{
             max-width: 350px;
+            height: 100%;;
         }
     </style>
 </head>
