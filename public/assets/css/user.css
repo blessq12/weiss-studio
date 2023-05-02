@@ -1,0 +1,12 @@
+.hero-banner{
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 900px;
+    width: 100%;
+    background: purple;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 40px;
+}

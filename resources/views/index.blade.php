@@ -1,63 +1,22 @@
 @extends('components.front-layout')
 @section('content')
-<div class="tp-banner-container">
 
-    <!-- START REVOLUTION SLIDER 5.0 -->
-    <div class="rev_slider_wrapper">
+  <x-hero-banner/>
 
-      <div id="slider1" class="rev_slider">
-
-        <ul> 
-          <li data-transition="zoomout" data-slotamount="default" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-fstransition="fade" data-fsmasterspeed="1500">
-            <!-- MAIN IMAGE -->
-            <img src="/assets/images/bg1_1920x965.jpg"  alt="">
-            <div class="tp-caption text1 align_center fadeout"
-              data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" 
-              data-transform_out="y:[100%];s:1000;e:Power2.easeInOut;s:1000;e:Power2.easeInOut;" 
-              data-start="500" 
-              data-x="center"
-              data-y="top">
-              <h5>- Salon Offer a Wide Range of Service -</h5>
-              <h2>Spa and Hairstyling</h2>
-              <a href="appointment_page.html" class="mad_button">Register Now</a>
-            </div>
-
-          </li>
-        </ul>
-
-        <svg class="separator_type_5_path" preserveAspectRatio="none" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 0 L70 100 L100.1 0 L100.1 100 L0 100 Z" fill="#fff" stroke="#fff" stroke-width="-1"></path>
-          <path d="M0 0 L0 0 L50 100 L100 0 L100 0 Z" fill="transparent"></path>
-        </svg>
-
-         
-
-      </div><!-- END REVOLUTION SLIDER -->
-    </div><!-- END OF SLIDER WRAPPER -->
-
-  </div>
-
-  <!-- - - - - - - - - - - - - - Content - - - - - - - - - - - - - - - - -->
-
+  {{-- content part starts --}}
   <div id="content">
 
-    <!-- Greetings -->
+    
     <div id="about">
-      
       <div class="mad_section inset_none v_align_center_blocks">
         <div class="container">
-        
           <div class="row">
-          
             <div class="col-md-6">
-
               <figure class="section_image align_right">
                 <img src="/assets/images/women_457x524.png" alt="">
               </figure>
-
             </div>
             <div class="col-md-6">
-
               <div class="mad_section_container">
                 <article>
                   <h3 class="mad_title_style1">Welcome to</h3>
@@ -68,22 +27,16 @@
                     <span>Founder and Hairstylist</span>
                   </div>
                 </article>
-
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
-
+      {{-- greeting --}}
       <div class="mad_section inset_none">
-
         <div class="mad_full_width_grid">
-          
           <div class="row pattern_section">
             <div id="mad_item_second" class="col-md-6">
-
               <div class="mad_pattern bg_pattern_red clearfix">
                 <article class="f_right">
                   <h2>Hair Salon</h2>
@@ -91,26 +44,20 @@
                   <a href="#" class="mad_button style2">View all Services</a>
                 </article>
               </div>
-
             </div>
             <div id="mad_item_first" class="col-md-6">
-
               <figure class="mad_img_wrap">
                 <img src="/assets/images/img_women1.jpg" alt="">
               </figure>
-
             </div>
           </div>
           <div class="row pattern_section">
             <div class="col-md-6">
-
               <figure>
                 <img src="/assets/images/img_women2.jpg" alt="">
               </figure>
-
             </div>
             <div class="col-md-6">
-
               <div class="mad_pattern bg_pattern_dark">
                 <article>
                   <h2>Beauty Spa</h2>
@@ -118,33 +65,24 @@
                   <a href="#" class="mad_button style2">View all Services</a>
                 </article>
               </div>
-
             </div>
           </div>
-
         </div>
-        
       </div>
-
-      <!-- Testimonials -->
+      {{-- end greeting --}}
+      
+      {{-- Testimonials --}}
       <div class="mad_section">
-        
         <div class="container">
-          
           <div class="row">
-          
             <div class="col-md-6">
-
               <div class="mad_section_container mad_testimonials">
                 <article>
                   <h3 class="mad_title_style1">Testimonials</h3>
                   <h2>Customers Says</h2>
-
                   <!-- Carousel -->
                   <div class="carousel_type_1">
-                    
                     <div class="owl-carousel" data-max-items="1" data-autoplay="true">
-                        
                       <!-- Slide -->
                       <div>
                         <!-- Carousel Item -->
@@ -190,32 +128,22 @@
                         <!-- /Carousel Item -->
                       </div>
                       <!-- /Slide -->
-                      
                     </div>
                   </div>
-
                 </article>
-
               </div>
-
             </div>
             <div class="col-md-6">
-
               <figure class="section_image align_right">
                 <img src="/assets/images/565x520_img.jpg" alt="">
               </figure>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
-    <!-- Services -->
+    {{-- end testimonials --}}
+    {{-- Services --}}
     <div id="services">
     
       <div class="paralax_image_bg2">
@@ -2412,25 +2340,20 @@
 
               </div>
               <div class="col-md-3 col-sm-6">
-                
                 <div class="mad_contact_item">
                   <h4 class="lnr lnr-clock">Opening Times</h4>
                   <p>Mon - Thu 11:30 - 22:00 clock <br>
                   Fri - Sat 11:30 - 24:00 clock </p>
                 </div>
-
               </div>
               <div class="col-md-3 col-sm-6">
-                
                 <div class="mad_contact_item">
                   <h4 class="lnr lnr-calendar-full">Apointment</h4>
                   <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit!</p>
                   <a href="#">Phone: +61 3 8376 6284</a>
                 </div>
-
               </div>
               <div class="col-md-3 col-sm-6">
-                
                 <div class="mad_contact_item">
                   <h4 class="lnr lnr-earth">Stay Connected</h4>
                   <div class="social_icon_list">
@@ -2444,24 +2367,11 @@
                     </ul>
                   </div>
                 </div>
-
               </div>
             </div>
-
           </div>
-
         </div>
-
       </div>
-
-      <!-- Google map -->
-      <div class="relative">
-
-        <div id="googleMap" class="map_container"></div>
-
-      </div>
-
     </div>
-
   </div>
 @endsection

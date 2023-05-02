@@ -21,7 +21,7 @@
 
             <div class="col-md-4">
               
-              <a href="index.html" class="logo"><img src="images/logo.png" alt=""></a>
+              <a href="index.html" class="logo"><img src="/assets/images/logo.png" alt=""></a>
 
             </div>
             <div class="col-md-8">
