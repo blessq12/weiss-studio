@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css')}}">
   <link rel="stylesheet" href="{{ asset('/assets/css/owl.carousel.css')}}">
+  <link rel="stylesheet" href="{{ asset('/assets/css/owl.theme.css')}}">
   <link rel="stylesheet" href="{{ asset('/assets/css/style.css')}}">
   <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}">
 </head>

@@ -2,11 +2,111 @@
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 900px;
+    min-height: 1000px;
     width: 100%;
     background: purple;
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
+}
+.greeting-back{
+    background: #ce3d5f;
+    position: relative;
+}
+.pattern-overlay{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url('/assets/images/pattern.png');
+    background-repeat: repeat;
+    opacity: 0.1;
+
+}
+.right-image,.left-image{
+    min-height: 450px;
+    position: relative;
+}
+.greeting-wrap{
+    padding: 3rem;
+    position: relative;
+    z-index: 1;
+}
+.greeting-wrap h2{
+    color: #fff;
+    text-transform: uppercase;
+    position: relative;
+    
+}
+.greeting-wrap p{
+    color: #fff;
+}
+.right-image:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://img.freepik.com/free-photo/cosmetologist-doing-face-treatment-applying-face-mask_1303-28042.jpg?w=2000');
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.left-image:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200%;
+    height: 100%;
+    background: url('https://images.everydayhealth.com/images/massage-therapy-guide-1440x810.jpg');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+blockquote p:before {
+    content: url('/assets/icons/blockquote.svg');
+    position: absolute;
+    left: 0;
+    top: -10px;
+    color: #ce3d5f;
+    font-size: 140px;
+    font-family: 'Rochester', cursive;
+    width: 52px;
+    height: auto;
+    background: none;
+    font-style: normal;
+}
+.paralax_image_bg2 {
+    background: #dedede;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.paralax-layout{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+}
+/* owl navigation */
+.owl-next span,.owl-prev span{display: none;}
+.owl-next::before{content: '>'!important;}
+.owl-prev::before{content: '<'!important;}
+.mad_owl_next::before{content: '>'!important;}
+.mad_owl_prev::before{content: '<'!important;}
+
+@media (max-width:768px){
+    .greeting-wrap{
+        padding: 50px 0;
+    }
+    .greeting-last{
+        padding-top: 0!important;
+    }
 }

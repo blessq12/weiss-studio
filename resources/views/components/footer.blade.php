@@ -32,7 +32,7 @@
 </div>
 <!--scripts include-->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="{{asset('/assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('/assets/js/plugins.js')}}"></script>
 <script src="{{asset('/assets/js/script.js')}}"></script>
 </body>
