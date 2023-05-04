@@ -17,6 +17,22 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 	})
 	//timer events
+
+	// tabs section
+	let tabsNav = document.querySelector('.tabs_nav')
+	let spanCollection = tabsNav.getElementsByTagName('span')
+	//	active class add to list
+	for (span of spanCollection){
+		span.addEventListener("click",function(){
+			for (span of spanCollection){
+				span.classList.remove('active')
+			}
+			this.classList.add('active')
+			console.log(this.parentElement.dataset.tab)
+		})
+	}
+	//	show content of data attr on li elements
+	
 })
 //jQuery scripts
 $(document).ready(function(){

@@ -4,6 +4,8 @@
   <x-hero-banner/>
   {{-- content part starts --}}
   <div id="content">
+
+    {{-- about section --}}
     <div id="about">
       <div class="mad_section inset_none v_align_center_blocks">
         <div class="container">
@@ -135,7 +137,7 @@
         </div>
       </div>
     </div>
-    {{-- end testimonials --}}
+
     {{-- Services --}}
     <div id="services">
       <div class="paralax_image_bg2" style="background:url('https://velikorodnov.com/html/spa-construction/spa/multi-page/images/bg_image_1920x1419.jpg')">
@@ -288,9 +290,7 @@
       <div id="services3" class="mad_section inset_none v_align_center_blocks">
         
         <div class="container">
-          
           <div class="row">
-          
             <div class="col-md-6">
 
               <figure class="section_image align_center">
@@ -299,46 +299,33 @@
 
             </div>
             <div class="col-md-6">
-
               <div class="mad_section_container">
                 <article>
                   <h3 class="mad_title_style1">Services Pricing</h3>
                   <h2>Plan and Pricing</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                 </article>
-
               </div>
             </div>
-
           </div>
-
         </div>
-
         <!-- Tabs section -->
         <div class="mad_section">
-          
           <div class="container">
-            
             <div class="row">
-            
               <div class="col-sm-12">
-                
                 <div class="tabs tabs-section vertical clearfix">
                   <!--tabs navigation-->
                   <ul class="tabs_nav clearfix">
-                    <li class=""><a href="#tab_1" class="icon-cut-2">Hair</a></li>
-                    <li class=""><a href="#tab_2" class="icon-women">Makeup</a></li>
-                    <li class=""><a href="#tab_3" class="icon-other-1">Shaving</a></li>
-                    <li class=""><a href="#tab_4" class="icon-medical">Manicure / Pedicure</a></li>
-                    <li class=""><a href="#tab_5" class="icon-night">Waxing</a></li>
-                    <li class=""><a href="#tab_6" class="icon-people">Massage</a></li>
+                    <li data-tab="first"><span class="">Hair</span></li>
+                    <li data-tab="second"><span class="">Makeup</span></li>
+                    <li data-tab="third"><span class="">Shaving</span></li>
+                    <li data-tab="fourth"><span class="">Manicure / Pedicure</span></li>
                   </ul>
                   <!--tabs content-->
                   <div class="tabs_content">
-                    <div id="tab_1">
-
+                    <div data-tab-target="first">
                       <div class="tabs tabs-section style2">
-
                         <!--tabs navigation-->
                         <div class="clearfix tabs_conrainer">
                           <ul class="tabs_nav clearfix">
@@ -348,13 +335,10 @@
                             <li class=""><a href="#tab4">Styling</a></li>
                           </ul>
                         </div>
-
                         <!--tabs content-->
                         <div class="tabs_content">
                           <div id="tab1">
-
                             <div class="accordion">
-
                               <!--accordion item-->
                               <div class="accordion_item">
                                 <h5 class="a_title active">
@@ -365,203 +349,42 @@
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula feugiat. </p>
                                 </div>
                               </div>
-
                               <!--accordion item-->
                               <div class="accordion_item">
                                 <h5 class="a_title">
                                   Mans - Long Hair Cut 
                                   <span>$ 30</span>
                                 </h5>
-                                <div class="a_content">
+                                <div class="a_content d-none">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
                                 </div>
                               </div>
-
                               <!--accordion item-->
                               <div class="accordion_item">
                                 <h5 class="a_title">
                                   Mans - Short Hair Cut 
                                   <span>$ 25</span>
                                 </h5>
-                                <div class="a_content">
+                                <div class="a_content d-none">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
                                 </div>
                               </div>
-
                               <!--accordion item-->
                               <div class="accordion_item">
                                 <h5 class="a_title">
                                   Childrens - Hair Cut 
                                   <span>$ 20</span>
                                 </h5>
-                                <div class="a_content">
+                                <div class="a_content d-none">
                                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
                                 </div>
                               </div>
-
                             </div>
-
-                          </div>
-                          <div id="tab2">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="tab3">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="tab4">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
                           </div>
                         </div>
-
                       </div>
-
                     </div>
-                    <div id="tab_2">
-                      
+                    <div data-tab-target="second" class="d-none">
                       <div class="tabs tabs-section style2">
 
                         <!--tabs navigation-->
@@ -785,7 +608,7 @@
                       </div>
 
                     </div>
-                    <div id="tab_3">
+                    <div data-tab-target="third" class="d-none">
 
                       <div class="tabs tabs-section style2">
 
@@ -1010,7 +833,7 @@
                       </div>
 
                     </div>
-                    <div id="tab_4">
+                    <div data-tab-target="fourth" class="d-none">
 
                       <div class="tabs tabs-section style2">
 
@@ -1235,456 +1058,6 @@
                       </div>
 
                     </div>
-                    <div id="tab_5">
-
-                      <div class="tabs tabs-section style2">
-
-                        <!--tabs navigation-->
-                        <div class="clearfix tabs_conrainer">
-                          <ul class="tabs_nav clearfix">
-                            <li class=""><a href="#ttab-1">Hair cut</a></li>
-                            <li class=""><a href="#ttab-2">Color</a></li>
-                            <li class=""><a href="#ttab-3">Dressing</a></li>
-                            <li class=""><a href="#ttab-4">Styling</a></li>
-                          </ul>
-                        </div>
-
-                        <!--tabs content-->
-                        <div class="tabs_content">
-                          <div id="ttab-1">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="ttab-2">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="ttab-3">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="ttab-4">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
-                    <div id="tab_6">
-
-                      <div class="tabs tabs-section style2">
-
-                        <!--tabs navigation-->
-                        <div class="clearfix tabs_conrainer">
-                          <ul class="tabs_nav clearfix">
-                            <li class=""><a href="#tab1-1">Hair cut</a></li>
-                            <li class=""><a href="#tab1-2">Color</a></li>
-                            <li class=""><a href="#tab1-3">Dressing</a></li>
-                            <li class=""><a href="#tab1-4">Styling</a></li>
-                          </ul>
-                        </div>
-
-                        <!--tabs content-->
-                        <div class="tabs_content">
-                          <div id="tab1-1">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="tab1-2">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="tab1-3">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                          <div id="tab1-4">
-
-                            <div class="accordion">
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title active">
-                                  Womens - Long Hair Cut 
-                                  <span>$ 35</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Long Hair Cut 
-                                  <span>$ 30</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Mans - Short Hair Cut 
-                                  <span>$ 25</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                              <!--accordion item-->
-                              <div class="accordion_item">
-                                <h5 class="a_title">
-                                  Childrens - Hair Cut 
-                                  <span>$ 20</span>
-                                </h5>
-                                <div class="a_content">
-                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. </p>
-                                </div>
-                              </div>
-
-                            </div>
-
-                          </div>
-                        </div>
-
-                      </div>
-
-                    </div>
                   </div>
                 </div>
 
@@ -1699,6 +1072,7 @@
       </div>
 
     </div>
+
     {{-- gallery --}}
     <div id="gallery">
       <div class="mad_section with_bg_1">
@@ -1843,6 +1217,7 @@
       </div>
 
     </div>
+
     {{-- team --}}
     <div id="team">
       <div class="mad_section">
@@ -1921,6 +1296,7 @@
       </div>
 
     </div>
+
     {{-- offers and news --}}
     <div id="news">
       <div class="mad_section paralax_image_bg4" style="background: url('https://velikorodnov.com/html/spa-construction/spa/multi-page/images/bg_image_1920x1278.jpg')">
@@ -1955,119 +1331,6 @@
           <path d="M0 -1 L0 0 L50 100 L100 0 L100 -1 Z" fill="rgba(255,255,255,0.01)"></path>
         </svg>
       </div>
-    </div>
-    {{-- blog --}}
-    <div id="blog">
-      <div class="mad_section paralax_image_bg1" style="background: url('https://velikorodnov.com/html/spa-construction/spa/multi-page/images/bg_image_1920x1110.jpg')">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="mad_section_container">
-                <h3 class="mad_title_style1">Blog</h3>
-                <h2 class="mad_separator style2">Latest News</h2>
-              </div>
-              <!-- Carousel -->
-              <div class="carousel_type_2">
-                <div id="newsCarousel" class="owl-carousel style2" data-max-items="2">
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_blog_post">
-                      <figure>
-                        <img src="/assets/images/570x370_img1.jpg" alt="">
-                        <div class="mad_post_date">
-                          <div class="date">18 / JAN / 2016</div>
-                        </div>
-                      </figure>
-                      <div class="mad_post_content clearfix">
-                        <div class="mad_post_info">
-                          <h2><a href="#">Slider Blog Post Title Here</a></h2>
-                          <div class="mad_post_action">
-                            <a href="#" class="admin">Admin</a>
-                            <a href="#" class="days">6 days ago</a>
-                            <a href="#" class="comment">10 comments</a>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_blog_post">
-                      <figure>
-                        <img src="/assets/images/570x370_img2.jpg" alt="">
-                        <div class="mad_post_date">
-
-                          <div class="date">18 / JAN / 2016</div>
-                          
-                        </div>
-                      </figure>
-                      <div class="mad_post_content clearfix">
-                        <div class="mad_post_info">
-
-                          <h2><a href="#">Slider Blog Post Title Here</a></h2>
-                          <div class="mad_post_action">
-                            <a href="#" class="admin">Admin</a>
-                            <a href="#" class="days">6 days ago</a>
-                            <a href="#" class="comment">10 comments</a>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_blog_post">
-                      <figure>
-                        <img src="/assets/images/570x370_img1.jpg" alt="">
-                        <div class="mad_post_date">
-
-                          <div class="date">18 / JAN / 2016</div>
-                          
-                        </div>
-                      </figure>
-                      <div class="mad_post_content clearfix">
-                        <div class="mad_post_info">
-
-                          <h2><a href="#">Slider Blog Post Title Here</a></h2>
-                          <div class="mad_post_action">
-                            <a href="#" class="admin">Admin</a>
-                            <a href="#" class="days">6 days ago</a>
-                            <a href="#" class="comment">10 comments</a>
-                          </div>
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-
-                        </div>
-                      </div>
-
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
     {{-- contact --}}
     <div id="contact">
@@ -2173,5 +1436,6 @@
         </div>
       </div>
     </div>
+
   </div>
 @endsection
