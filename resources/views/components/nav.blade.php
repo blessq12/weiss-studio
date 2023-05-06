@@ -41,7 +41,7 @@
       <div class="mad_top_header position-relative">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6 d-flex justify-content-start">
               <a href="" class="logo"><img src="{{ asset('/assets/icons/logo-text.svg') }}" alt="{{ env('APP_NAME') }}"></a>
             </div>
             <div class="col-md-8 d-none d-md-block d-lg-block">
