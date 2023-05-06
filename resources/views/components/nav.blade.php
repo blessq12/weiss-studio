@@ -3,15 +3,33 @@
     <div class="page-layout d-none"></div>
     {{-- mobile menu --}}
     <nav class="mobile-menu">
-      <div class="container py-5">
-        <div class="row">
+      <div class="container py-3">
+        <div class="row mb-3">
+          <div class="col">
+            <h5 class="mb-0 text-white">Навигация:</h5>
+          </div>
+        </div>
+        <div class="row mb-3">
           <div class="col">
             <ul class="list-unstyled mobile-list">
-              <li>link</li>
-              <li>link</li>
-              <li>link</li>
-              <li>linnk</li>
+              <li>
+                <a href="" >Some Link to</a>
+              </li>
+              <li>
+                <a href="" >Some Link to</a>
+              </li>
+              <li>
+                <a href="" >Some Link to</a>
+              </li>
+              <li>
+                <a href="" >Some Link to</a>
+              </li>
             </ul>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <a href="appointment_page.html" class="mad_button">Make an Appointment</a>
           </div>
         </div>
       </div>
