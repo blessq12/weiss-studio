@@ -165,6 +165,8 @@ blockquote p:before {
 }
 .logo img{
     max-height: 100px;
+    height: 100%;
+    width: auto;
 }
 .mobile-toggler{
     background: transparent;
@@ -214,7 +216,9 @@ blockquote p:before {
         margin-bottom: 40px;
     }
     .logo img{
-    max-height: 55px;
+        max-height: 55px;
+        height: 100%;
+        width: auto;
     }
     .menu_wrap{
         display: none!important;
