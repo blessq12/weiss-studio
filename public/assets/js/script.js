@@ -51,7 +51,6 @@ document.addEventListener("DOMContentLoaded",function(){
 	mt.addEventListener("click",()=>{
 		mm.classList.toggle('show-mobile')
 		document.querySelector('.page-layout').classList.toggle('d-none')
-		this.body.classList.toggle('overflow-hidden')
 	})
 })
 //jQuery scripts

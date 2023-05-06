@@ -4,7 +4,7 @@
     {{-- mobile menu --}}
     <nav class="mobile-menu">
       <div class="container py-3">
-        <div class="row mb-3">
+        <div class="row mb-1">
           <div class="col">
             <h5 class="mb-0 text-white">Навигация:</h5>
           </div>
@@ -25,6 +25,29 @@
                 <a href="" >Some Link to</a>
               </li>
             </ul>
+          </div>
+        </div>
+        <div class="row mb-1">
+          <div class="col">
+            <h5 class="mb-0 text-white">Мы в соцсетях:</h5>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col">
+            <div class="social-mobile">
+                <a href="" class="vk">
+                  <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
+                </a>
+                <a href="" class="wa">
+                  <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                </a>
+                <a href="" class="inst">
+                  <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
+                </a>
+                <a href="" class="tg">
+                  <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                </a>
+            </div>
           </div>
         </div>
         <div class="row mb-3">
