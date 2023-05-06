@@ -1015,8 +1015,6 @@ p{
     padding: 10px 0;
   }
 
-  .mobile-advanced{display: none;}
-
   #header .menu_wrap .nav_item #responsive-nav-button:nth-child(n+2){display: none!important;}
 
 /* Product List */

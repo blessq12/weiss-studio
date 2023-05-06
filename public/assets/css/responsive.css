@@ -184,25 +184,7 @@
 
 	.responsive-nav-button { display: inline-block; }
 
-	.mobile-advanced {
-		position: absolute;
-		top: 0;
-		right: -100%;
-		z-index: 995;
-		overflow: hidden;
-		display: block;
-		width: 100%;
-		height: 100%;
-		background-color: #fff;
-		pointer-events: none;
-		-webkit-backface-visibility: hidden;
-		-webkit-transform-origin: 0 0;
-				transform-origin: 0 0;
-		-webkit-transition: -webkit-transform .35s ease;
-				transition: transform .35s ease;
-		-webkit-transform: translateX(0);
-				transform: translateX(0);
-	}
+	
 
 	#wrapper.active .mobile-advanced {
 		pointer-events: auto;

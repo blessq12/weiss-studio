@@ -1,34 +1,34 @@
 
-<div id="wrapper" class="wrapper_container">
-
-    <!-- - - - - - - - - - - - - Mobile Menu - - - - - - - - - - - - - - -->
-
-    <nav id="mobile-advanced" class="mobile-advanced"></nav>
-
-    <!-- - - - - - - - - - - - / Mobile Menu - - - - - - - - - - - - - -->
-
-    <!-- - - - - - - - - - - - - - Header - - - - - - - - - - - - - - - - -->
-
+<div id="wrapper" class="wrapper_container position-relative">
+    <div class="page-layout d-none"></div>
+    {{-- mobile menu --}}
+    <nav class="mobile-menu">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled mobile-list">
+              <li>link</li>
+              <li>link</li>
+              <li>link</li>
+              <li>linnk</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    {{-- end mobile menu --}}
     <header id="header" class="header-main rsAbsoluteEl">
     
       <!-- top-header -->
-
-      <div class="mad_top_header">
-
+      <div class="mad_top_header position-relative">
         <div class="container">
-
           <div class="row">
-
-            <div class="col-md-4">
-              
-              <a href="index.html" class="logo"><img src="/assets/images/logo.png" alt=""></a>
-
+            <div class="col-md-4 col-6">
+              <a href="" class="logo"><img src="{{ asset('/assets/icons/logo-text.svg') }}" alt="{{ env('APP_NAME') }}"></a>
             </div>
-            <div class="col-md-8">
-
+            <div class="col-md-8 d-none d-md-block d-lg-block">
               <div class="header_info_section">
                 <div class="head_socials">
-    
                   <p class="icon_location">121 King Street, Melbourne</p>
                   <div class="social_icon_list">
                     <ul>
@@ -40,47 +40,39 @@
                       <li><a href="#" class="soc_icon icon-pinterest"></a></li>
                     </ul>
                   </div>
-    
                 </div>
                 <div class="head_phone">
-    
                   <div><p class="icon_mobile">+61 3 8376 6284</p></div>
                   <a href="appointment_page.html" class="mad_button">Make an Appointment</a>
-    
                 </div>
               </div>
-
             </div>
-
+            <div class="col-md-8 col-6 d-flex d-md-none d-lg-none mt-0 justify-content-end">
+              <button class="mobile-toggler d-flex align-items-center">
+                <div>
+                  <span></span>
+                  <object data="{{ asset('/assets/icons/menu-button.svg') }}" type=""></object>
+                </div>
+              </button>
+            </div>
           </div>
-
         </div>
-
       </div>
-
       <!--main menu-->
-
       <div class="menu_holder">
-        
         <div class="container">
-          
           <div class="menu_wrap">
-
             <!-- - - - - - - - - - - - - - Navigation - - - - - - - - - - - - - - - - -->
-
             <div class="nav_item">
-              
               <nav id="main_navigation" class="main_navigation">
                 <ul id="menu" class="clearfix">
                   <li class="current"><a href="index.html">Home</a></li>
                   <li class="drop"><a href="#">Pages</a>
-
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
                         <li><a href="about_us.html">About Us</a></li>
                         <li class="sub"><a href="#">Team</a>
-                          
                           <!--sub menu-->
                           <div class="sub_menu_wrap sub_menu_inner type_2 clearfix">
                             <ul>
@@ -88,10 +80,8 @@
                               <li><a href="single_member.html">Single Member Page</a></li>
                             </ul>
                           </div>
-
                         </li>
                         <li class="sub"><a href="#">Services</a>
-
                           <!--sub menu-->
                           <div class="sub_menu_wrap sub_menu_inner type_2 clearfix">
                             <ul>
@@ -99,7 +89,6 @@
                               <li><a href="services_v2.html">Service v2</a></li>
                             </ul>
                           </div>
-
                         </li>
                         <li><a href="careers.html">Carrers</a></li>
                         <li><a href="testimonials.html">Testimonials</a></li>
@@ -109,10 +98,8 @@
                         <li><a href="coming_soon.html">Coming Soon Page</a></li>
                       </ul>
                     </div>
-
                   </li>
                   <li class="drop"><a href="#">Features</a>
-
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
@@ -121,10 +108,8 @@
                         <li><a href="featured_columns.html">Columns</a></li>
                       </ul>
                     </div>
-
                   </li>
                   <li class="drop"><a href="#">Gallery</a>
-
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
@@ -135,10 +120,8 @@
                         <li><a href="portfolio_single_page_v2.html">Single Portfolio Page v2</a></li>
                       </ul>
                     </div>
-
                   </li>
                   <li class="drop"><a href="#">Blog</a>
-                    
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
@@ -146,7 +129,6 @@
                         <li><a href="blog_category_left_sidebar.html">Blog With Left Sidebar</a></li>
                         <li><a href="blog_grid_2columns.html">Grid Blog - 2 Columns</a></li>
                         <li class="sub"><a href="#">Single Blog Post Page</a>
-
                           <!--sub menu-->
                           <div class="sub_menu_wrap sub_menu_inner type_2 clearfix">
                             <ul>
@@ -154,14 +136,11 @@
                               <li><a href="blog_category_left_sidebar.html">With Left Sidebar</a></li>
                             </ul>
                           </div>
-
                         </li>
                       </ul>
                     </div>
-
                   </li>
-                  <li class="drop"><a href="#">Shop</a>
-                    
+                  <li class="drop"><a href="#">Shop</a>  
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
                       <ul>
@@ -174,20 +153,13 @@
                         <li><a href="shop_order_info.html">Order Information</a></li>
                       </ul>
                     </div>
-
                   </li>
                   <li><a href="contact.html">Contact</a></li>
                 </ul>
               </nav>
-
             </div>
-
             <!-- - - - - - - - - - - - - end Navigation - - - - - - - - - - - - - - - -->
-
           </div>
-
         </div>
-
       </div>
-    
     </header>
