@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Carolina';
+    src: url('/assets/fonts/Carolina.woff2') format('woff2'),
+        url('/assets/fonts/Carolina.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body{
     position: relative;
 }

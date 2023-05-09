@@ -31,8 +31,8 @@
   </footer>
 </div>
 <!--scripts include-->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{{ asset('/assets/js/jquery.min.js') }}"></script>
+<script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{asset('/assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('/assets/js/plugins.js')}}"></script>
 <script src="{{asset('/assets/js/script.js')}}"></script>

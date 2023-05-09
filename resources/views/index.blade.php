@@ -13,7 +13,7 @@
             <div class="col-md-6">
               <div class="mad_section_container">
                 <article>
-                  <h3 class="mad_title_style1">Welcome to</h3>
+                  <h3 class="mad_title_style1" style="font-family: 'Carolina">Welcome to</h3>
                   <h2>Косметология и аппаратные массажи</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                   <div class="mad_author">
