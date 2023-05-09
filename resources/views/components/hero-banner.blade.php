@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-10 col-lg-10">
-                <h1>heading</h1>
-                <h3>subheading</h3>
+                <h2>Твоё пространство для отдыха</h2>
+                <h1>Студия аппаратных  массажей и косметологии в Томске</h1>
             </div>
         </div>
     </div>
