@@ -10,6 +10,10 @@
 body{
     position: relative;
 }
+.mad_title_style1{
+    font-family: 'Carolina';
+    font-size: 82px;
+}
 .page-layout {
     width: 100%;
     height: 100%;
@@ -86,7 +90,7 @@ body{
     left: 0;
     width: 200%;
     height: 100%;
-    background: url('https://img.freepik.com/free-photo/cosmetologist-doing-face-treatment-applying-face-mask_1303-28042.jpg?w=2000');
+    background: url('/assets/images/face-mask.jpg');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -98,7 +102,7 @@ body{
     right: 0;
     width: 200%;
     height: 100%;
-    background: url('https://images.everydayhealth.com/images/massage-therapy-guide-1440x810.jpg');
+    background: url('/assets/images/massage-therapy.jpeg');
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -242,6 +246,10 @@ blockquote p:before {
 }
 /* end mobile section */
 @media (max-width:768px){
+    .mad_title_style1{
+        font-family: 'Carolina';
+        font-size: 40px;
+    }
     .hero-banner {
         background-position: center center;
         background-size: cover;

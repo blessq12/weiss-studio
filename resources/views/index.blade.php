@@ -13,7 +13,7 @@
             <div class="col-md-6">
               <div class="mad_section_container">
                 <article>
-                  <h3 class="mad_title_style1" style="font-family: 'Carolina">Welcome to</h3>
+                  <h3 class="mad_title_style1">Welcome to</h3>
                   <h2>Косметология и аппаратные массажи</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                   <div class="mad_author">
@@ -150,7 +150,7 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="mad_section_container">
-                <h3 class="mad_title_style1">Services</h3>
+                <h3 class="mad_title_style1">Комплексные процедуры</h3>
                 <h2 class="mad_separator">Beauty Services</h2>
               </div>
               {{-- services carousel --}}
@@ -301,7 +301,7 @@
             <div class="col-md-6">
               <div class="mad_section_container">
                 <article>
-                  <h3 class="mad_title_style1">Services Pricing</h3>
+                  <h3 class="mad_title_style1">Цены на услуги</h3>
                   <h2>Plan and Pricing</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                 </article>
@@ -970,7 +970,7 @@
             <div class="col-sm-12">
               <div class="align_center mad_item_offset">
                 <div class="mad_section_container">
-                  <h3 class="mad_title_style1">Team</h3>
+                  <h3 class="mad_title_style1">Наша команда</h3>
                   <h2>Наша команда</h2>
                 </div>
               </div>
@@ -999,7 +999,7 @@
                     <a href="#" class="mad_item_hover style2">
                       
                       <figure>
-                        <img src="/assets/images/women_model2.png" alt="">
+                        <img src="/assets/images/women_457x524.png" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
                         <div class="mad_author style2">
@@ -1049,7 +1049,7 @@
             <div class="col-lg-5"></div>
             <div class="col-lg-7">
               <div class="mad_section_container mad_item_offset">
-                <h3 class="mad_title_style1">Offers n News</h3>
+                <h3 class="mad_title_style1">Новости и предложения</h3>
                 <h2>Latest News & Offers</h2>
               </div>
             </div>
