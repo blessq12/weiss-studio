@@ -70,7 +70,7 @@
             <div class="col-md-8 d-none d-md-block d-lg-block">
               <div class="header_info_section">
                 <div class="head_socials">
-                  <p class="icon_location">121 King Street, Melbourne</p>
+                  <p class="icon_location">{{ $address }}</p>
                   <div class="social_icon_list">
                     <ul>
                       <li><a href="#" class="soc_icon icon-facebook"></a></li>
@@ -83,7 +83,7 @@
                   </div>
                 </div>
                 <div class="head_phone">
-                  <div><p class="icon_mobile">+61 3 8376 6284</p></div>
+                  <div><p class="icon_mobile">{{ $phone }}</p></div>
                   <a href="appointment_page.html" class="mad_button">Make an Appointment</a>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
+Route::domain(env('APP_URL'))->group(function(){
+
+    $mainRoutes = function(){
+        Route::get('/','index')->name('index');
+    };
+    
+    Route::controller(MainController::class)->group($mainRoutes);
+
 });
+
