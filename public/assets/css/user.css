@@ -6,12 +6,22 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'Corinthia';
+    src: url('/assets/fonts/Corinthia.woff2') format('woff2'),
+        url('/assets/fonts/Corinthia.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 
 body{
     position: relative;
 }
 .mad_title_style1{
-    font-family: 'Carolina';
+    font-family: 'Corinthia';
     font-size: 82px;
 }
 /* hero bannner section */
@@ -264,7 +274,13 @@ blockquote p:before {
     background: #0088cc;
 }
 /* end mobile section */
+.mad_title_style2{
+    font-family: 'Carolina'!important;
+}
 @media (max-width:768px){
+    .section_image{
+        margin-bottom: 0!important;
+    }
     .hero-banner h2 {
         color: #ce3d5f;
         font-size: 20px;
@@ -276,7 +292,7 @@ blockquote p:before {
         font-size: 35px;
     }
     .mad_title_style1{
-        font-family: 'Carolina';
+        font-family: 'Corinthia';
         font-size: 40px;
     }
     .hero-banner {

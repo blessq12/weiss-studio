@@ -17,13 +17,13 @@
                   <h2>Косметология и аппаратные массажи</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                   <div class="mad_author">
-                    <h3 class="mad_title_style2">JhonDoe.</h3>
-                    <span>Founder and Hairstylist</span>
+                    <h3 class="mad_title_style2">Анастасия Ашуркина.</h3>
+                    <span>Основатель студии</span>
                   </div>
                 </article>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 mt-0">
               <figure class="section_image align_right">
                 <img src="/assets/images/women_457x524.png" alt="">
               </figure>
