@@ -13,7 +13,7 @@
             <div class="col-md-6">
               <div class="mad_section_container">
                 <article>
-                  <h3 class="mad_title_style1">Добро пожаловать</h3>
+                  <h3 class="mad_title_style1">Больше, чем просто работа</h3>
                   <h2>Косметология и аппаратные массажи</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                   <div class="mad_author">
@@ -319,10 +319,8 @@
                 <div class="tabs tabs-section vertical clearfix">
                   <!--tabs navigation-->
                   <ul class="tabs_nav clearfix">
-                    <li data-tab="first"><span class="active">Hair</span></li>
-                    <li data-tab="second"><span class="">Makeup</span></li>
-                    <li data-tab="third"><span class="">Shaving</span></li>
-                    <li data-tab="fourth"><span class="">Manicure / Pedicure</span></li>
+                    <li data-tab="first"><span class="active">Процедуры для лица</span></li>
+                    <li data-tab="second"><span class="">Процедуры для тела</span></li>
                   </ul>
                   <!--tabs content-->
                   <div class="tabs_content">
@@ -334,7 +332,9 @@
                         </div>
                         <!--tabs content-->
                         <div class="tabs_content">
-                          <h2>content 1</h2>
+                            <div class="row">
+                              <div class="col-6"></div>
+                            </div>
                         </div>
                       </div>
                     </div>
