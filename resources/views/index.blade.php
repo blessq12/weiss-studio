@@ -6,8 +6,8 @@
   <div id="content">
 
     {{-- about section --}}
-    <div id="about">
-      <div class="mad_section inset_none v_align_center_blocks">
+    <div>
+      <div id="about" class="mad_section v_align_center_blocks mad_about">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -66,7 +66,7 @@
       {{-- end greeting --}}
 
       {{-- Testimonials --}}
-      <div class="mad_section">
+      <div class="mad_section" id="testimonials">
         <div class="container">
           <div class="row">
             <div class="col-md-6">
@@ -287,7 +287,7 @@
       </div>
 
       <!-- Services3 -->
-      <div id="services3" class="mad_section inset_none v_align_center_blocks">
+      <div id="services3" class="mad_section mad_about v_align_center_blocks">
         
         <div class="container">
           <div class="row">

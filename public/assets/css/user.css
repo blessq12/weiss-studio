@@ -228,6 +228,13 @@ blockquote p:before {
     justify-content: start;
     align-items: center;
 }
+.mad_about{
+    padding-top: 90px;
+    padding-bottom: 0;
+}
+.mob-link-active{
+    background: #ce3d5f!important;
+}
 /* mobile social section */
 .social-mobile{
     display: flex;

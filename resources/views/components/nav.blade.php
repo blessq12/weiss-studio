@@ -12,18 +12,10 @@
         <div class="row mb-3">
           <div class="col">
             <ul class="list-unstyled mobile-list">
-              <li>
-                <a href="" >Some Link to</a>
-              </li>
-              <li>
-                <a href="" >Some Link to</a>
-              </li>
-              <li>
-                <a href="" >Some Link to</a>
-              </li>
-              <li>
-                <a href="" >Some Link to</a>
-              </li>
+              <li><a href="#about" class="mob-link-active">О нас</a></li>
+              <li><a href="#testimonials">Отзывы</a></li>
+              <li><a href="#services3">Услуги</a></li>
+              <li><a href="#contact">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -106,10 +98,9 @@
             <div class="nav_item">
               <nav id="main_navigation" class="main_navigation">
                 <ul id="menu" class="clearfix">
-                  <li class="current"><a href="#">Главная</a></li>
                   <li class=""><a href="#about">О нас</a></li>
                   <li class=""><a href="#testimonials">Отзывы</a></li>
-                  <li class=""><a href="#services">Услуги</a></li>
+                  <li class=""><a href="#services3">Услуги</a></li>
                   <li class=""><a href="#contact">Контакты</a></li>
                   {{-- <li class="drop"><a href="#">Pages</a>
                     <!--sub menu-->

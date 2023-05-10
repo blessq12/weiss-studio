@@ -16,6 +16,24 @@ document.addEventListener("DOMContentLoaded",function(){
 			menu.classList.remove('sticky')
 		}
 	})
+	//smooth scroll
+	let menuContainer = document.querySelector('#menu')
+	let menuItems = menuContainer.querySelectorAll('a[href^="#"]')
+	menuItems.forEach(item => {
+		item.addEventListener('click',function(e){
+			for (el of menuItems){
+				el.parentElement.classList.remove('current')
+			}
+			item.parentElement.classList.add('current')
+			let hash = item.getAttribute('href')
+			let target = document.querySelector(hash)
+			target.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			})
+			e.preventDefault
+		})
+	})
 	//timer events
 
 	// tabs section
@@ -52,6 +70,25 @@ document.addEventListener("DOMContentLoaded",function(){
 		mm.classList.toggle('show-mobile')
 		document.querySelector('.page-layout').classList.toggle('d-none')
 	})
+	let mobileList = document.querySelector('.mobile-list')
+	let mobileLinks = mobileList.querySelectorAll('a[href^="#"]')
+	mobileLinks.forEach(link => {
+		link.addEventListener('click',function(){
+			for (el of mobileLinks){
+				el.classList.remove('mob-link-active')
+			}
+			let hash = link.getAttribute('href')
+			let target = document.querySelector(hash)
+			target.scrollIntoView({
+				behavior: 'smooth',
+				block: 'start'
+			})
+			link.classList.add('mob-link-active')
+			mm.classList.toggle('show-mobile')
+			document.querySelector('.page-layout').classList.toggle('d-none')
+		})
+	})
+	
 })
 //jQuery scripts
 $(document).ready(function(){
