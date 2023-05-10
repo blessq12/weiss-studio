@@ -846,132 +846,31 @@
             </div>
           </div>
         </div>
+        
         <!-- Carousel -->
         <div class="carousel_type_2 full_width_gallery">
           <div id="gallery_carousel" class="owl-carousel gallery_carousel" data-max-items="4">
-            <!-- Slide -->
-            <div>
-              <!-- Carousel Item -->
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img1.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img1.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
+            @foreach ($galleryPairs as $key => $val)
+                <!-- Slide -->
+                  <div>
+                    <!-- Carousel Item -->
+                    <div class="mad_item_hover">
+                      <figure>
+                        <img src="/assets/images/gallery/{{ $key .'_' .$val[0]}}.jpg" alt="">
+                      </figure>
+                    </div>
+                    <div class="mad_item_hover">
+                      <figure>
+                        <img src="/assets/images/gallery/{{ $key .'_' .$val[1]}}.jpg" alt="">
+                      </figure>
+                    </div>
+                    <!-- /Carousel Item -->
                   </div>
-                </div>
-              </div>
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img5.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img5.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- /Carousel Item -->
-            </div>
-            <!-- /Slide -->
-            <!-- Slide -->
-            <div>
-              <!-- Carousel Item -->
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img2.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img2.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img6.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img6.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- /Carousel Item -->
-            </div>
-            <!-- /Slide -->
-            <!-- Slide -->
-            <div>
-              <!-- Carousel Item -->
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img3.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img3.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img7.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img7.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- /Carousel Item -->
-            </div>
-            <!-- /Slide -->
-            <!-- Slide -->
-            <div>
-              <!-- Carousel Item -->
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img4.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img4.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="mad_item_hover">
-                <figure>
-                  <img src="/assets/images/480x370_img8.jpg" alt="">
-                </figure>
-                <div class="item_overlay">
-                  <div class="text_holder">
-                    <a href="/assets/images/480x370_img8.jpg" class="mad_icon_plus gallery" rel="category"></a>
-                    <a href="#" class="mad_icon_link"></a>
-                  </div>
-                </div>
-              </div>
-              <!-- /Carousel Item -->
-            </div>
-            <!-- /Slide -->
-            
-          
+                <!-- /Slide -->
+            @endforeach
           </div>
-
         </div>
-
       </div>
-
     </div>
 
     {{-- team --}}

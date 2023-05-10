@@ -12,12 +12,17 @@ class MainController extends Controller
         if (is_dir($photoGalleryPath)){
             $photoGallery = array_diff(scandir($photoGalleryPath), array('.', '..'));
         }
-        dd($photoGallery);
+        $galleryPairs = [];
+        foreach ($photoGallery as $key => $val){
+            $name = explode('.',$val);
+            $name = explode('_',$name[0]);
+            $galleryPairs[$name[0]][] = $name[1];
+        }
         return view('index',[
             'title' => 'Аппаратный массаж и коррекция фигуры',
             'description' => 'Описание для главной страницы',
             'image' => 'http://via.placeholder.com/1920x680',
-            'galleryImages' => $photoGallery
+            'galleryPairs' => $galleryPairs
         ]);
     }
 }
