@@ -154,6 +154,14 @@ blockquote p:before {
     background: none;
     font-style: normal;
 }
+blockquote .mad_author .mad_title_style2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 44px;
+    font-weight: 600;
+    margin-top: 20px;
+    line-height: 20px;
+    color: #27090d;
+}
 .paralax_image_bg2 {
     background: #dedede;
     background-position: center;

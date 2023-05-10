@@ -43,9 +43,10 @@
               <div class="greeting-wrap">
                 <h2>для лица</h2>
                 <p>
-                  Процедуры направленные на омоложение и поддержание состояния кожи лица
+                  Какое то описание процедур и что они направлены именно на какую-то определенную часть тела.
+                  Описание общее как для отдельной категории, что это важно и нужно
                 </p>
-                <a href="#" class="mad_button style2">Все услуги</a>
+                <a href="#" class="mad_button style2">Перечень услуг</a>
               </div>
               </div>
             <div class="col-12 col-md-6 col-lg-6 right-image d-none d-md-block d-lg-block" data-background=""></div>
@@ -61,8 +62,12 @@
             <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
               <div class="greeting-wrap greeting-last">
                 <h2>для тела</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, praesentium ab. Eaque nulla dolore voluptates eius aspernatur, dignissimos sed magni distinctio! Tenetur magni, inventore id amet est veniam fugiat expedita?</p>
-                <a href="#" class="mad_button style2">View all Services</a>
+                <p>
+                  Какое то описание процедур и что они направлены именно на какую-то определенную часть тела.
+                  Описание общее как для отдельной категории, что это важно и нужно.
+                  Желательно чтобы текста было не мало
+                </p>
+                <a href="#" class="mad_button style2">Перечень услуг</a>
               </div>
             </div>
           </div>
@@ -92,11 +97,12 @@
                         <!-- Carousel Item -->
                         <blockquote>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat.
+                            Я могу рекомендовать этот салон с полной уверенностью. Это место, где вам предоставят не только профессиональные услуги, здесь вас также ждет приветливый и заботливый персонал. 
+                            Здесь я нашла все, что мне нужно: уютная атмосфера, профессиональные мастера, которые являются настоящими экспертами в своем деле.
                           </p>
                           <div class="mad_author style2">
-                            <h3 class="mad_title_style2">Alex Jhon</h3>
-                            <span> Founder and CEO</span>
+                            <h3 class="mad_title_style2">​Светлана Волженина</h3>
+                            <span>Клиент</span>
                           </div>
                         </blockquote>
                         <!-- /Carousel Item -->
@@ -107,11 +113,12 @@
                         <!-- Carousel Item -->
                         <blockquote>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat.
+                            Хотела бы оставить свой отзыв, место чудесное, чисто, уютно, работают специалисты своего дела, всё подробно расскажут и объяснят, уже приобрела абонемент на ВР массаж, я с вами на долго 😉❤
+                            Кто ещё не был в этой студии, советую обязательно сходить...
                           </p>
                           <div class="mad_author style2">
-                            <h3 class="mad_title_style2">Alex Jhon</h3>
-                            <span> Founder and CEO</span>
+                            <h3 class="mad_title_style2">​Кристина Вострякова</h3>
+                            <span>Клиент</span>
                           </div>
                         </blockquote>
                         <!-- /Carousel Item -->
@@ -122,11 +129,11 @@
                         <!-- Carousel Item -->
                         <blockquote>
                           <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat.
+                            Ещё в 2019 году познакомилась с мастером Анастасией,ходила на вакуумный массаж тела,мне очень понравилась!В этом году в отпуске прошла курс рф лифтинг лица и осталась довольна!Хочу выразить огромную благодарность Анастасии ,она настоящий мастер своего дела,легкая,чуткая,аккуратная, мастер ,который постоянно обучается ,радует новинками!Рекомендую посетить эту студию без раздумий!
                           </p>
                           <div class="mad_author style2">
-                            <h3 class="mad_title_style2">Alex Jhon</h3>
-                            <span> Founder and CEO</span>
+                            <h3 class="mad_title_style2">Ольга Филонова</h3>
+                            <span> Клиент</span>
                           </div>
                         </blockquote>
                         <!-- /Carousel Item -->
