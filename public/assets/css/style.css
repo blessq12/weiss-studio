@@ -299,7 +299,7 @@ textarea::-moz-placeholder{
 h1,h2,h3,h4,h5,h6{
   font-family: 'Raleway', sans-serif;
   color: #272627;
-  line-height: 1.25em;
+  line-height: 1em;
   font-weight: bold;
   margin-bottom: 20px;
   letter-spacing: -2px;

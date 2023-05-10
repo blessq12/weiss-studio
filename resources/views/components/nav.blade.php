@@ -19,6 +19,23 @@
             </ul>
           </div>
         </div>
+        {{-- contact group --}}
+        <div class="row mb-3">
+          <div class="col">
+              <ul class="list-unstyled cont-list">
+                <li>
+                    Телефон:
+                    <a href="">{{$phone}}</a>
+                </li>
+                <li>
+                    Адрес:
+                    <a href="">{{$address}}</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+        {{-- end contact group --}}
+        {{-- social group --}}
         <div class="row mb-1">
           <div class="col">
             <h5 class="mb-0 text-white">Мы в соцсетях:</h5>
@@ -42,6 +59,7 @@
             </div>
           </div>
         </div>
+        {{-- end social group --}}
         <div class="row mb-3">
           <div class="col">
             <a href="appointment_page.html" class="mad_button">Make an Appointment</a>

@@ -39,8 +39,10 @@
             <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
               <div class="greeting-wrap">
                 <h2>для лица</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae, praesentium ab. Eaque nulla dolore voluptates eius aspernatur, dignissimos sed magni distinctio! Tenetur magni, inventore id amet est veniam fugiat expedita?</p>
-                <a href="#" class="mad_button style2">View all Services</a>
+                <p>
+                  Процедуры направленные на омоложение и поддержание состояния кожи лица
+                </p>
+                <a href="#" class="mad_button style2">Все услуги</a>
               </div>
               </div>
             <div class="col-12 col-md-6 col-lg-6 right-image d-none d-md-block d-lg-block" data-background=""></div>
@@ -77,8 +79,8 @@
             <div class="col-md-6">
               <div class="mad_section_container mad_testimonials">
                 <article>
-                  <h3 class="mad_title_style1">Testimonials</h3>
-                  <h2>Отзывы наших клиентов</h2>
+                  <h3 class="mad_title_style1">Отзывы</h3>
+                  <h2>Что о нас говорят</h2>
                   {{-- testimonial carousel --}}
                   <div class="carousel_type_1">
                     <div id="testimonialCarousel" class="owl-carousel" data-max-items="1" data-autoplay="true">
@@ -824,8 +826,8 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="mad_section_container">
-                <h3 class="mad_title_style1">Gallery</h3>
-                <h2 class="mad_separator style2">See our Works</h2>
+                <h3 class="mad_title_style1">Галерея</h3>
+                <h2 class="mad_separator style2">Наша работа</h2>
                 <div class="owl_custom_buttons">
                   <button class="mad_owl_prev"></button>
                   <button class="mad_owl_next"></button>
@@ -970,8 +972,8 @@
             <div class="col-sm-12">
               <div class="align_center mad_item_offset">
                 <div class="mad_section_container">
-                  <h3 class="mad_title_style1">Наша команда</h3>
-                  <h2>Наша команда</h2>
+                  <h3 class="mad_title_style1">Профессионалы</h3>
+                  <h2>своего дела</h2>
                 </div>
               </div>
               {{-- team carousel --}}

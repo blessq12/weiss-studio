@@ -277,6 +277,9 @@ blockquote p:before {
 .mad_title_style2{
     font-family: 'Carolina'!important;
 }
+.cont-list li a{
+    color: #fff;
+}
 @media (max-width:768px){
     .section_image{
         margin-bottom: 0!important;
