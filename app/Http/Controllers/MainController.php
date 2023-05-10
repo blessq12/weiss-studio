@@ -8,11 +8,10 @@ class MainController extends Controller
 {
     public function index()
     {
-        $pageVars = [
+        return view('index',[
             'title' => 'Заголовок для главной страницы',
             'description' => 'Описание для главной страницы',
             'image' => 'http://via.placeholder.com/1920x680'
-        ];
-        return view('index',$pageVars);
+        ]);
     }
 }

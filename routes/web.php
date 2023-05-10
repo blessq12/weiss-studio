@@ -20,7 +20,7 @@ Route::domain(env('APP_URL'))->group(function(){
         Route::get('/','index')->name('index');
     };
     
-    Route::controller(MainController::class)->group($mainRoutes);
+    Route::controller(MainController::class)->name('main.')->group($mainRoutes);
 
 });
 
