@@ -24,12 +24,12 @@
           <div class="col">
               <ul class="list-unstyled cont-list">
                 <li>
-                    Телефон:
-                    <a href="">{{$phone}}</a>
+                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                    <a href="tel:{{$phone}}">{{$phone}}</a>
                 </li>
                 <li>
-                    Адрес:
-                    <a href="">{{$address}}</a>
+                    <object data="{{ asset('/assets/icons/map-marker.svg') }}" type=""></object>
+                    <a href="javascript:void(0)">{{$address}}</a>
                 </li>
               </ul>
           </div>
@@ -62,7 +62,7 @@
         {{-- end social group --}}
         <div class="row mb-3">
           <div class="col">
-            <a href="appointment_page.html" class="mad_button">Make an Appointment</a>
+            <a href="#" class="mad_button">Задать вопрос</a>
           </div>
         </div>
       </div>
