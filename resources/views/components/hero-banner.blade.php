@@ -1,11 +1,14 @@
 <div class="container-fluid hero-banner" style="background: url('{{ asset('/assets/images/banner.jpeg') }}')">
     <div class="container">
         <div class="row">
-            <div class="col-12 col-md-10 col-lg-10">
-                <h2>Влюбись в себя заново</h2>
-                <h1>Стройный и подтянутый силуэт доступный каждой</h1>
+            <div class="col-12 col-md-8 col-lg-8">
+                <h2>Эстетика, естественность и любовь</h2>
+                <h1>Забота о себе и своем теле никогда не выйдет из моды</h1>
                 <p class="text-white">Студия аппаратного массажа и чего-то там в Томске, занимамся чем-то там столько то лет</p>
-                <a href="#" class="mad_button">Хочу скорее попасть</a>
+                <div class="d-flex align-items-center">
+                    <a href="#" class="mad_button" style="margin-right: 10px">Консултация</a>
+                    <a href="#" class="mad_button style2">WhatsApp</a>
+                </div>
             </div>
         </div>
     </div>

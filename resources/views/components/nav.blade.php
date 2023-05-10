@@ -82,18 +82,36 @@
             <div class="col-md-8 d-none d-md-block d-lg-block">
               <div class="header_info_section">
                 <div class="head_socials">
-                  <p class="icon_location">{{ $address }}</p>
+                  <div class="d-flex align-items-center mb-3">
+                    <object data="{{ '/assets/icons/map-marker.svg' }}" type="" style="margin-right: 10px"></object>
+                    <p class="m-0">{{ $address }}</p>
+                  </div>
                   <div class="social_icon_list">
-                    <ul>
-                      <li><a href="#" class="soc_icon icon-facebook"></a></li>
-                      <li><a href="#" class="soc_icon icon-twitter"></a></li>
-                      <li><a href="#" class="soc_icon icon-facebook"></a></li>
-                      <li><a href="#" class="soc_icon icon-twitter"></a></li>
-                    </ul>
+                    <div class="social-mobile">
+                      <a href="" class="vk">
+                        <span></span>
+                        <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
+                      </a>
+                      <a href="" class="wa">
+                        <span></span>
+                        <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                      </a>
+                      <a href="" class="inst">
+                        <span></span>
+                        <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
+                      </a>
+                      <a href="" class="tg">
+                        <span></span>
+                        <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                      </a>
+                  </div>
                   </div>
                 </div>
                 <div class="head_phone">
-                  <div><p class="icon_mobile">{{ $phone }}</p></div>
+                  <div class="d-flex align-items-center mb-3">
+                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type="" style="margin-right: 10px"></object>
+                    <a href="tel:{{ $phone }}" class="text-white">{{ $phone }}</a>
+                  </div>
                   <a href="appointment_page.html" class="mad_button">Бесплатная консультация</a>
                 </div>
               </div>

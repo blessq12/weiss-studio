@@ -15,7 +15,10 @@
                 <article>
                   <h3 class="mad_title_style1">Больше, чем просто работа</h3>
                   <h2>Косметология и аппаратные массажи</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
+                  <p>
+                    За столько лет это стало больше, чем просто работа, была проделана большая работа чтобы студия стала тем местом, куда люди приходят и не бояться оценочных суждений.
+                    Мы заботимся о наших клиентах и делаем всё возможное, чтобы наши услуги стали максимально эффективными для каждой!
+                  </p>
                   <div class="mad_author">
                     <h3 class="mad_title_style2">Анастасия Ашуркина.</h3>
                     <span>Основатель студии</span>
