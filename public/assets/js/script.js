@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded",function(){
 	let loader = document.querySelector('.loader')
 	setTimeout(()=>{
 		loader.classList.add('hide')
-	},'3000')
+	},'2000')
 	
 
 	// image about section
