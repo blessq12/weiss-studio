@@ -20822,3 +20822,6 @@
 127.0.0.1 - - [11/May/2023:21:24:55 +0700] "GET /assets/images/mapaa.jpeg HTTP/1.1" 304 -
 127.0.0.1 - - [11/May/2023:21:24:55 +0700] "GET /assets/css/bootstrap.min.css.map HTTP/1.1" 404 6603
 127.0.0.1 - - [11/May/2023:21:24:56 +0700] "GET /assets/js/bootstrap.bundle.min.js.map HTTP/1.1" 404 6603
+127.0.0.1 - - [11/May/2023:21:31:23 +0700] "GET /assets/images/piling.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [11/May/2023:21:31:23 +0700] "GET /assets/images/vibr.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [11/May/2023:21:31:23 +0700] "GET /assets/images/vacuum.jpeg HTTP/1.1" 304 -

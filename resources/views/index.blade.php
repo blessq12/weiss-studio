@@ -530,7 +530,7 @@
     </div>
 
     {{-- offers and news --}}
-    <div id="news">
+    <div id="contact">
       <div class="mad_section paralax_image_bg4 position-relative" style="background: url('{{ asset('/assets/images/mapaa.jpeg') }}')">
         <div class="overlay"></div>
         <div class="container">
