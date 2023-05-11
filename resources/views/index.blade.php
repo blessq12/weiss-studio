@@ -530,7 +530,7 @@
     </div>
 
     {{-- offers and news --}}
-    <div id="contact">
+    <div id="news">
       <div class="mad_section paralax_image_bg4 position-relative" style="background: url('{{ asset('/assets/images/mapaa.jpeg') }}')">
         <div class="overlay"></div>
         <div class="container">
@@ -539,7 +539,7 @@
             <div class="col-lg-7">
               <div class="mad_section_container mad_item_offset">
                 <h3 class="mad_title_style1">Мы на связи</h3>
-                <h2>Наши контакты</h2>
+                <h2 class="text-white">Наши контакты</h2>
               </div>
             </div>
           </div>
@@ -547,7 +547,7 @@
         <div class="full_width_bg_pattern bg_pattern_red">
           <div class="container">
             <div class="row">
-              <div class="col-md-5">
+              <div class="col-md-5 d-none d-md-block d-lg-block">
                 <figure><img src="/assets/images/magazine_620x480.png" alt=""></figure>
               </div>
               <div class="col-md-7">

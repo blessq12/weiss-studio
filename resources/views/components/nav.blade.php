@@ -15,7 +15,7 @@
               <li><a href="#about" class="mob-link-active">О нас</a></li>
               <li><a href="#testimonials">Отзывы</a></li>
               <li><a href="#services3">Услуги</a></li>
-              <li><a href="#contact">Контакты</a></li>
+              <li><a href="#news">Контакты</a></li>
             </ul>
           </div>
         </div>
@@ -137,7 +137,7 @@
                   <li class=""><a href="#about">О нас</a></li>
                   <li class=""><a href="#testimonials">Отзывы</a></li>
                   <li class=""><a href="#services3">Услуги</a></li>
-                  <li class=""><a href="#contact">Контакты</a></li>
+                  <li class=""><a href="#news">Контакты</a></li>
                   {{-- <li class="drop"><a href="#">Pages</a>
                     <!--sub menu-->
                     <div class="sub_menu_wrap clearfix">
