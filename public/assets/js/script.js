@@ -3,7 +3,12 @@ document.addEventListener("DOMContentLoaded",function(){
 
 	//loader
 	let loader = document.querySelector('.loader')
-	loader.classList.add('d-none')
+	loader.classList.add('hide')
+
+	// image about section
+	let rightImg = document.querySelector('.right-image').dataset.background
+	let leftImg = document.querySelector('.left-image').dataset.background
+	
 
 	//sticky menu 
 	let topHeaderHeight = document.querySelector('.mad_top_header').offsetHeight

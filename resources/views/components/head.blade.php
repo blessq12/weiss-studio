@@ -15,4 +15,9 @@
   <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}">
 </head>
 <body id="index" class="wide_layout">
-  <div class="loader"></div>
+  <div class="loader">
+     <div class="loader-logo">
+        <object data="{{ asset('/assets/icons/loader-icon.svg') }}" type=""></object>
+        <hr>
+     </div>
+  </div>

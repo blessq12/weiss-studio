@@ -15,10 +15,73 @@
     font-display: swap;
 }
 
+/* annimation */
+@keyframes slideRight {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 45px;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* end annimation */
 
+:root{
+    --rightImage:http://via.placeholder.com/1024x1024;
+    --leftImage:http://via.placeholder.com/1024x1024;
+}
 
 body{
     position: relative;
+}
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    top: -100%;
+}
+.loader-logo{
+    position: relative;
+    overflow: hidden;
+}
+.loader-logo hr{
+    color: inherit;
+    border: 0;
+    border-top: 2px solid #ce3d5f;
+    opacity: 1;
+    position: absolute;
+    top: 115px;
+    left: 45px;
+    display: block;
+    width: 50%;
+    transition: all 0.3s;
+    animation-name: slideRight;
+    animation-duration: 3s;
+}
+.loader-logo object{
+    width: 250px;
+    height: auto;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-duration: 3s;
 }
 .mad_title_style1{
     font-family: 'Corinthia';
@@ -124,7 +187,7 @@ body{
     left: 0;
     width: 200%;
     height: 100%;
-    background: url('/assets/images/face-mask.jpg');
+    background-image: url('/assets/images/face-mask.jpg');
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;

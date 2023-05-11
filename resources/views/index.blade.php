@@ -4,7 +4,6 @@
   <x-hero-banner/>
   {{-- content part starts --}}
   <div id="content">
-
     {{-- about section --}}
     <div>
       <div id="about" class="mad_section v_align_center_blocks mad_about">
@@ -49,15 +48,15 @@
                 <a href="#" class="mad_button style2">Перечень услуг</a>
               </div>
               </div>
-            <div class="col-12 col-md-6 col-lg-6 right-image d-none d-md-block d-lg-block" data-background=""></div>
+            <div class="col-12 col-md-6 col-lg-6 right-image d-none d-md-block d-lg-block" data-background="/assets/images/face-mask.jpg"></div>
             <div class="col-12 d-block d-md-none d-lg-none position-relative">
-              <img src="https://hips.hearstapps.com/hmg-prod/images/6-beauty-treatments-every-woman-should-try-in-her-lifetime-1487255003.jpg" alt="">
+              <img src="/assets/images/face-mask.jpg" alt="">
             </div>
           </div>
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-6 left-image d-none d-md-block d-lg-block"></div>
+            <div class="col-12 col-md-6 col-lg-6 left-image d-none d-md-block d-lg-block" data-background="/assets/images/massage-therapy.jpeg"></div>
             <div class="col-12 d-block d-md-none d-lg-none position-relative">
-              <img src="http://via.placeholder.com/1024x512" alt="">
+              <img src="/assets/images/massage-therapy.jpeg" alt="">
             </div>
             <div class="col-12 col-md-6 col-lg-6 d-flex align-items-center">
               <div class="greeting-wrap greeting-last">
@@ -456,23 +455,15 @@
                             </li>
                           </ul>
                         </div>
-
                       </div>
-
                     </div>
                   </div>
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
 
     {{-- gallery --}}
