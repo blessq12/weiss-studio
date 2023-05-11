@@ -59,11 +59,11 @@ body{
     height: 100%;
     background: transparent;
 }
-.mobile-list > li > a {
+.mobile-list li a{
     display: block;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 17px 25px;
+    padding: 10px 15px;
     text-align: start;
     color: #fff;
     background: #272627;
@@ -345,6 +345,8 @@ blockquote .mad_author .mad_title_style2 {
     background: #272627;
     min-height: 120px;
     padding: 30px 0;
+    display: flex;
+    align-items: center;
 }
 .footer-logo {
     padding: 30px 30px;
@@ -392,9 +394,9 @@ blockquote .mad_author .mad_title_style2 {
     }
     .hero-banner h2 {
         color: #ce3d5f;
-        font-size: 42px;
+        font-size: 34px;
         font-weight: 300;
-        margin-bottom: -10px;
+        margin-bottom: 0px;
     }
     .hero-banner h1 {
         color: #fff;

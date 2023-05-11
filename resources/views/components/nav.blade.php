@@ -4,7 +4,7 @@
     {{-- mobile menu --}}
     <nav class="mobile-menu">
       <div class="container py-3">
-        <div class="row mb-1">
+        <div class="row mb-2">
           <div class="col">
             <h5 class="mb-0 text-white">Навигация:</h5>
           </div>
@@ -36,7 +36,7 @@
         </div>
         {{-- end contact group --}}
         {{-- social group --}}
-        <div class="row mb-1">
+        <div class="row mb-2">
           <div class="col">
             <h5 class="mb-0 text-white">Мы в соцсетях:</h5>
           </div>
