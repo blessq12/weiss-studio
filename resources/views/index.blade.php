@@ -162,7 +162,7 @@
             <div class="col-sm-12">
               <div class="mad_section_container">
                 <h3 class="mad_title_style1">Комплексные процедуры</h3>
-                <h2 class="mad_separator">Beauty Services</h2>
+                <h2 class="mad_separator">Курсом дешевле</h2>
               </div>
               {{-- services carousel --}}
               <div class="carousel_type_2">
@@ -172,14 +172,33 @@
                     <!-- Carousel Item -->
                     <div class="mad_item_hover">
                       <figure>
-                        <img src="/assets/images/370x370_img1.jpg" alt="">
+                        <img src="/assets/images/vacuum.jpeg" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
-                        <h5>Barber Services for Women</h5>
+                        <h5>Вакуумно роликовый массаж</h5>
                       </div>
                       <a href="#" class="item_overlay">
                         <div class="text_holder">
-                          <p>Barber Services for Women</p>
+                          <p>Описание комплекса</p>
+                        </div>
+                      </a>
+                    </div>
+                    <!-- /Carousel Item -->
+                  </div>
+                  <!-- /Slide -->
+                   <!-- Slide -->
+                   <div>
+                    <!-- Carousel Item -->
+                    <div class="mad_item_hover">
+                      <figure>
+                        <img src="/assets/images/piling.jpeg" alt="">
+                      </figure>
+                      <div class="mad_item_desc with_bg_img">
+                        <h5>Пилинги</h5>
+                      </div>
+                      <a href="#" class="item_overlay">
+                        <div class="text_holder">
+                          <p>Описание комплекса</p>
                         </div>
                       </a>
                     </div>
@@ -191,99 +210,20 @@
                     <!-- Carousel Item -->
                     <div class="mad_item_hover">
                       <figure>
-                        <img src="/assets/images/370x370_img2.jpg" alt="">
+                        <img src="/assets/images/vibr.jpeg" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
-                        <h5>Barber Services for Mens</h5>
+                        <h5>Вибрационные массажи</h5>
                       </div>
                       <a href="#" class="item_overlay">
                         <div class="text_holder">
-                          <p>Barber Services for Mens</p>
+                          <p>Описание комплекса</p>
                         </div>
                       </a>
                     </div>
                     <!-- /Carousel Item -->
                   </div>
                   <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/370x370_img3.jpg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Barber Services Shaving</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Barber Services Shaving</p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/370x370_img4.jpg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Spa Services (Massage)</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Spa Services (Massage)</p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/370x370_img5.jpg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Beauty Services for Women</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Beauty Services for Women</p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/370x370_img6.jpg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Beauty Services for Mens</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Beauty Services for Mens</p>
-                        </div>
-                      </a>
-                    </div>
-                    <!-- /Carousel Item -->
-                  </div>
-                  <!-- /Slide -->
-                </div>
-                <div class="align_center">
-                  <a href="#" class="mad_button style2">View all Services</a>
                 </div>
               </div>
               {{-- end services carousel --}}
@@ -313,7 +253,7 @@
               <div class="mad_section_container">
                 <article>
                   <h3 class="mad_title_style1">Цены на услуги</h3>
-                  <h2>Plan and Pricing</h2>
+                  <h2>Перечень услуг</h2>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
                 </article>
               </div>
@@ -591,14 +531,15 @@
 
     {{-- offers and news --}}
     <div id="news">
-      <div class="mad_section paralax_image_bg4" style="background: url('https://velikorodnov.com/html/spa-construction/spa/multi-page/images/bg_image_1920x1278.jpg')">
+      <div class="mad_section paralax_image_bg4 position-relative" style="background: url('{{ asset('/assets/images/mapaa.jpeg') }}')">
+        <div class="overlay"></div>
         <div class="container">
           <div class="row">
             <div class="col-lg-5"></div>
             <div class="col-lg-7">
               <div class="mad_section_container mad_item_offset">
-                <h3 class="mad_title_style1">Новости и предложения</h3>
-                <h2>Latest News & Offers</h2>
+                <h3 class="mad_title_style1">Мы на связи</h3>
+                <h2>Наши контакты</h2>
               </div>
             </div>
           </div>
@@ -611,8 +552,8 @@
               </div>
               <div class="col-md-7">
                 <div class="mad_section_container">
-                  <h3 class="mad_title_style1">See the Latest News Regarding “Hairstyle”</h3>
-                  <a href="#" class="mad_button style2">Read All</a>
+                  <h3 class="m-0 text-white">Телефон: {{ $phone }}</h3>
+                  <h3 class="m-0 text-white">Адрес: {{ $address }}</h3>
                 </div>
               </div>
             </div>
