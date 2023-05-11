@@ -3,7 +3,10 @@ document.addEventListener("DOMContentLoaded",function(){
 
 	//loader
 	let loader = document.querySelector('.loader')
-	loader.classList.add('hide')
+	setTimeout(()=>{
+		loader.classList.add('hide')
+	},'3000')
+	
 
 	// image about section
 	let rightImg = document.querySelector('.right-image').dataset.background
