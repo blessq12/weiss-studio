@@ -1,7 +1,7 @@
 <div class="container-fluid hero-banner">
     <video 
         src="{{ asset('/assets/video/hero-background.mp4') }}"
-        
+        playsinline
         autoplay 
         muted 
         loop
