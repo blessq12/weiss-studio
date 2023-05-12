@@ -44,7 +44,7 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video{
+time, mark, audio{
   margin: 0;
   padding: 0;
   border: 0;
@@ -188,33 +188,6 @@ body{
 .invisible{visibility: hidden;}
 
 .mad_no_space{margin: 0!important;}
-
-::selection{
-  background: #ce3d5f;
-  color: #fff;
-}
-
-::-moz-selection{
-  background: #ce3d5f;
-  color: #fff; 
-}
-
-::-o-selection{
-  background: #ce3d5f;
-  color: #fff; 
-}
-
-::-ms-selection{
-  background: #ce3d5f;
-  color: #fff;
-}
-
-::-webkit-scrollbar{
-  width: 5px;
-  background: #272627;
-}
-
-::-webkit-scrollbar-thumb{background: #ce3d5f;}
 
 img{
   -webkit-user-select: none;
@@ -2501,7 +2474,7 @@ blockquote p:after{
 .mad_item_hover .item_overlay{
   content: '';
   position: absolute;
-  background: rgba(191,56,88,0.8);
+  background: rgba(174, 129, 126,0.8);
   top: 0;
   left: 0;
   width: 100%;

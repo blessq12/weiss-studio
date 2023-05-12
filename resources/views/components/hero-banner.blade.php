@@ -1,5 +1,13 @@
-<div class="container-fluid hero-banner" style="background: url('{{ asset('/assets/images/banner.jpeg') }}')">
-    <div class="container">
+<div class="container-fluid hero-banner">
+    <video 
+        src="{{ asset('/assets/video/hero-background.mp4') }}"
+        
+        autoplay 
+        muted 
+        loop
+    ></video>
+    <div class="overlay"></div>
+    <div class="container position-relative" style="z-index: 1">
         <div class="row">
             <div class="col-12 col-md-8 col-lg-8">
                 <h2>Эстетика, естественность и любовь</h2>

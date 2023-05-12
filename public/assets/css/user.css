@@ -33,11 +33,40 @@
     }
 }
 /* end annimation */
-
 :root{
-    --beige: #e3a974;
+    --beige: #ae817e;
     --pink: #ce3d5f;
 }
+/* selection and scrollbar */
+::selection{
+    background: var(--beige);
+    color: #fff;
+  }
+  
+  ::-moz-selection{
+    background: var(--beige);
+    color: #fff; 
+  }
+  
+  ::-o-selection{
+    background: var(--beige);
+    color: #fff; 
+  }
+  
+  ::-ms-selection{
+    background: var(--beige);
+    color: #fff;
+  }
+  
+  ::-webkit-scrollbar{
+    width: 5px;
+    background: #272627;
+  }
+  
+  ::-webkit-scrollbar-thumb{background: var(--beige);}
+  
+/* end selection and scrollbar */
+
 .mad_title_style1{
     color: var(--beige)!important;
 }
@@ -75,7 +104,7 @@ body{
 .loader-logo hr{
     color: inherit;
     border: 0;
-    border-top: 2px solid #ce3d5f;
+    border-top: 2px solid var(--beige);
     opacity: 1;
     position: absolute;
     top: 115px;
@@ -159,7 +188,6 @@ body{
     display: flex;
     align-items: center;
     position: relative;
-    margin-bottom: 80px;
 }
 .greeting-back{
     background: var(--beige);
@@ -172,7 +200,7 @@ body{
     height: 100%;
     background: url('/assets/images/pattern.png');
     background-repeat: repeat;
-    opacity: 0.1;
+    opacity: 0.5;
 
 }
 .right-image,.left-image{
@@ -309,7 +337,7 @@ blockquote .mad_author .mad_title_style2 {
   }
 .tabs_nav > li > span.active{
     color: #fff;
-    background: #ce3d5f;
+    background: var(--beige);
 }
 .tabs_conrainer {
     border: 1px solid #eeeeee;
@@ -371,7 +399,7 @@ blockquote .mad_author .mad_title_style2 {
     padding-bottom: 0;
 }
 .mob-link-active{
-    background: #ce3d5f!important;
+    background: var(--beige)!important;
 }
 /* mobile social section */
 .social-mobile{
@@ -439,6 +467,14 @@ blockquote .mad_author .mad_title_style2 {
 .bg_pattern_red{
     background: var(--beige)!important;
 }
+.hero-banner video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
 @media (max-width:768px){
     .footer {
     background: #272627;
@@ -472,7 +508,7 @@ blockquote .mad_author .mad_title_style2 {
         margin-bottom: 0!important;
     }
     .hero-banner h2 {
-        color: #ce3d5f;
+        color: var(--beige);
         font-size: 34px;
         font-weight: 300;
         margin-bottom: 0px;
@@ -495,7 +531,6 @@ blockquote .mad_author .mad_title_style2 {
         display: flex;
         align-items: center;
         position: relative;
-        margin-bottom: 80px;
     }
     #news .paralax_image_bg4{
         margin-bottom: 100px;
