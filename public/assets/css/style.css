@@ -263,13 +263,13 @@ h1,h2,h3,h4,h5,h6{
   font-family: 'Raleway', sans-serif;
   color: #272627;
   line-height: 1em;
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 20px;
   letter-spacing: -2px;
 }
 
 h2{
-  font-weight: 800;
+  font-weight: 300;
   font-size: 60px;
   letter-spacing: -1px;
 }
@@ -726,7 +726,8 @@ p{
 
   .logo{
     text-align: left;
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   /* Main Navigation */
@@ -2233,7 +2234,7 @@ svg:not(:root) {overflow: hidden;}
 
 .mad_author span{
   margin-left: 25px;
-  margin-top: -20px;
+  margin-top: -5px;
   color: #afafaf;
 }
 
@@ -2251,7 +2252,7 @@ svg:not(:root) {overflow: hidden;}
   display: inline-block;
 }
 
-.mad_section_container article p{margin-bottom: 35px;}
+.mad_section_container article p{margin-bottom: 35px;color: #000;}
 
 .pattern_section.row > [class*="col-"]{padding: 0;}
 
@@ -4028,7 +4029,7 @@ iframe::scrollbar{
 
   #services .carousel_type_2 .owl-carousel{padding-top: 90px;}
 
-#services3 .mad_section_container p{margin-bottom: 0;}
+#services3 .mad_section_container p{margin-bottom: 0;color: #000;}
 
 #services .owl-carousel .owl-nav > [class*="owl-"]{
   border: 2px solid #616161;

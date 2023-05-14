@@ -73,18 +73,24 @@
       <div class="mad_top_header position-relative">
         <div class="container">
           <div class="row">
-            <div class="col-md-4 col-6 d-flex justify-content-start">
+            <div class="col-md-2 col-6 d-flex justify-content-start">
               <a href="{{ route('main.index') }}" class="logo">
                 <img src="{{ asset('/assets/icons/logo-text.svg') }}" alt="{{ env('APP_NAME') }}">
               </a>
             </div>
-            <div class="col-md-8 d-none d-md-block d-lg-block">
+            <div class="col-md-4 justify-content-center d-none d-md-flex d-lg-flex">
+              <div class="cta-nav">
+                <div class="surprise"><img src="{{ asset('/assets/images/surprise-box.png') }}" alt=""></div>
+                <div class="content">
+                  <h3>Впервые у нас?</h3>
+                  <p class="m-0 text-white">Weiss-studio дарит скидку на первое посещение студии!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 d-none d-md-block d-lg-block">
               <div class="header_info_section">
                 <div class="head_socials">
-                  <div class="d-flex align-items-center mb-3">
-                    <object data="{{ '/assets/icons/map-marker.svg' }}" type="" style="margin-right: 10px"></object>
-                    <p class="m-0">{{ $address }}</p>
-                  </div>
+                  <h5 class="text-white fw-normal">Подпишись на нас<br>в соцсетях!</h5>
                   <div class="social_icon_list">
                     <div class="social-mobile">
                       <a href="{{ $vkGroup }}" class="vk">
@@ -107,11 +113,19 @@
                   </div>
                 </div>
                 <div class="head_phone">
-                  <div class="d-flex align-items-center mb-3">
+                  <h5 class="text-white fw-normal">Контакты</h5>
+                  <div class="d-flex align-items-center mb-1">
                     <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type="" style="margin-right: 10px"></object>
-                    <a href="tel:{{ $phone }}" class="text-white">{{ $phone }}</a>
+                    <a href="tel:{{ $phone }}" class="text-white fw-normal">{{ $phone }}</a>
                   </div>
-                  <a href="appointment_page.html" class="mad_button">Бесплатная консультация</a>
+                  <div class="d-flex align-items-center mb-1">
+                    <object data="{{ '/assets/icons/map-marker.svg' }}" type="" style="margin-right: 10px"></object>
+                    <p class="m-0 fw-normal">{{ $address }}</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-1">
+                    <object data="{{ '/assets/icons/envelope.svg' }}" type="" style="margin-right: 10px"></object>
+                    <p class="m-0 fw-normal">{{ $emailAddress }}</p>
+                  </div>
                 </div>
               </div>
             </div>
