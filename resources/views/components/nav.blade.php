@@ -31,6 +31,10 @@
                     <object data="{{ asset('/assets/icons/map-marker.svg') }}" type=""></object>
                     <a href="javascript:void(0)">{{$address}}</a>
                 </li>
+                <li>
+                  <object data="{{ asset('/assets/icons/envelope.svg') }}" type=""></object>
+                  <a href="mailto:{{ $emailAddress }}">{{$emailAddress}}</a>
+              </li>
               </ul>
           </div>
         </div>
@@ -44,16 +48,16 @@
         <div class="row mb-3">
           <div class="col">
             <div class="social-mobile">
-                <a href="" class="vk">
+                <a href="{{ $vkGroup }}" class="vk">
                   <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
                 </a>
-                <a href="" class="wa">
-                  <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
-                </a>
-                <a href="" class="inst">
+                <a href="{{ $insta }}" class="inst">
                   <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
                 </a>
-                <a href="" class="tg">
+                <a href="{{ $waLink }}" class="wa">
+                  <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                </a>
+                <a href="{{ $tgLink }}" class="tg">
                   <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
                 </a>
             </div>
@@ -88,19 +92,19 @@
                   </div>
                   <div class="social_icon_list">
                     <div class="social-mobile">
-                      <a href="" class="vk">
+                      <a href="{{ $vkGroup }}" class="vk">
                         <span></span>
                         <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
                       </a>
-                      <a href="" class="wa">
-                        <span></span>
-                        <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
-                      </a>
-                      <a href="" class="inst">
+                      <a href="{{ $insta }}" class="inst">
                         <span></span>
                         <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
                       </a>
-                      <a href="" class="tg">
+                      <a href="{{ $waLink }}" class="wa">
+                        <span></span>
+                        <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                      </a>
+                      <a href="{{ $tgLink }}" class="tg">
                         <span></span>
                         <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
                       </a>

@@ -22,11 +22,13 @@ class AppServiceProvider extends ServiceProvider
     public function boot(): void
     {
         View::share([
-            'phone' => '+7(961)890‒08‒55',
+            'phone' => '+7 (901) 608‒08‒55',
             'address' => '​Большая Подгорная, 87, 2 офис',
-            'emailAddress' => 'info@weiss-studio.ru',
-            'waLink' => 'http://wa.me/XXXXXX',
-            'tgLink' => 'http://t.me/username',
+            'emailAddress' => 'Vais.anastassia@yandex.ru',
+            'waLink' => 'http://wa.me/79016080855',
+            'tgLink' => 'https://t.me/weis_stydio',
+            'vkGroup' => 'https://vk.com/club210928296',
+            'insta' => 'https://instagram.com/weiss_tomsk?igshid=NTc4MTIwNjQ2YQ=='
         ]);
     }
 }

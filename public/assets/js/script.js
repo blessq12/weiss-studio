@@ -144,7 +144,7 @@ $(document).ready(function(){
 	$('#teamCarousel').owlCarousel({
 		items: $('#teamCarousel').attr("data-max-items"),
 		loop: false,
-		dots: true,
+		dots: false,
 		responsive: {
 			0: {items: 1},
 			480: {items: 2},
@@ -152,18 +152,4 @@ $(document).ready(function(){
 			992: {items: 3}
 		}
 	})
-	//news carousel
-	$('#newsCarousel').owlCarousel({
-		items: 2,
-		loop: true,
-		dots: false,
-		nav: false,
-		responsive: {
-			0: {items: 1},
-			480: {items: 2},
-			768: {items: 2},
-			992: {items: 2}
-		}
-	})
-	
 })

@@ -14,8 +14,8 @@
                 <h1>Забота о себе и своем теле никогда не выйдет из моды</h1>
                 <p class="text-white">Студия аппаратного массажа и чего-то там в Томске, занимамся чем-то там столько то лет</p>
                 <div class="d-flex align-items-center">
-                    <a href="#" class="mad_button" style="margin-right: 10px">Консултация</a>
-                    <a href="#" class="mad_button style2">WhatsApp</a>
+                    <a href="tel:{{ $phone }}" class="mad_button" style="margin-right: 10px">Консультация</a>
+                    <a href="{{ $waLink .'?text=Ответы на вопросы и консультация специалистов в этом чате' }}" target="_blank" class="mad_button style2">WhatsApp</a>
                 </div>
             </div>
         </div>

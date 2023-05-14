@@ -467,15 +467,15 @@
                 <div id="teamCarousel" class="owl-carousel" data-max-items="3" data-autoplay="true">
                   <div>
                     <!-- Carousel Item -->
-                    <a href="#" class="mad_item_hover style2">
+                    <a href="javascript:void(0)" class="mad_item_hover style2">
                       
                       <figure>
                         <img src="/assets/images/team-1.png" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
                         <div class="mad_author style2">
-                          <h3 class="mad_title_style2">Rosy</h3>
-                          <span>Hair Stylist</span>
+                          <h3 class="mad_title_style2">Вершинина Лариса</h3>
+                          <span>Аппаратный массажист</span>
                         </div>
                       </div>
 
@@ -484,15 +484,15 @@
                   </div>
                   <div>
                     <!-- Carousel Item -->
-                    <a href="#" class="mad_item_hover style2">
+                    <a href="javascript:void(0)" class="mad_item_hover style2">
                       
                       <figure>
                         <img src="/assets/images/women_457x524.png" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
                         <div class="mad_author style2">
-                          <h3 class="mad_title_style2">Liza</h3>
-                          <span>Hair Stylist and Manager</span>
+                          <h3 class="mad_title_style2">Ашуркина Анастасия</h3>
+                          <span>Основатель студии</span>
                         </div>
                       </div>
 
@@ -501,15 +501,15 @@
                   </div>
                   <div>
                     <!-- Carousel Item -->
-                    <a href="#" class="mad_item_hover style2">
+                    <a href="javascript:void(0)" class="mad_item_hover style2">
                       
                       <figure>
                         <img src="/assets/images/team-2.png" alt="">
                       </figure>
                       <div class="mad_item_desc with_bg_img">
                         <div class="mad_author style2">
-                          <h3 class="mad_title_style2">Merry</h3>
-                          <span>Spa Assistant</span>
+                          <h3 class="mad_title_style2">Тереньтьева Ксения</h3>
+                          <span>Аппаратный массажист</span>
                         </div>
                       </div>
 
@@ -552,8 +552,47 @@
               </div>
               <div class="col-md-7">
                 <div class="mad_section_container">
-                  <h3 class="m-0 text-white">Телефон: {{ $phone }}</h3>
-                  <h3 class="m-0 text-white">Адрес: {{ $address }}</h3>
+                  <div class="contact-section">
+                    <ul class="list-unstyled contact-list">
+                      <li> 
+                        <div class="icon">
+                          <object data="{{ asset('/assets/icons/map-marker.svg') }}" type=""></object>
+                        </div>
+                        <span>{{ $address }}</span>
+                      <li> 
+                        <div class="icon">
+                          <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                        </div>
+                        <span><a href="tel:{{ $phone }}">{{ $phone }}</a></span>
+                      <li> 
+                        <div class="icon">
+                          <object data="{{ asset('/assets/icons/envelope.svg') }}" type=""></object>
+                        </div>
+                        <span><a href="mailto:{{ $emailAddress }}">{{ $emailAddress }}</a></span>
+                      </li>
+                    </ul>
+                    <div class="social_icon_list">
+                      <h5 class="mb-3 text-white">Мы в соц. сетях</h5>
+                      <div class="social-mobile">
+                        <a href="{{ $vkGroup }}" class="vk">
+                          <span></span>
+                          <object data="http://weiss-studio.dd/assets/icons/vk.svg" type=""></object>
+                        </a>
+                        <a href="{{ $insta }}" class="inst">
+                          <span></span>
+                          <object data="http://weiss-studio.dd/assets/icons/inst.svg" type=""></object>
+                        </a>
+                        <a href="{{ $waLink }}" class="wa">
+                          <span></span>
+                          <object data="http://weiss-studio.dd/assets/icons/wa.svg" type=""></object>
+                        </a>
+                        <a href="{{ $tgLink }}" class="tg">
+                          <span></span>
+                          <object data="http://weiss-studio.dd/assets/icons/telegram.svg" type=""></object>
+                        </a>
+                    </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
