@@ -64,11 +64,6 @@
           </div>
         </div>
         {{-- end social group --}}
-        <div class="row mb-3">
-          <div class="col">
-            <a href="#" class="mad_button">Задать вопрос</a>
-          </div>
-        </div>
       </div>
     </nav>
     {{-- end mobile menu --}}
