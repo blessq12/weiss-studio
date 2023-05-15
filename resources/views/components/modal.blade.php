@@ -1,9 +1,10 @@
-<div class="cta-modal-block">
+<div class="cta-modal-block d-none">
     <div class="overlay"></div>
     <div class="container position-relative">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 col-lg-8">
-                <div class="cta-modal-content">
+                <div class="cta-modal-content position-relative">
+                    <div class="close-button" onclick="document.querySelector('.cta-modal-block').classList.toggle('d-none')">X</div>
                     <div class="image d-none d-md-flex d-lg-flex"></div>
                     <div class="content">
                         <div class="row">

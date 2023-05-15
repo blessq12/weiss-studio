@@ -11,7 +11,7 @@
       height: 50px;
       background: red;
       z-index: 999;
-      " onclick="console.log('click')"></div>
+      " onclick="document.querySelector('.cta-modal-block').classList.toggle('d-none')"></div>
     {{-- about section --}}
     <div>
       <div id="about" class="mad_section v_align_center_blocks mad_about">

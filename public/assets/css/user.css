@@ -565,8 +565,7 @@ blockquote .mad_author .mad_title_style2 {
     border: 3px solid var(--beige);
     border-radius: 1rem;
     box-shadow: rgba(255, 255, 255, 0.25) 0px 13px 27px -5px, rgba(255, 255, 255, 0.3) 0px 8px 16px -8px;
-    background: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    background: rgba(0, 0, 0, 0.8);
 }
 .cta-modal-content .image {
     background: url('/assets/images/modal-img.jpg');
@@ -591,6 +590,7 @@ blockquote .mad_author .mad_title_style2 {
     border-bottom: 1px solid var(--beige);
     border-radius: 0;
     transition: all 0.3s;
+    height: 40px;
 }
 .form-input:focus{
     background: transparent;
@@ -609,8 +609,32 @@ blockquote .mad_author .mad_title_style2 {
     border: 1px solid var(--beige);
     padding: 10px 15px;
 }
+.close-button {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    background: #fff;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 13px;
+    border: 3px solid var(--beige);
+    border-radius: 100%;
+    cursor: pointer;
+}
 /* end team styles */
 @media (max-width:768px){
+    .close-button {
+        position: absolute;
+        right: 15px;
+        top: -20px;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        padding: 5px 13px;
+        border: 3px solid var(--beige);
+        border-radius: 100%;
+        cursor: pointer;
+    }
     .cta-modal-content .content {
         padding: 25px;
     }
