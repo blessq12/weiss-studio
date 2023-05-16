@@ -654,7 +654,9 @@ blockquote .mad_author .mad_title_style2 {
     max-width: none;
   }
 /* end certificate ticker */
-/* end team styles */
+.social_icon_list .social-mobile a object{
+    width: 20px;
+}
 @media (max-width:768px){
     .close-button {
         position: absolute;
