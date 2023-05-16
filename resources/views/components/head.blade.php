@@ -12,8 +12,8 @@
   <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css')}}">
   <link rel="stylesheet" href="{{ asset('/assets/css/owl.carousel.css')}}">
   <link rel="stylesheet" href="{{ asset('/assets/css/owl.theme.css')}}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/style.css')}}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}">
+  <link rel="stylesheet" href="{{ asset('/assets/css/style.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
+  <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
 </head>
 <body id="index" class="wide_layout">
   <div class="loader">
