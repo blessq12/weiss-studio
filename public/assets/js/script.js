@@ -96,7 +96,11 @@ document.addEventListener("DOMContentLoaded",function(){
 			document.querySelector('.page-layout').classList.toggle('d-none')
 		})
 	})
-	
+	// certificates ticker script
+	let ticker = document.querySelector('.ticker'),
+        list = document.querySelector('.ticker-list'),
+        clone = list.cloneNode(true)
+    ticker.append(clone)
 })
 //jQuery scripts
 $(document).ready(function(){

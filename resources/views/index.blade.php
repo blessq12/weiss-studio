@@ -462,6 +462,17 @@
     {{-- team --}}
     <div id="team">
       <div class="mad_section">
+          <div class="ticker d-flex align-items-center">
+            <div class="light-overlay"></div>
+            <ul class="d-flex ticker-list" style="flex-wrap: nowrap!important;">
+              <li><img src="{{ asset('/assets/images/certificates/cert-1.jpg') }}" alt=""></li>
+              <li><img src="{{ asset('/assets/images/certificates/cert-2.jpg') }}" alt=""></li>
+              <li><img src="{{ asset('/assets/images/certificates/cert-3.jpg') }}" alt=""></li>
+              <li><img src="{{ asset('/assets/images/certificates/cert-4.jpg') }}" alt=""></li>
+              <li><img src="{{ asset('/assets/images/certificates/cert-5.jpg') }}" alt=""></li>
+              <li><img src="{{ asset('/assets/images/certificates/cert-6.jpg') }}" alt=""></li>
+            </ul>
+          </div>
         <div class="container">
           <div class="row">
             <div class="col-sm-12">
