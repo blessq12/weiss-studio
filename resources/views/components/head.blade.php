@@ -60,6 +60,52 @@
          left: 0;
          z-index: 999;
       }
+      .cta-list {
+         position: absolute;
+         left: 0;
+         width: 100%;
+         bottom: 75px;
+         opacity: 1;
+         transition: all 0.3s;
+      }
+      .list-hide{
+         bottom: 0;
+         opacity: 0;
+      }
+      .cta-links{
+         padding: 0;
+         margin: 0;
+         display: block;
+      }
+      .cta-links li{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         padding: 5px 0;
+      }
+      .list-item{
+         min-height: 25px;
+         width: 100%;
+         border:2px solid var(--beige);
+         border-radius: 5px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         padding: 15px 10px;
+      }
+      .list-item.wa{
+         background: green;
+      }
+      .list-item.tg{
+         background: blue;
+      }
+      .list-item.cell{
+         background: var(--beige);
+      }
+      .list-item object{
+         height: 25px;
+         width: 25px;
+      }
   </style>
 
   <div class="cta-claster">
@@ -67,7 +113,26 @@
          <div class="row">
             <div class="col d-flex justify-content-end">
                <div class="position-relative">
-                  <div class="launcher" onclick="document.querySelector('.cta-modal-block').classList.remove('d-none')">
+                  <div class="cta-list list-hide">
+                     <ul class="list-unstyled cta-links">
+                        <li>
+                           <div class="list-item wa">
+                              <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="list-item tg">
+                              <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="list-item cell">
+                              <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="launcher position-relative" onclick="document.querySelector('.cta-list').classList.toggle('list-hide')">
                      <div class="launch-button position-relative">
                         <span></span>
                         <object data="{{ asset('/assets/icons/touch.svg') }}" type=""></object>

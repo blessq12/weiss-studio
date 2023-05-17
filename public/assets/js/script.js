@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded",function(){
         clone = list.cloneNode(true)
     ticker.append(clone)
 })
+
 //jQuery scripts
 $(document).ready(function(){
 	//testimonial carousel
