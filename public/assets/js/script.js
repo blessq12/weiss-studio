@@ -12,7 +12,12 @@ document.addEventListener("DOMContentLoaded",function(){
 	let rightImg = document.querySelector('.right-image').dataset.background
 	let leftImg = document.querySelector('.left-image').dataset.background
 	
-
+	// cta launcher
+	let launcher = document.querySelector('.launcher')
+	let ctaList = document.querySelector('.cta-list')
+	launcher.addEventListener('click',()=>{
+		ctaList.classList.toggle('list-hide')
+	})
 	//sticky menu 
 	let topHeaderHeight = document.querySelector('.mad_top_header').offsetHeight
 	let menu = document.querySelector(".menu_wrap")
