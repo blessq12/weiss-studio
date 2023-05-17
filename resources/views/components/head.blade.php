@@ -28,7 +28,7 @@
       <div class="container">
          <div class="row">
             <div class="col d-flex justify-content-end">
-               <div class="position-relative">
+               <div class="position-relative launcher-obj">
                   <div class="cta-list list-hide">
                      <ul class="list-unstyled cta-links">
                         <li>
@@ -51,7 +51,8 @@
                   <div class="launcher position-relative">
                      <div class="launch-button position-relative">
                         <span></span>
-                        <object data="{{ asset('/assets/icons/touch.svg') }}" type=""></object>
+                        <object class="touch " data="{{ asset('/assets/icons/touch.svg') }}" type=""></object>
+                        <object class="closeBtn d-none" data="{{ asset('/assets/icons/close-cta.svg') }}" type=""></object>
                      </div>
                   </div>
                </div>

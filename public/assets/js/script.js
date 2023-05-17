@@ -15,8 +15,11 @@ document.addEventListener("DOMContentLoaded",function(){
 	// cta launcher
 	let launcher = document.querySelector('.launcher')
 	let ctaList = document.querySelector('.cta-list')
+	let launchButton = document.querySelector('.launch-button')
 	launcher.addEventListener('click',()=>{
 		ctaList.classList.toggle('list-hide')
+		launchButton.querySelector('.touch').classList.toggle('d-none')
+		launchButton.querySelector('.closeBtn').classList.toggle('d-none')
 	})
 	//sticky menu 
 	let topHeaderHeight = document.querySelector('.mad_top_header').offsetHeight
