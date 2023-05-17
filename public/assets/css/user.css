@@ -535,6 +535,11 @@ blockquote .mad_author .mad_title_style2 {
     border: 4px solid var(--beige);
     border-radius: 1rem;
     position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.cta-nav:hover{
+    background: var(--beige);
 }
 .cta-nav .surprise {
     position: absolute;
