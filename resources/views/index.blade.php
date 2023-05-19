@@ -13,7 +13,7 @@
               <div class="mad_section_container">
                 <article>
                   <h3 class="mad_title_style1">Больше, чем просто работа</h3>
-                  <h2>Косметология и аппаратные массажи</h2>
+                  <h2>Эстетическая Косметология и аппаратные массажи</h2>
                   <p>
                     Лицо и фигура могут многое рассказать о характере человека, о состоянии его здоровья, и образе жизни. 
                     Желая обрести подтянутое тело, здоровую кожу нужно обращаться не просто в салон красоты, а к квалифицированными специалистами. 
@@ -243,14 +243,7 @@
         
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-
-              <figure class="section_image align_center">
-                <img src="/assets/images/500x385_img.jpg" alt="">
-              </figure>
-
-            </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="mad_section_container">
                 <article>
                   <h3 class="mad_title_style1">Цены на услуги</h3>
@@ -267,19 +260,51 @@
             <div class="row">
               <div class="col-sm-12">
                 <div class="tabs tabs-section vertical clearfix">
-                  <!--tabs navigation-->
                   <ul class="tabs_nav clearfix">
                     <li data-tab="first"><span class="active">Процедуры для лица</span></li>
                     <li data-tab="second"><span class="">Процедуры для тела</span></li>
+                    <li data-tab="third"><span class="">Комплексные процедуры</span></li>
                   </ul>
-                  <!--tabs content-->
                   <div class="tabs_content">
                     <div data-tab-target="first" class="tab-content">
                       <div class="tabs tabs-section style2">
-                        <!--tabs navigation-->
-                        <div class="clearfix tabs_conrainer">
-                          
-                        </div>
+                        <div class="clearfix tabs_conrainer"></div>
+                        <style>
+                          .procedures{
+                            margin-top: 10px;
+                          }
+                          .procedures p{
+
+                          }
+                          .qty{
+                            padding: 0;
+                            margin: 0;
+                            margin-left: 10px;
+                          }
+                          .qty li{
+                            color: var(--beige);
+                            height: 20px;
+                            width: 20px;
+                            border: 1px solid var(--beige);
+                            border-radius: 5px;
+                            padding: 15px 20px;
+                            margin: 0;
+                            margin-right: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            transition: all 0.3s ease-in-out;
+                            cursor: pointer;
+                          }
+                          .qty li.active{
+                            background: var(--beige);
+                            color: #fff;
+                          }
+                          .qty li:hover{
+                            background: var(--beige);
+                            color: #fff;
+                          }
+                        </style>
                         <!--tabs content-->
                         <div class="tabs_content">
                             <ul class="list-unstyled service-list">
@@ -290,8 +315,16 @@
                                     Описание краткое, но вмещающее суть для процедуры/услуги.
                                     Описание краткое, но вмещающее суть для процедуры/услуги.
                                   </p>
+                                  <div class="procedures d-flex align-items-center">
+                                    <p class="m-0">Процедур</p>
+                                    <ul class="qty d-flex list-unstyled">
+                                      <li class="active"><span>1</span></li>
+                                      <li><span>5</span></li>
+                                      <li><span>10</span></li>
+                                    </ul>
+                                  </div>
                                 </div>
-                                <div class="price">
+                                  <div class="price">
                                     <span>2700</span>
                                 </div>
                               </li>
@@ -337,13 +370,7 @@
                     </div>
                     <div data-tab-target="second" class="tab-content d-none">
                       <div class="tabs tabs-section style2">
-
-                        <!--tabs navigation-->
-                        <div class="clearfix tabs_conrainer">
-                          
-                        </div>
-
-                        <!--tabs content-->
+                        <div class="clearfix tabs_conrainer"></div>
                         <div class="tabs_content">
                           <ul class="list-unstyled service-list">
                             <li>
@@ -358,33 +385,18 @@
                                   <span>2700</span>
                               </div>
                             </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-tab-target="third" class="tab-content d-none">
+                      <div class="tabs tabs-section style2">
+                        <div class="clearfix tabs_conrainer"></div>
+                        <div class="tabs_content">
+                          <ul class="list-unstyled service-list">
                             <li>
                               <div class="content">
-                                <h4>Название процедуры для тела 2</h4>
-                                <p>
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                </p>
-                              </div>
-                              <div class="price">
-                                  <span>2700</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="content">
-                                <h4>Название процедуры для тела 3</h4>
-                                <p>
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                </p>
-                              </div>
-                              <div class="price">
-                                  <span>2700</span>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="content">
-                                <h4>Название процедуры для тела 4</h4>
+                                <h4>Название процедуры для тела 1</h4>
                                 <p>
                                   Описание краткое, но вмещающее суть для процедуры/услуги.
                                   Описание краткое, но вмещающее суть для процедуры/услуги.

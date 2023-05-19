@@ -7,7 +7,19 @@ document.addEventListener("DOMContentLoaded",function(){
 		loader.classList.add('hide')
 	},'2000')
 	
-
+	// hero ticker vertical
+	let delay = document.querySelector('.hero-ticker-wrap').dataset.delay
+	
+	setInterval(() => {
+		let el = document.getElementsByClassName('ticker-item')[0],
+				ticker = document.querySelector('.hero-ticker'),
+				clone = el.cloneNode(true)
+			ticker.append(clone)
+			el.classList.add('item-hide')
+			setTimeout(() => {
+				el.remove()
+			}, 300);
+		}, delay);
 	// image about section
 	let rightImg = document.querySelector('.right-image').dataset.background
 	let leftImg = document.querySelector('.left-image').dataset.background

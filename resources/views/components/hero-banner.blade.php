@@ -12,11 +12,26 @@
             <div class="col-12 col-md-8 col-lg-8">
                 <h2>Эстетика, естественность и любовь</h2>
                 <h1>Студия аппаратной и эстетической косметологии и коррекции фигуры</h1>
-                <h5 class="text-white">В наших силах вернуть естественный румянец, улучшить цвет и состояние кожи. Для натурального омоложения это самый приятный способ</h5>
-                <div class="d-flex align-items-center">
-                    <a href="tel:{{ $phone }}" class="mad_button" style="margin-right: 10px">Консультация</a>
-                    <a href="{{ $waLink .'?text=Ответы на вопросы и консультация специалистов в этом чате' }}" target="_blank" class="mad_button style2">WhatsApp</a>
+                <div class="hero-ticker-wrap" data-delay='5000'>
+                    <div class="hero-ticker">
+                        <div class="ticker-item">
+                            <p>
+                                Сохраним вашу молодость и красоту БЕЗ уколов и инъекций
+                            </p>
+                        </div>
+                        <div class="ticker-item">
+                            <p>
+                                Поможем похудеть БЕЗ физ нагрузок на организм
+                            </p>
+                        </div>
+                        <div class="ticker-item">
+                            <p>
+                                Индивидуальный подход
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <h5 class="text-white">В наших силах вернуть естественный румянец, улучшить цвет и состояние кожи. Для натурального омоложения это самый приятный способ</h5>
             </div>
         </div>
     </div>

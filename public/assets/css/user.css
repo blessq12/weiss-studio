@@ -156,6 +156,9 @@ body{
     font-weight: 300;
     margin-bottom: -20px;
 }
+.hero-banner h5 {
+    margin-top: 20px;
+}
 .mad_button{
     background: var(--beige)!important;
 }
@@ -300,6 +303,39 @@ blockquote .mad_author .mad_title_style2 {
     background: #000;
     opacity: 0.7;
 }
+/* hero ticker */
+.hero-ticker-wrap{
+    overflow: hidden;
+}
+.hero-ticker-wrap .hero-ticker {
+    box-sizing: border-box;
+    height: 90px;
+    width: fit-content;
+    color: #fff;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    padding: 10px 0;
+}
+.ticker-item {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.ticker-item p{
+    margin: 0;
+    font-size: 30px;
+    line-height: normal;
+    font-weight: 400;
+    color: var(--beige);
+}
+.item-hide{
+    height: 0!important;
+}
+/* end hero ticker */
 /* service list */
 .service-list li{
     display: flex;
@@ -308,6 +344,10 @@ blockquote .mad_author .mad_title_style2 {
     justify-content: space-between;
     border-bottom: 1px solid #dedede;
     margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+.service-list>li:hover {
+    background: #ebe8e8;
 }
 .service-list li h4{
     margin-bottom: 10px;
@@ -595,6 +635,7 @@ blockquote .mad_author .mad_title_style2 {
     height: 100%;
     min-height: 500px;
     min-width: 350px;
+    border-radius: 13px 0 0 13px;
 }
 .cta-modal-content .content {
     padding: 35px;
@@ -676,12 +717,14 @@ blockquote .mad_author .mad_title_style2 {
     width: 20px;
 }
 /* cta-launcher */
+
 .cta-claster{
     position: fixed;
     bottom: 50px;
     width: 100%;
     z-index: 99;
  }
+
  .launcher {
     position: absolute;
     width: 70px;
@@ -733,6 +776,7 @@ blockquote .mad_author .mad_title_style2 {
  .list-hide{
     bottom: 0;
     opacity: 0;
+    visibility: hidden;
  }
  .cta-links{
     padding: 0;
@@ -754,7 +798,18 @@ blockquote .mad_author .mad_title_style2 {
     align-items: center;
     justify-content: center;
     padding: 20px 10px;
+    position: relative;
  }
+ .list-item::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: transparent;
+    position: absolute;
+    border-radius: 100%;
+}
  .list-item.wa{
     background: var(--whatsapp);
     border-color: var(--whatsapp);
@@ -771,7 +826,24 @@ blockquote .mad_author .mad_title_style2 {
     width: 25px;
  }
 /* end cta-launcher */
+.pluses{
+    display: flex;
+}
+.pluses li{
+    margin-right: 10px;
+}
 @media (max-width:768px){
+    .hero-ticker-wrap .hero-ticker {
+        height: 70px;
+        padding: 0;
+    }
+    .ticker-item{
+        height: 70px;
+    }
+    .ticker-item p{
+        font-size: 18px;
+        font-weight: 500;
+    }
     .launcher-obj{
         top: 30px;
     }
@@ -821,6 +893,7 @@ blockquote .mad_author .mad_title_style2 {
         justify-content: space-between;
         border-bottom: 1px solid #dedede;
         margin-bottom: 10px;
+        transition: all 0.3s ease-in-out;
     }
     .service-list li h4{
         font-size: 18px;
@@ -831,15 +904,19 @@ blockquote .mad_author .mad_title_style2 {
     .section_image{
         margin-bottom: 0!important;
     }
-    .hero-banner h2 {
-        color: var(--beige);
-        font-size: 34px;
-        font-weight: 300;
-        margin-bottom: 0px;
-    }
     .hero-banner h1 {
         color: #fff;
         font-size: 35px;
+        margin-bottom: 10px;
+    }
+    .hero-banner h2 {
+        color: var(--beige);
+        font-size: 40px;
+        font-weight: 300;
+        margin-bottom: 0px;
+    }
+    .hero-banner h5 {
+        margin-top: 10px;
     }
     .mad_title_style1{
         font-family: 'Corinthia';

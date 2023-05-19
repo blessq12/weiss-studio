@@ -29,23 +29,29 @@
          <div class="row">
             <div class="col d-flex justify-content-end">
                <div class="position-relative launcher-obj">
-                  <div class="cta-list list-hide">
+                  <div class="cta-list list-hide" aria-hidden="true">
                      <ul class="list-unstyled cta-links">
-                        <li>
-                           <div class="list-item wa">
-                              <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="list-item tg">
-                              <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
-                           </div>
-                        </li>
-                        <li>
-                           <div class="list-item cell">
-                              <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
-                           </div>
-                        </li>
+                        <a href="{{ $waLink }}" target="_blank" rel="nofollow">
+                           <li>
+                              <div class="list-item wa">
+                                 <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                              </div>
+                           </li>
+                        </a>
+                        <a href="{{ $tgLink }}" target="_blank" rel="nofollow">
+                           <li>
+                              <div class="list-item tg">
+                                 <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                              </div>
+                           </li>
+                        </a>
+                        <a href="tel:{{ $phone }}">
+                           <li>
+                              <div class="list-item cell">
+                                 <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                              </div>
+                           </li>
+                        </a>
                      </ul>
                   </div>
                   <div class="launcher position-relative">
