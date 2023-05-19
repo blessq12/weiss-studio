@@ -31,7 +31,12 @@
                         </div>
                     </div>
                 </div>
-                <h5 class="text-white">В наших силах вернуть естественный румянец, улучшить цвет и состояние кожи. Для натурального омоложения это самый приятный способ</h5>
+                <h5 class="text-white mb-0">В наших силах вернуть естественный румянец, улучшить цвет и состояние кожи. Для натурального омоложения это самый приятный способ</h5>
+                <div class="d-flex justify-content-center position-relative">
+                    <div class="slider-down">
+                        <object data="{{ asset('/assets/icons/arrow-down.svg') }}" type="" ></object>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

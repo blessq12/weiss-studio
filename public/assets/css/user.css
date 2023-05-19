@@ -47,6 +47,17 @@
         opacity: 0;
     }
 }
+@keyframes slide {
+    0% {
+      top: 4px;
+    }
+    50%{
+      top: 28px;
+    }
+    100% {
+      top: 4px;
+    }
+  }
 /* end annimation */
 :root{
     --beige: #ae817e;
@@ -309,7 +320,7 @@ blockquote .mad_author .mad_title_style2 {
 }
 .hero-ticker-wrap .hero-ticker {
     box-sizing: border-box;
-    height: 90px;
+    height: 95px;
     width: fit-content;
     color: #fff;
     position: relative;
@@ -831,6 +842,15 @@ blockquote .mad_author .mad_title_style2 {
 }
 .pluses li{
     margin-right: 10px;
+}
+.slider-down{
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+    animation: slide 3s infinite linear;
+}
+.slider-down object{
+    height: 55px;
 }
 @media (max-width:768px){
     .hero-ticker-wrap .hero-ticker {

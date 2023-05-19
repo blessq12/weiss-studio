@@ -8,6 +8,7 @@ class MainController extends Controller
 {
     public function index()
     {
+        // gallery carousel 
         $photoGalleryPath = 'assets/images/gallery/';
         if (is_dir($photoGalleryPath)){
             $photoGallery = array_diff(scandir($photoGalleryPath), array('.', '..'));
@@ -18,6 +19,12 @@ class MainController extends Controller
             $name = explode('_',$name[0]);
             $galleryPairs[$name[0]][] = $name[1];
         }
+        // procedures list with price
+        $procedures = [
+            'faceProcedures' => [],
+            'bodyProcedures' => [],
+            'complexProcedures' => [],
+        ];
         return view('index',[
             'title' => 'Аппаратный массаж и коррекция фигуры',
             'description' => 'Описание для главной страницы',
