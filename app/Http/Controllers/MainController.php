@@ -22,7 +22,11 @@ class MainController extends Controller
         // procedures list with price
         $procedures = [
             'faceProcedures' => [],
-            'bodyProcedures' => [],
+            'bodyProcedures' => [
+                'title' => 'Вакуумно роликовый массаж',
+                'excerpt' => 'один из самых эффективных методов в борьбе с лишними килограммами! Очень хорошо воздействует на жировую прослойку. Запускает лимфатическую систему. Избавит вас от целлюлита. Убирает до - 7 см в талии.',
+                
+            ],
             'complexProcedures' => [],
         ];
         return view('index',[

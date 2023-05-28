@@ -853,6 +853,18 @@ blockquote .mad_author .mad_title_style2 {
     height: 55px;
 }
 @media (max-width:768px){
+    #services3 .mad_section{
+        padding-top: 0!important;
+    }
+    .tabs_nav {
+        display: flex;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+    }
+    .tabs_nav li{
+        white-space: nowrap;
+
+    }
     .hero-ticker-wrap .hero-ticker {
         height: 70px;
         padding: 0;
