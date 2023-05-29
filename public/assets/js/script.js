@@ -121,6 +121,23 @@ document.addEventListener("DOMContentLoaded",function(){
         list = document.querySelector('.ticker-list'),
         clone = list.cloneNode(true)
     ticker.append(clone)
+
+	// price toggler
+	let procedures = document.querySelectorAll('.procedures')
+	for (procedure of procedures) {
+		let qtySelectors = procedure.getElementsByTagName('li')
+		for (qty of qtySelectors){
+			qty.click()
+			qty.addEventListener('click',function(){
+				for (qty of qtySelectors){qty.classList.remove('active')}
+				
+				this.classList.add('active')
+				let liParent = this.closest('li.item'),
+					priceSpan = liParent.getElementsByTagName('span')[0]
+				priceSpan.innerHTML = this.dataset.price
+			})
+		}
+	}
 })
 
 //jQuery scripts

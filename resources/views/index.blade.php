@@ -269,141 +269,51 @@
                     <div data-tab-target="first" class="tab-content">
                       <div class="tabs tabs-section style2">
                         <div class="clearfix tabs_conrainer"></div>
-                        <style>
-                          .procedures{
-                            margin-top: 10px;
-                          }
-                          .procedures p{
-
-                          }
-                          .qty{
-                            padding: 0;
-                            margin: 0;
-                            margin-left: 10px;
-                          }
-                          .qty li{
-                            color: var(--beige);
-                            height: 20px;
-                            width: 20px;
-                            border: 1px solid var(--beige);
-                            border-radius: 5px;
-                            padding: 15px 20px;
-                            margin: 0;
-                            margin-right: 10px;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            transition: all 0.3s ease-in-out;
-                            cursor: pointer;
-                          }
-                          .qty li.active{
-                            background: var(--beige);
-                            color: #fff;
-                          }
-                          .qty li:hover{
-                            background: var(--beige);
-                            color: #fff;
-                          }
-                        </style>
-                        <!--tabs content-->
-                        <div class="tabs_content">
-                            <ul class="list-unstyled service-list">
-                              <li>
-                                <div class="content">
-                                  <h4>Название процедуры/услуги</h4>
-                                  <p>
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  </p>
-                                  <div class="procedures d-flex align-items-center">
-                                    <p class="m-0">Процедур</p>
-                                    <ul class="qty d-flex list-unstyled">
-                                      <li class="active"><span>1</span></li>
-                                      <li><span>5</span></li>
-                                      <li><span>10</span></li>
-                                    </ul>
-                                  </div>
-                                </div>
-                                  <div class="price">
-                                    <span>2700</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="content">
-                                  <h4>Название процедуры для лица 1</h4>
-                                  <p>
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  </p>
-                                </div>
-                                <div class="price">
-                                    <span>2700</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="content">
-                                  <h4>Название процедуры для лица 2</h4>
-                                  <p>
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  </p>
-                                </div>
-                                <div class="price">
-                                    <span>2700</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="content">
-                                  <h4>Название процедуры для лица 3</h4>
-                                  <p>
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                    Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  </p>
-                                </div>
-                                <div class="price">
-                                    <span>2700</span>
-                                </div>
-                              </li>
-                            </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div data-tab-target="second" class="tab-content d-none">
-                      <div class="tabs tabs-section style2">
-                        <div class="clearfix tabs_conrainer"></div>
                         <div class="tabs_content">
                           <ul class="list-unstyled service-list">
-                            <li>
-                              <div class="content">
-                                <h4>Название процедуры для тела 1</h4>
-                                <p>
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                </p>
-                              </div>
-                              <div class="price">
-                                  <span>2700</span>
+                            <li class="item">
+                              <div class="row align-items-center">
+                                <div class="col-12">
+                                  <h4>Вакуумный массаж лица</h4>
+                                  <p class="m-0">
+                                    Эффект, полученный от данной процедуры, складывается из силового влияния на ткань дермы. И, чем тщательнее проработка, тем процесс эффективнее.
+                                  </p>
+                                  <hr>
+                                </div>
+                                <div class="col-12">
+                                  <span>Price</span>
+                                </div>
+                                <div class="col-12 d-flex align-items-center">
+                                  <p class="m-0">Процедур: </p>
+                                  <ul class="procedures">
+                                    <li class="active" data-price="800+600">1</li>
+                                    <li data-price="3500+2500">5</li>
+                                    <li data-price="5000+4000">10</li>
+                                  </ul>
+                                </div>
                               </div>
                             </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div data-tab-target="third" class="tab-content d-none">
-                      <div class="tabs tabs-section style2">
-                        <div class="clearfix tabs_conrainer"></div>
-                        <div class="tabs_content">
-                          <ul class="list-unstyled service-list">
-                            <li>
-                              <div class="content">
-                                <h4>Название процедуры для тела 1</h4>
-                                <p>
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                  Описание краткое, но вмещающее суть для процедуры/услуги.
-                                </p>
-                              </div>
-                              <div class="price">
-                                  <span>2700</span>
+                            <li class="item">
+                              <div class="row align-items-center">
+                                <div class="col-12 col-md-10 col-lg-10">
+                                  <h4>RF лифтинг</h4>
+                                  <p class="m-0">
+                                    После завершенного сеанса исчезают признаки возрастного птоза комплекса мягких тканей лица, уменьшается глубина кожных заломов, разглаживаются морщины, происходит значительное визуальное омоложение дермы.
+                                  </p>
+                                  <hr>
+                                </div>
+                                <div class="col-12 col-md-2 col-lg-2 mb-3 mb-md-0 mb-lg-0 mt-0 d-flex">
+                                  <p class="m-0">Стоимость:</p>
+                                  <span>Price</span>
+                                </div>
+                                <div class="col-12 mt-0 d-flex align-items-center">
+                                  <p class="m-0">Процедур: </p>
+                                  <ul class="procedures">
+                                    <li class="active" data-price="700">1</li>
+                                    <li data-price="3000">5</li>
+                                    <li data-price="5000">10</li>
+                                  </ul>
+                                </div>
                               </div>
                             </li>
                           </ul>

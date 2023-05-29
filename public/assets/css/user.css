@@ -347,42 +347,47 @@ blockquote .mad_author .mad_title_style2 {
     height: 0!important;
 }
 /* end hero ticker */
+
 /* service list */
 .service-list li{
-    display: flex;
-    padding: 10px 15px;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #dedede;
-    margin-bottom: 20px;
-    transition: all 0.3s ease-in-out;
+    padding: 15px 0;
 }
-.service-list>li:hover {
-    background: #ebe8e8;
-}
-.service-list li h4{
-    margin-bottom: 10px;
-    font-size: 22px;
-    letter-spacing: -1px;
-    font-weight: 400;
-}
-.service-list li .price{
-    padding: 0 15px;
-}
-.service-list li .price span{
-    font-size: 22px;
-    font-weight: 400;
+.service-list li span{
     color: #000;
 }
-.service-list li .price span::after{
-    content: '₽';
-    margin-left: 5px;
-    font-size: 18px;
+.procedures{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-left: 10px;
 }
-.service-list li p{
-    margin-bottom: 0;
+.procedures li {
+    padding: 5px;
+    min-width: 30px;
+    border: 1px solid var(--beige);
+    margin-right: 5px;
+    color: var(--beige);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    max-height: 30px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.procedures li:hover{
+    background: var(--beige);
+    color: #fff;
+}
+.procedures li.active{
+    background: var(--beige);
+    color: #fff;
+}
+.service-list li h4{
+    letter-spacing: normal;
 }
 /* end service list */
+
 /* owl navigation */
 .owl-next span,.owl-prev span{display: none;}
 .owl-next::before{content: '>'!important;}
@@ -852,6 +857,21 @@ blockquote .mad_author .mad_title_style2 {
 .slider-down object{
     height: 55px;
 }
+.tabs.vertical > .tabs_content {
+    float: left;
+    width: 70%;
+    z-index: 1;
+    position: relative;
+    padding: 40px;
+    background: #fbfbfb;
+    border: 1px solid #eeeeee;
+}
+.tabs.vertical > .tabs_nav {
+    margin-right: -1px;
+    z-index: 2;
+    width: 30%;
+    position: relative;
+}
 @media (max-width:768px){
     #services3 .mad_section{
         padding-top: 0!important;
@@ -917,18 +937,6 @@ blockquote .mad_author .mad_title_style2 {
     }
     .footer-logo object {
     width: 80px;
-    }
-    .service-list li {
-        display: flex;
-        padding: 10px 10px;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #dedede;
-        margin-bottom: 10px;
-        transition: all 0.3s ease-in-out;
-    }
-    .service-list li h4{
-        font-size: 18px;
     }
     #services3 .tabs.style2 .tabs_content {
         padding: 15px 10px;
