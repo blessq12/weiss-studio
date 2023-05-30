@@ -282,7 +282,7 @@
                                     </p>
                                     <hr>
                                   </div>
-                                  <div class="col-12 col-md-2 col-lg-2 price-block">
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                     <p class="m-0">Стоимость:</p>
                                     <span class="position-relative"></span>
                                   </div>
@@ -306,7 +306,7 @@
                                     </p>
                                     <hr>
                                   </div>
-                                  <div class="col-12 col-md-2 col-lg-2 price-block">
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                     <p class="m-0">Стоимость:</p>
                                     <span class="position-relative"></span>
                                   </div>
@@ -330,7 +330,7 @@
                                     </p>
                                     <hr>
                                   </div>
-                                  <div class="col-12 col-md-2 col-lg-2 price-block">
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                     <p class="m-0">Стоимость:</p>
                                     <span class="position-relative"></span>
                                   </div>
@@ -366,7 +366,7 @@
                                     </p>
                                     <hr>
                                   </div>
-                                  <div class="col-12 col-md-2 col-lg-2 price-block">
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                     <p class="m-0">Стоимость:</p>
                                     <span class="position-relative"></span>
                                   </div>
@@ -390,7 +390,7 @@
                                     </p>
                                     <hr>
                                   </div>
-                                  <div class="col-12 col-md-2 col-lg-2 price-block">
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                     <p class="m-0">Стоимость:</p>
                                     <span class="position-relative"></span>
                                   </div>

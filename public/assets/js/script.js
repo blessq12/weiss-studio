@@ -157,17 +157,24 @@ document.addEventListener("DOMContentLoaded",function(){
 			let proceduresList = serviceItem.querySelector('.procedures'),
 				proceduresQty = proceduresList.querySelectorAll('li')
 				for (procedure of proceduresQty){
+					if (procedure.classList.contains('active')){
+						let priceActive = procedure.closest('li.item').querySelector('span')
+						priceActive.innerHTML = procedure.dataset.price						
+					}
 					procedure.addEventListener('click',function(serviceItem){
+						let price = this.dataset.price,
+							pricePlace = this.closest('li.item').querySelector('span')
 						for (item of proceduresQty){item.classList.remove('active')}
 						this.classList.add('active')
-						console.log(this.closest('li.item').querySelector('h4'))
+						this.closest('li.item').querySelector('span').innerHTML = price
+						this.closest('li.item').querySelector('span').classList.add('price-anim')
+						setTimeout(function(){
+							pricePlace.classList.remove('price-anim')
+							console.log('deleted')
+						},300)
 					})
 				}
 		}
-	}
-
-	function showPrice(){
-
 	}
 	//end services section
 })
