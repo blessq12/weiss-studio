@@ -121,23 +121,55 @@ document.addEventListener("DOMContentLoaded",function(){
         list = document.querySelector('.ticker-list'),
         clone = list.cloneNode(true)
     ticker.append(clone)
-
+	
 	// price toggler
-	let procedures = document.querySelectorAll('.procedures')
-	for (procedure of procedures) {
-		let qtySelectors = procedure.getElementsByTagName('li')
-		for (qty of qtySelectors){
-			qty.click()
-			qty.addEventListener('click',function(){
-				for (qty of qtySelectors){qty.classList.remove('active')}
-				
-				this.classList.add('active')
-				let liParent = this.closest('li.item'),
-					priceSpan = liParent.getElementsByTagName('span')[0]
-				priceSpan.innerHTML = this.dataset.price
-			})
+	// let procedures = document.querySelectorAll('.procedures')
+	// for (procedure of procedures){
+	// 	let qtySelectors = procedure.getElementsByTagName('li')
+	// 	qtySelectors[0].click
+	// 	for (qty of qtySelectors){
+	// 		let activeEl = {}
+	// 		if (qty.classList.contains('.active')){
+	// 			activeEl = qty
+	// 		}
+	// 		console.log(activeEl)
+	// 		qty.addEventListener('click',function(){
+	// 			for (qty of qtySelectors){qty.classList.remove('active')}
+	// 			this.classList.add('active')
+	// 			let liParent = this.closest('li.item'),
+	// 				priceBlock = liParent.querySelector('div.price-block'),
+	// 				priceSpan = priceBlock.querySelector('span')
+	// 			priceSpan.innerHTML = this.dataset.price
+	// 			priceSpan.classList.add('price-anim')
+	// 			setTimeout(function(){
+	// 				priceSpan.classList.remove('price-anim')
+	// 			},300)
+	// 		})
+	// 	}
+	// }
+	
+	//services section
+
+	let serviceLists = document.querySelectorAll('.service-list')
+	for (serviceList of serviceLists){
+		let serviceItems = serviceList.querySelectorAll('li.item')
+		for (serviceItem of serviceItems){
+			let proceduresList = serviceItem.querySelector('.procedures'),
+				proceduresQty = proceduresList.querySelectorAll('li')
+				for (procedure of proceduresQty){
+					procedure.addEventListener('click',function(serviceItem){
+						for (item of proceduresQty){item.classList.remove('active')}
+						this.classList.add('active')
+						console.log(this.closest('li.item').querySelector('h4'))
+					})
+				}
 		}
 	}
+
+	function showPrice(){
+
+	}
+	//end services section
 })
 
 //jQuery scripts

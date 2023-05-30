@@ -350,7 +350,7 @@ blockquote .mad_author .mad_title_style2 {
 
 /* service list */
 .service-list li{
-    padding: 15px 0;
+    margin: 15px 0;
 }
 .service-list li span{
     color: #000;
@@ -385,6 +385,35 @@ blockquote .mad_author .mad_title_style2 {
 }
 .service-list li h4{
     letter-spacing: normal;
+}
+@keyframes fadeIn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.price-anim{
+    animation: fadeIn 0.3s linear;
+}
+.price-block span{
+    font-size: 26px;
+    font-weight: 500;
+    display: block;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+.price-block span::after {
+    content: 'RUR';
+    position: absolute;
+    top: -5px;
+    right: -30px;
+    font-size: 12px;
+}
+.tabs_content {
+    overflow: hidden;
+}
+.tabs_content .service-list-wrapper{
+    max-height: 550px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 /* end service list */
 
