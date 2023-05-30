@@ -191,7 +191,7 @@ $(document).ready(function(){
 	$('#serviceCarousel').owlCarousel({
 		items: $('#serviceCarousel').attr("data-max-items"),
 		loop: true,
-		autoplay: true,
+		autoplay: false,
 		dots: true,
 		nav: false,
 		responsive: {

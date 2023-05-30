@@ -162,69 +162,39 @@
           <div class="row">
             <div class="col-sm-12">
               <div class="mad_section_container">
-                <h3 class="mad_title_style1">Комплексные процедуры</h3>
-                <h2 class="mad_separator">Курсом дешевле</h2>
+                <h3 class="mad_title_style1">Акции на наши услуги</h3>
+                <h2 class="mad_separator">Всегда знаем, что предложить</h2>
               </div>
               {{-- services carousel --}}
               <div class="carousel_type_2">
                 <div id="serviceCarousel" class="owl-carousel" data-max-items="3">
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/vacuum.jpeg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Вакуумно роликовый массаж</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Описание комплекса</p>
-                        </div>
-                      </a>
+                  <div class="promotion-item" style="background: url('{{ asset('/assets/images/back1.jpeg') }}')">
+                    <div class="overlay" style="background: rgba(0,0,0,0.5)"></div>
+                    <div class="promotion-content">
+                      <div class="item">
+                        <h4 class="text-white">Приведи друга</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum laudantium voluptatum optio quis itaque velit enim voluptatibus et facere sed, quaerat error atque animi doloremque quibusdam nostrum minus?</p>
+                      </div>  
                     </div>
-                    <!-- /Carousel Item -->
                   </div>
-                  <!-- /Slide -->
-                   <!-- Slide -->
-                   <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/piling.jpeg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Пилинги</h5>
-                      </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Описание комплекса</p>
-                        </div>
-                      </a>
+                  <div class="promotion-item" style="background: url('{{ asset('/assets/images/back2.jpeg') }}')">
+                    <div class="overlay" style="background: rgba(0,0,0,0.5)"></div>
+                    <div class="promotion-content">
+                      <div class="item">
+                        <h4 class="text-white">Пробный массаж</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum laudantium voluptatum optio quis itaque velit enim voluptatibus et facere sed, quaerat error atque animi doloremque quibusdam nostrum minus?</p>
+                      </div>  
                     </div>
-                    <!-- /Carousel Item -->
                   </div>
-                  <!-- /Slide -->
-                  <!-- Slide -->
-                  <div>
-                    <!-- Carousel Item -->
-                    <div class="mad_item_hover">
-                      <figure>
-                        <img src="/assets/images/vibr.jpeg" alt="">
-                      </figure>
-                      <div class="mad_item_desc with_bg_img">
-                        <h5>Вибрационные массажи</h5>
+                  <div class="promotion-item" style="background: url('{{ asset('/assets/images/back3.jpeg') }}')">
+                    <div class="overlay" style="background: rgba(0,0,0,0.5)"></div>
+                    <div class="promotion-content">
+                      <div class="item">
+                        <h4 class="text-white">Постоянный клиент</h4>
+                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum laudantium voluptatum optio quis itaque velit enim voluptatibus et facere sed, quaerat error atque animi doloremque quibusdam nostrum minus?</p>
                       </div>
-                      <a href="#" class="item_overlay">
-                        <div class="text_holder">
-                          <p>Описание комплекса</p>
-                        </div>
-                      </a>
                     </div>
-                    <!-- /Carousel Item -->
                   </div>
-                  <!-- /Slide -->
                 </div>
               </div>
               {{-- end services carousel --}}
@@ -248,7 +218,10 @@
                 <article>
                   <h3 class="mad_title_style1">Цены на услуги</h3>
                   <h2>Перечень услуг</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod dignissim massa ut venenatis. Vivamus eleifend sem id ligula sollicitudin feugiat. Sed viverra erat finibus, elementum velit sit amet.</p>
+                  <p>
+                    Ниже приведены цены на наши услуги и комплексы процедур, цены на процедуры представлены как в разовом посещении, так и при покупке комплексом. Если у вас возникли вопросы, свяжитесь с нами удобным для вас способом.
+                    Телефон для связи: <a href="tel:{{$phone}}">{{$phone}}</a>
+                  </p>
                 </article>
               </div>
             </div>
