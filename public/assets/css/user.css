@@ -902,6 +902,20 @@ blockquote .mad_author .mad_title_style2 {
     position: relative;
 }
 @media (max-width:768px){
+    li.item h4 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    li.item p.m-0{
+        font-size: 14px;
+    }
+    .price-block{
+        align-items: baseline!important;
+    }
+    .price-block p.m-0{
+        margin-right: 10px!important;
+        font-size: 16px;
+    }
     #services3 .mad_section{
         padding-top: 0!important;
     }

@@ -264,6 +264,7 @@
                     <li data-tab="first"><span class="active">Процедуры для лица</span></li>
                     <li data-tab="second"><span class="">Процедуры для тела</span></li>
                     <li data-tab="third"><span class="">Комплексные процедуры</span></li>
+                    <li data-tab="fourth"><span class="">Увеличение губ</span></li>
                   </ul>
                   <div class="tabs_content">
                     <div data-tab-target="first" class="tab-content">
@@ -324,9 +325,9 @@
                               <li class="item">
                                 <div class="row align-items-center">
                                   <div class="col-12 col-md-10 col-lg-10">
-                                    <h4>RF лифтинг</h4>
+                                    <h4>Ультразвуковой фонофорез</h4>
                                     <p class="m-0">
-                                      После завершенного сеанса исчезают признаки возрастного птоза комплекса мягких тканей лица, уменьшается глубина кожных заломов, разглаживаются морщины, происходит значительное визуальное омоложение дермы.
+                                        Воздействие аппарата для ультразвукового фонофореза во многом схоже с эффектом от процедуры ультразвукового пилинга, но с одним существенным отличием – под влиянием ультразвукового воздействия глубоко под кожу вводятся лекарственные средства и сыворотки.
                                     </p>
                                     <hr>
                                   </div>
@@ -337,9 +338,124 @@
                                   <div class="col-12 mt-0 d-flex align-items-center">
                                     <p class="m-0">Кол-во процедур: </p>
                                     <ul class="procedures">
-                                      <li class="active" data-price="700">1</li>
-                                      <li data-price="3.000">5</li>
-                                      <li data-price="5.000">10</li>
+                                      <li class="active" data-price="600">1</li>
+                                      <li data-price="2.500">5</li>
+                                      <li data-price="4.000">10</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}{{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Микродермабразия</h4>
+                                    <p class="m-0">
+                                      Простой и очень популярный метод пилинга, который находится в топе самых востребованных процедур последние 15-20 лет. Микродермабразия является одной из разновидностей механического пилинга, который проводится с помощью микрокристаллических абразивных частиц.
+                                    </p>
+                                    <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <p class="m-0">Кол-во процедур: </p>
+                                    <ul class="procedures">
+                                      <li class="active" data-price="2100">Разовая</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}{{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Химические пилинги</h4>
+                                      <p class="m-0">Контролируемое повреждение кожи с помощью химических составов для коррекции эстетических недостатков. Процедура позволяет решать широкий спектр проблем – устранять акне и рубцы, морщины, пигментные пятна и другие возрастные изменения.</p>
+                                    <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <p class="m-0">Кол-во процедур: </p>
+                                    <ul class="procedures">
+                                      <li class="active" data-price="2.500">Миндальный</li>
+                                      <li data-price="2.500">Джеснера</li>
+                                      <li data-price="3.500">Ретиноевый</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}{{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Микротоки</h4>
+                                      <p class="m-0">
+                                        Микротоки в косметологии используются еще с прошлого века и по праву считаются одной из самых эффективных аппаратных методик в арсенале косметолога: под действием тока низкой амплитуды ускоряются обменные процессы кожи, устраняется отечность, укрепляются лицевые мышцы, улучшается цвет лица, подтягивается овал лица, кожа приобретает здоровое «сияние».
+                                      </p>
+                                      <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <p class="m-0">Кол-во процедур: </p>
+                                    <ul class="procedures">
+                                      <li class="active" data-price="700">Разовая</li>
+                                      <li data-price="5.000">10 процедур</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}{{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Фракционная мезотерапия</h4>
+                                      <p class="m-0">
+                                        Эта довольно новая методика уже полюбилась многим девушкам .Как и традиционная мезотерапия, она помогает восстановить регенерацию кожи, сделав ее более гладкой и молодой, а также подходит для того, чтобы вернуть блеск и густоту волосам.
+                                      </p>
+                                      <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <p class="m-0">Кол-во процедур: </p>
+                                    <ul class="procedures">
+                                      <li class="active" data-price="2.500">Разовая</li>
+                                      <li data-price="6.000">3 процедуры</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}{{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Процедуры Безыгольного иньектора Nyaluron Pen</h4>
+                                      <p class="m-0">
+                                        При работе с безыгольным инъектором мастер использует одноразовый безыгольный шприц, который находиться в герметичной стерильной упаковке. Это сводит риск занесения инфекции к минимуму. 
+                                      </p>
+                                      <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <ul class="procedures">
+                                      <li class="active" data-price="4.000">Биоревитализация</li>
+                                      <li data-price="2.000(зона)">Мезотерапия</li>
+                                      <li data-price="5.000">Лицо</li>
+                                      <li data-price="9.000">Repart 1,1ml</li>
+                                      <li data-price="10.000">Princess Filler 1,0 ml</li>
                                     </ul>
                                   </div>
                                 </div>
@@ -360,10 +476,8 @@
                               <li class="item">
                                 <div class="row align-items-center">
                                   <div class="col-12 col-md-10 col-lg-10">
-                                    <h4>Вакуумный массаж лица1</h4>
-                                    <p class="m-0">
-                                      Оттенок лица становится приятным на вид, кожа начинает увлажняться естественным образом, становится эластичной, повышается тонус мимической мускулатуры, пропадают небольшие морщины в области губ, подбородка, внешних уголков глаз.
-                                    </p>
+                                    <h4>Здесь еще ничего не добавлено</h4>
+                                    <p class="m-0"></p>
                                     <hr>
                                   </div>
                                   <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
@@ -373,21 +487,29 @@
                                   <div class="col-12 mt-0 d-flex align-items-center">
                                     <p class="m-0">Кол-во процедур: </p>
                                     <ul class="procedures">
-                                      <li class="active" data-price="1.400">1</li>
-                                      <li data-price="6.000">5</li>
-                                      <li data-price="9.000">10</li>
+                                      <li class="active" data-price="1.000">1</li>
                                     </ul>
                                   </div>
                                 </div>
                               </li>
-                              {{-- end single item --}}{{-- single item --}}
+                              {{-- end single item --}}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-tab-target="third" class="tab-content d-none">
+                      <div class="tabs tabs-section style2">
+                        <div class="clearfix tabs_conrainer"></div>
+                        <div class="tabs_content">
+                          <div class="service-list-wrapper">
+                            <ul class="list-unstyled service-list">
+                              {{-- single item --}}
                               <li class="item">
                                 <div class="row align-items-center">
                                   <div class="col-12 col-md-10 col-lg-10">
-                                    <h4>RF лифтинг1</h4>
-                                    <p class="m-0">
-                                      После завершенного сеанса исчезают признаки возрастного птоза комплекса мягких тканей лица, уменьшается глубина кожных заломов, разглаживаются морщины, происходит значительное визуальное омоложение дермы.
-                                    </p>
+                                    <h4>Здесь еще ничего не добавлено</h4>
+                                    <p class="m-0"></p>
                                     <hr>
                                   </div>
                                   <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
@@ -397,9 +519,43 @@
                                   <div class="col-12 mt-0 d-flex align-items-center">
                                     <p class="m-0">Кол-во процедур: </p>
                                     <ul class="procedures">
-                                      <li class="active" data-price="700">1</li>
-                                      <li data-price="3.000">5</li>
-                                      <li data-price="5.000">10</li>
+                                      <li class="active" data-price="1.000">1</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </li>
+                              {{-- end single item --}}
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div data-tab-target="fourth" class="tab-content d-none">
+                      <div class="tabs tabs-section style2">
+                        <div class="clearfix tabs_conrainer"></div>
+                        <div class="tabs_content">
+                          <div class="service-list-wrapper">
+                            <ul class="list-unstyled service-list">
+                              {{-- single item --}}
+                              <li class="item">
+                                <div class="row align-items-center">
+                                  <div class="col-12 col-md-10 col-lg-10">
+                                    <h4>Безыгольное увеличение губ</h4>
+                                    <p class="m-0">
+                                      При работе с безыгольным инъектором мастер использует одноразовый безыгольный шприц, который находиться в герметичной стерильной упаковке. Это сводит риск занесения инфекции к минимуму.
+                                      Еще одна причина по которой стоит выбрать безыгольную мезотерапию — отсутствие болевых ощущений. Даже при низком болевом пороге, человек ничего не почувствует. Отсутствие прокола и скорость манипуляции гарантируют комфорт клиента.
+                                    </p>
+                                    <hr>
+                                  </div>
+                                  <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
+                                    <p class="m-0">Стоимость:</p>
+                                    <span class="position-relative"></span>
+                                  </div>
+                                  <div class="col-12 mt-0 d-flex align-items-center">
+                                    <p class="m-0">Тип: </p>
+                                    <ul class="procedures">
+                                      <li class="active" data-price="9.000">Repart 1,1ml</li>
+                                      <li data-price="10.000">Princess Filler 1,0 ml</li>
                                     </ul>
                                   </div>
                                 </div>
