@@ -288,11 +288,11 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
-                                      <li class="active" data-price="1.400">1</li>
-                                      <li data-price="6.000">5</li>
-                                      <li data-price="9.000">10</li>
+                                      <li class="active" data-price="1.400">Разовая</li>
+                                      <li data-price="6.000">5 пр</li>
+                                      <li data-price="9.000">10 пр</li>
                                     </ul>
                                   </div>
                                 </div>
@@ -312,11 +312,11 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
-                                      <li class="active" data-price="700">1</li>
-                                      <li data-price="3.000">5</li>
-                                      <li data-price="5.000">10</li>
+                                      <li class="active" data-price="700">Разовая</li>
+                                      <li data-price="3.000">5 пр</li>
+                                      <li data-price="5.000">10 пр</li>
                                     </ul>
                                   </div>
                                 </div>
@@ -336,11 +336,11 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
-                                      <li class="active" data-price="600">1</li>
-                                      <li data-price="2.500">5</li>
-                                      <li data-price="4.000">10</li>
+                                      <li class="active" data-price="600">Разовая</li>
+                                      <li data-price="2.500">5 пр</li>
+                                      <li data-price="4.000">10 пр</li>
                                     </ul>
                                   </div>
                                 </div>
@@ -360,7 +360,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="2100">Разовая</li>
                                     </ul>
@@ -380,7 +380,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="2.500">Миндальный</li>
                                       <li data-price="2.500">Джеснера</li>
@@ -404,7 +404,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="700">Разовая</li>
                                       <li data-price="5.000">10 процедур</li>
@@ -427,7 +427,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="2.500">Разовая</li>
                                       <li data-price="6.000">3 процедуры</li>
@@ -452,10 +452,8 @@
                                   <div class="col-12 mt-0 d-flex align-items-center">
                                     <ul class="procedures">
                                       <li class="active" data-price="4.000">Биоревитализация</li>
-                                      <li data-price="2.000(зона)">Мезотерапия</li>
+                                      <li data-price="2.000">Мезотерапия(зона)</li>
                                       <li data-price="5.000">Лицо</li>
-                                      <li data-price="9.000">Repart 1,1ml</li>
-                                      <li data-price="10.000">Princess Filler 1,0 ml</li>
                                     </ul>
                                   </div>
                                 </div>
@@ -485,7 +483,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="1.000">1</li>
                                     </ul>
@@ -517,7 +515,7 @@
                                     <span class="position-relative"></span>
                                   </div>
                                   <div class="col-12 mt-0 d-flex align-items-center">
-                                    <p class="m-0">Кол-во процедур: </p>
+                                    
                                     <ul class="procedures">
                                       <li class="active" data-price="1.000">1</li>
                                     </ul>
