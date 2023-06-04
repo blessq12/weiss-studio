@@ -914,6 +914,7 @@ blockquote .mad_author .mad_title_style2 {
     background-position: center center!important;
     background-size: cover!important;
     background-repeat: no-repeat!important;
+    transition: all 0.3s;
 }
 .promotion-item .promotion-content{
     width: 100%;
@@ -922,6 +923,10 @@ blockquote .mad_author .mad_title_style2 {
     z-index: 9;
     display: flex;
     align-items: end;
+    transition: all 0.3s;
+}
+.promotion-item:hover .promotion-content{
+    align-items: center;
 }
 .promotion-item .promotion-content h4{
     font-weight: 500;
