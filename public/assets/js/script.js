@@ -122,32 +122,6 @@ document.addEventListener("DOMContentLoaded",function(){
         clone = list.cloneNode(true)
     ticker.append(clone)
 	
-	// price toggler
-	// let procedures = document.querySelectorAll('.procedures')
-	// for (procedure of procedures){
-	// 	let qtySelectors = procedure.getElementsByTagName('li')
-	// 	qtySelectors[0].click
-	// 	for (qty of qtySelectors){
-	// 		let activeEl = {}
-	// 		if (qty.classList.contains('.active')){
-	// 			activeEl = qty
-	// 		}
-	// 		console.log(activeEl)
-	// 		qty.addEventListener('click',function(){
-	// 			for (qty of qtySelectors){qty.classList.remove('active')}
-	// 			this.classList.add('active')
-	// 			let liParent = this.closest('li.item'),
-	// 				priceBlock = liParent.querySelector('div.price-block'),
-	// 				priceSpan = priceBlock.querySelector('span')
-	// 			priceSpan.innerHTML = this.dataset.price
-	// 			priceSpan.classList.add('price-anim')
-	// 			setTimeout(function(){
-	// 				priceSpan.classList.remove('price-anim')
-	// 			},300)
-	// 		})
-	// 	}
-	// }
-	
 	//services section
 
 	let serviceLists = document.querySelectorAll('.service-list')
@@ -177,6 +151,15 @@ document.addEventListener("DOMContentLoaded",function(){
 		}
 	}
 	//end services section
+	let prLists = document.querySelectorAll('.procedures')
+	for (prList of prLists){
+		let childLi = prList.querySelectorAll('li'),
+			price = childLi[0].dataset.price,
+			parent = prList.closest('li.item'),
+			priceNode = parent.querySelector('.price-block span')
+		priceNode.innerHTML = price
+		childLi[0].classList.add('active')
+	}
 })
 
 //jQuery scripts

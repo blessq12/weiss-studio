@@ -366,7 +366,6 @@ blockquote .mad_author .mad_title_style2 {
 }
 .procedures li {
     padding: 5px;
-    min-width: 30px;
     border: 1px solid var(--beige);
     margin-right: 5px;
     color: var(--beige);
@@ -936,6 +935,13 @@ blockquote .mad_author .mad_title_style2 {
 }
 /* end promotion items carousel */
 @media (max-width:768px){
+    .procedures {
+        overflow-x: scroll;
+    }
+    .procedures li{
+        white-space: nowrap;
+        min-width: none;
+    }
     li.item h4 {
         font-size: 24px;
         margin-bottom: 10px;
