@@ -905,7 +905,6 @@ blockquote .mad_author .mad_title_style2 {
 }
 /* promotion items carousel */
 .promotion-item {
-    width: 400px;
     height: 400px;
     background: red;
     position: relative;
@@ -924,17 +923,32 @@ blockquote .mad_author .mad_title_style2 {
     align-items: end;
     transition: all 0.3s;
 }
-.promotion-item:hover .promotion-content{
-    align-items: center;
-}
 .promotion-item .promotion-content h4{
     font-weight: 500;
     font-family: var(--title-first);
     font-size: 64px;
 
 }
+.order-button {
+    background: transparent;
+    border: 1px solid var(--beige);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 3px 5px;
+    margin-top: 10px;
+    color: var(--beige);
+    transition: all 0.3s ease-in-out;
+}
+.order-button:hover{
+    color: #fff;
+    background: var(--beige);
+}
 /* end promotion items carousel */
 @media (max-width:768px){
+    .order-button{
+        margin-top: 0;
+        margin-left: 50px;
+    }
     .procedures {
         overflow-x: scroll;
     }

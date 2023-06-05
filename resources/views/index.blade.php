@@ -173,7 +173,9 @@
                     <div class="promotion-content">
                       <div class="item">
                         <h4 class="text-white">Приведи друга</h4>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum laudantium voluptatum optio quis itaque velit enim voluptatibus et facere sed, quaerat error atque animi doloremque quibusdam nostrum minus?</p>
+                        <p class="text-white">
+                          Рекомендуй нас своим друзьям и получай за каждого по 30 мин любой процедуры бесплатно
+                        </p>
                       </div>  
                     </div>
                   </div>
@@ -182,7 +184,9 @@
                     <div class="promotion-content">
                       <div class="item">
                         <h4 class="text-white">Пробный массаж</h4>
-                        <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum maiores cum laudantium voluptatum optio quis itaque velit enim voluptatibus et facere sed, quaerat error atque animi doloremque quibusdam nostrum minus?</p>
+                        <p class="text-white">
+                          Вы у нас впервые? У нас есть подарок - массаж всего тела за 300 рублей (30 мин)
+                        </p>
                       </div>  
                     </div>
                   </div>
@@ -192,7 +196,7 @@
                       <div class="item">
                         <h4 class="text-white">Постоянный клиент</h4>
                         <p class="text-white">
-                          каждый кто был у нас хотябы 1 раз , уже наш постоянный клиент и он может приобрести абонемент на любую из наших процедур и получить скидку 500₽
+                          Уже были клиентом нашей студии? Дарим скидку 500 руб на абонемент на любую процедуру
                         </p>
                       </div>
                     </div>
@@ -261,6 +265,7 @@
                                     <div class="col-12 col-md-2 col-lg-2 mt-0 d-flex d-md-block price-block">
                                       <p class="m-0">Стоимость:</p>
                                       <span class="position-relative"></span>
+                                      <button class="order-button">Записаться</button>
                                     </div>
                                     <div class="col-12 mt-0 d-flex align-items-center">
                                       <ul class="procedures">
