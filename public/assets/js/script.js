@@ -160,6 +160,62 @@ document.addEventListener("DOMContentLoaded",function(){
 		priceNode.innerHTML = price
 		childLi[0].classList.add('active')
 	}
+	
+	//modal 
+	let targetButtons = document.querySelectorAll('[data-toggle]')
+	let modalsWindows = document.querySelectorAll('.cta-modal-block')
+	for (modalWindow of modalsWindows){
+		let modalContent = modalWindow.querySelector('.modal-content')
+
+		let modalHeader = document.createElement('h4'),
+			selectedService = document.createElement('h5'),
+			modalParagraph = document.createElement('p')
+			
+		modalContent.prepend(modalParagraph)
+		modalContent.prepend(selectedService)
+		modalContent.prepend(modalHeader)
+
+		modalHeader.classList.add('text-white')
+		selectedService.classList.add('text-white','mb-3')
+		modalParagraph.classList.add('text-white','m-0')
+	}
+	for (targetButton of targetButtons){
+		targetButton.addEventListener('click',function(){
+
+			let modalId = this.dataset.target,
+				modal = document.querySelector( '#' + modalId ),
+				closeBtn = modal.querySelector('div.close-button')
+			// show modal window
+			modal.classList.remove('d-none')
+
+			// inner modal content
+			let h4 = modal.querySelector('.modal-content').querySelector('h4'),
+				h5 = modal.querySelector('.modal-content').querySelector('h5'),
+				p = modal.querySelector('.modal-content').querySelector('p')
+			
+			// placement objects in modal
+			if (modalId == 'order-modal'){
+				let serviceItem = this.closest('li.item'),
+					serviceHeading = serviceItem.querySelector('h4').innerHTML,
+					serviceQty = serviceItem.querySelector('li.active').innerHTML,
+					servicePrice = serviceItem.querySelector('li.active').dataset.price
+				
+				
+				h4.innerHTML = 'Запись на ' + serviceHeading.toLowerCase()
+				h5.innerHTML = 'Кол-во процедур: ' + serviceQty + ', Стоимость: ' + servicePrice
+				p.innerHTML = 'Укажите свои контактные данные, мы свяжемся с Вами в ближайшее время для уточнения времени и подтверждения записи.'
+			} else if (modalId == 'basic-modal'){
+				h4.innerHTML = 'Запись в Weiss Studio'
+				h5.innerHTML = 'Дарим пробный массаж!'
+				p.innerHTML = 'При первом посещении студии дарим скидку на пробный массаж. Стоимость 300 рублей за 30 минут массажа.'
+			}
+			// close action
+			closeBtn.addEventListener('click',function(){
+				modal.classList.add('d-none')
+			})
+			
+		})
+	}
 })
 
 //jQuery scripts

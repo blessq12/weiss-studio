@@ -79,7 +79,7 @@
               </a>
             </div>
             <div class="col-md-4 justify-content-center d-none d-md-flex d-lg-flex">
-              <div class="cta-nav" onclick="document.querySelector('.cta-modal-block').classList.toggle('d-none')">
+              <div class="cta-nav" data-toggle="modal" data-target="basic-modal">
                 <div class="surprise"><img src="{{ asset('/assets/images/surprise-box.png') }}" alt=""></div>
                 <div class="content">
                   <h3>Впервые у нас?</h3>

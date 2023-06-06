@@ -213,7 +213,7 @@ class ServiceData {
                 'product_id' => 7
             ],[
                 'id' => 15,
-                'title' => '1 процедуры',
+                'title' => 'Разовая',
                 'value' => 4000,
                 'product_id' => 8
             ],[
