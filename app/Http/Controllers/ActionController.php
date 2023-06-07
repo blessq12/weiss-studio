@@ -7,6 +7,11 @@ use Illuminate\Http\Request;
 class ActionController extends Controller
 {
     public function send(Request $request){
-        dd($request->query());
+        $telegram = false;
+        if ($telegram){
+            echo 'some response from backend';
+        } else {
+            return false;
+        }
     }
 }

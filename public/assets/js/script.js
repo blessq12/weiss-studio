@@ -1,6 +1,8 @@
 
 document.addEventListener("DOMContentLoaded",function(){
 
+	const xhr = new XMLHttpRequest()
+
 	//loader
 	let loader = document.querySelector('.loader')
 	setTimeout(()=>{
@@ -183,39 +185,90 @@ document.addEventListener("DOMContentLoaded",function(){
 	}
 	for (targetButton of targetButtons){
 		targetButton.addEventListener('click',function(){
-
 			let modalId = this.dataset.target,
 				modal = document.querySelector( '#' + modalId ),
-				closeBtn = modal.querySelector('div.close-button')
+				closeBtn = modal.querySelector('div.close-button'),
+				form = modal.querySelector('form')
+
 			// show modal window
 			modal.classList.remove('d-none')
-
-			// inner modal content
+			// inner modal elements
 			let h4 = modal.querySelector('.modal-content').querySelector('h4'),
 				h5 = modal.querySelector('.modal-content').querySelector('h5'),
 				p = modal.querySelector('.modal-content').querySelector('p')
-			
 			// placement objects in modal
 			if (modalId == 'order-modal'){
 				let serviceItem = this.closest('li.item'),
 					serviceHeading = serviceItem.querySelector('h4').innerHTML,
 					serviceQty = serviceItem.querySelector('li.active').innerHTML,
-					servicePrice = serviceItem.querySelector('li.active').dataset.price
-				
-				
+					servicePrice = serviceItem.querySelector('li.active').dataset.price,
+					serviceInputs = {
+						'service_name' : serviceHeading,
+						'service_qty' : serviceQty,
+						'service_price' : servicePrice
+					}
+
 				h4.innerHTML = 'Запись на ' + serviceHeading.toLowerCase()
 				h5.innerHTML = 'Кол-во процедур: ' + serviceQty + ', Стоимость: ' + servicePrice
 				p.innerHTML = 'Укажите свои контактные данные, мы свяжемся с Вами в ближайшее время для уточнения времени и подтверждения записи.'
+
+				for (item in serviceInputs){
+					let input = document.createElement('input')
+					input.name = item
+					input.value = serviceInputs[item]
+					input.type = 'hidden'
+					form.append(input)
+				}
+
 			} else if (modalId == 'basic-modal'){
 				h4.innerHTML = 'Добро пожаловать в Weiss Studio'
 				h5.innerHTML = 'Впервые у нас? Для вас подарок!'
 				p.innerHTML = 'При первом посещении студии дарим скидку на пробный массаж. Стоимость 300 рублей за 30 минут массажа.'
+
+				let serviceInputs = {
+					'service_name' : 'Пробный массаж',
+					'service_price' : '300'
+				}
+				for (item in serviceInputs){
+					let input = document.createElement('input')
+					input.name = item
+					input.value = serviceInputs[item]
+					input.type = 'hidden'
+					form.append(input)
+				}
 			}
 			// close action
 			closeBtn.addEventListener('click',function(){
 				modal.classList.add('d-none')
+				let serviceInputs = []
+				if ( modalId == 'order-modal'){
+					serviceInputs = ['service_name','service_qty','service_price']
+				} else if (modalId == 'basic-modal'){
+					serviceInputs = ['service_name','service_price']
+				}
+				for (item of serviceInputs){
+					let input = form.querySelector('[name='+ item +']')
+					if (input.parentNode){
+						input.parentNode.removeChild(input)
+					}
+				}
+				
 			})
 			
+		})
+	}
+
+	let forms = document.getElementsByTagName('form')
+	for (form of forms){
+		form.addEventListener('submit',function(e){
+			e.preventDefault()
+			let formData = new FormData();
+			for (el of this.querySelectorAll('input')){
+				formData[el.name]=el.value
+			}
+			xhr.open('get','/sendreq',true)
+			console.log(xhr.status)
+			xhr.send('')
 		})
 	}
 })

@@ -708,6 +708,7 @@ blockquote .mad_author .mad_title_style2 {
     background: transparent;
     border-bottom: 2px solid var(--beige);
     box-shadow: none;
+    color:#fff;
 }
 .submit-button {
     background: var(--beige);
