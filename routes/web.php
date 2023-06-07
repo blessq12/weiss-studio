@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ActionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +20,10 @@ Route::domain(env('APP_URL'))->group(function(){
     $mainRoutes = function(){
         Route::get('/','index')->name('index');
     };
-    
+    $actionRoutes = function(){
+        Route::get('/sendreq','send')->name('sendreq');
+    };
+    Route::controller(ActionController::class)->name('action.')->group($actionRoutes);
     Route::controller(MainController::class)->name('main.')->group($mainRoutes);
-
 });
 

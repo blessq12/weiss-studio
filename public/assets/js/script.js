@@ -177,6 +177,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
 		modalHeader.classList.add('text-white')
 		selectedService.classList.add('text-white','mb-3')
+		selectedService.classList.add('text-white','mb-3')
+		selectedService.style.lineHeight = 1.2
 		modalParagraph.classList.add('text-white','m-0')
 	}
 	for (targetButton of targetButtons){
@@ -205,8 +207,8 @@ document.addEventListener("DOMContentLoaded",function(){
 				h5.innerHTML = 'Кол-во процедур: ' + serviceQty + ', Стоимость: ' + servicePrice
 				p.innerHTML = 'Укажите свои контактные данные, мы свяжемся с Вами в ближайшее время для уточнения времени и подтверждения записи.'
 			} else if (modalId == 'basic-modal'){
-				h4.innerHTML = 'Запись в Weiss Studio'
-				h5.innerHTML = 'Дарим пробный массаж!'
+				h4.innerHTML = 'Добро пожаловать в Weiss Studio'
+				h5.innerHTML = 'Впервые у нас? Для вас подарок!'
 				p.innerHTML = 'При первом посещении студии дарим скидку на пробный массаж. Стоимость 300 рублей за 30 минут массажа.'
 			}
 			// close action

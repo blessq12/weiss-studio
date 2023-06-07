@@ -10,14 +10,15 @@
                         <div class="row">
                             <div class="col-12"><div class="modal-content"><hr></div></div>
                             <div class="col-12">
-                                <form action="" method="get">
+                                <form action="{{ route('action.sendreq') }}" method="get">
+                                    @csrf
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
-                                        <input type="text" class="form-control form-input" name="name">
+                                        <input type="text" class="form-control form-input" name="name" required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="name">Телефон:</label>
-                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX">
+                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
                                     </div>
                                     <div class="form-group pt-3">
                                         <button type="submit" class="submit-button">Отправить</button>
@@ -46,14 +47,15 @@
                                 <div class="modal-content"><hr></div>
                             </div>
                             <div class="col-12">
-                                <form action="" method="get">
+                                <form action="{{ route('action.sendreq') }}" method="get">
+                                    @csrf
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
-                                        <input type="text" class="form-control form-input" name="name">
+                                        <input type="text" class="form-control form-input" name="name" required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="name">Телефон:</label>
-                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX">
+                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
                                     </div>
                                     <div class="form-group pt-3">
                                         <button type="submit" class="submit-button">Отправить</button>
