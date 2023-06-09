@@ -14,7 +14,7 @@ class ActionController extends Controller
     public function send(Request $request){
         $validator = Validator::make($request->all(),[
             'name' => 'required|min:3|max:255',
-            'phone' => 'required|min:11|max:12'
+            'phone' => 'required|min:11|max:16'
         ],[
             'name.required' => 'Имя обязательно для заполнения',
             'name.min' => 'Имя не может быть короче 3 символов', 

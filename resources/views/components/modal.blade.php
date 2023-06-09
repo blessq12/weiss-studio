@@ -13,11 +13,11 @@
                                 <form action="{{ route('action.sendreq') }}" method="get">
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
-                                        <input type="text" class="form-control form-input" name="name" required>
+                                        <input type="text" class="form-control form-input" id="name" name="name" min="3" autocomplete required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="name">Телефон:</label>
-                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
+                                        <input type="text" class="form-control form-input" id="phone" data-mask="phone" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
                                     </div>
                                     <div class="form-group pt-3">
                                         <button type="submit" class="submit-button">Отправить</button>
@@ -49,11 +49,11 @@
                                 <form action="{{ route('action.sendreq') }}" method="get">
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
-                                        <input type="text" class="form-control form-input" name="name" required>
+                                        <input type="text" class="form-control form-input" id="name" name="name" min="3" autocomplete required>
                                     </div>
                                     <div class="form-group mb-3">
                                         <label for="name">Телефон:</label>
-                                        <input type="text" class="form-control form-input" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
+                                        <input type="text" class="form-control form-input" id="phone" data-mask="phone" name="phone" placeholder="+7(XXX) XXX-XX-XX" required>
                                     </div>
                                     <div class="form-group pt-3">
                                         <button type="submit" class="submit-button">Отправить</button>

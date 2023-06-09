@@ -25,6 +25,7 @@
 <script src="{{ asset('/assets/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{asset('/assets/js/owl.carousel.min.js')}}"></script>
 <script src="{{asset('/assets/js/plugins.js')}}"></script>
+<script src="{{ asset('/assets/js/mask.js') }}"></script>
 <script src="{{asset('/assets/js/script.js')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}"></script>
 </body>
 </html>

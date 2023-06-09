@@ -13,11 +13,25 @@ class Telegram{
     }
 
     public function send($request){
-        $msg = '';
+        $msg = '📔Получена заявка с сайта:' ."\n\n";
+        $keys = [];
         foreach ($request as $k=>$v){
-            $msg .= $v ."\n";
+            switch ($k){
+                case 'name' : $title = 'Имя: ';
+                break;
+                case 'phone' : $title = 'Телефон: ';
+                break;
+                case 'service_name' : $title = 'Услуга: ';
+                break;
+                case 'service_price' : $title = 'Стоимость: ';
+                break;
+                case 'service_qty' : $title = 'Процедур: ';
+                break;
+            }
+            $msg .= $title . $v ."\n";
         }
-        echo urlencode($msg);
-        file_get_contents($this->url.urlencode($msg));
+        if(file_get_contents($this->url.urlencode($msg))){
+            echo 'order send';
+        };
     }
 }

@@ -1,10 +1,4 @@
-/**********************************************************************************/
 
-/*
-Plugin Name: 	BrowserSelector
-Written by: 	Crivos - (http://www.crivos.com)
-Version: 		0.1
-*/
 
 (function($, navigator) {
 	$.extend({
@@ -32,11 +26,6 @@ Version: 		0.1
 
 })(jQuery, navigator);
 
-/**********************************************************************************/
-
-/*
-Plugin Name: 	SearchHolder
-*/
 
 (function () {
 
@@ -138,26 +127,7 @@ Plugin Name: 	SearchHolder
 
 })();
 
-/**********************************************************************************/
 
-/**********************************************************************************/
-
-/*
-Plugin Name: 	smoothScroll for jQuery.
-Written by: 	Crivos - (http://www.crivos.com)
-Version: 		0.1
-
-Based on:
-
-	SmoothScroll v1.2.1
-	Licensed under the terms of the MIT license.
-
-	People involved
-	 - Balazs Galambosi (maintainer)
-	 - Patrick Brunner  (original idea)
-	 - Michael Herf     (Pulse Algorithm)
-
-*/
 (function($) {
 	$.extend({
 

@@ -260,6 +260,8 @@ document.addEventListener("DOMContentLoaded",function(){
 	let forms = document.getElementsByTagName('form')
 	for (form of forms){
 		form.addEventListener('submit',function(e){
+			let form = this,
+				modal = this.closest('.cta-modal-block')
 			e.preventDefault()
 			let formData = new FormData();
 			for (el of this.querySelectorAll('input')){
@@ -272,6 +274,8 @@ document.addEventListener("DOMContentLoaded",function(){
 				if (xhr.status !== 200){
 					alert('Ошибка!'+xhr.status+':'+xhr.statusText)
 				}else {
+					form.reset()
+					modal.classList.add('d-none')
 					console.log(xhr.response)
 				}
 			}
@@ -281,9 +285,18 @@ document.addEventListener("DOMContentLoaded",function(){
 			xhr.onprogress = function(event){
 				console.log('progress')
 			}
-			console.log(formData)
 			xhr.send(JSON.stringify(formData))
 		})
+	}
+	// mask
+	let phoneInputs = document.querySelectorAll("[data-mask=phone]")
+	for (phoneInput of phoneInputs){
+		let element = phoneInput
+		let maskOptions = {
+			mask: '+{7}(000)000-00-00',
+			lazy: false
+		} 		
+		let mask = new IMask(element, maskOptions)
 	}
 })
 
