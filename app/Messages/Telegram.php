@@ -31,7 +31,7 @@ class Telegram{
             $msg .= $title . $v ."\n";
         }
         if(file_get_contents($this->url.urlencode($msg))){
-            echo 'order send';
+            echo 'Мы получили заявку и свяжемся с Вами в ближайшее время';
         };
     }
 }

@@ -146,7 +146,6 @@ document.addEventListener("DOMContentLoaded",function(){
 						this.closest('li.item').querySelector('span').classList.add('price-anim')
 						setTimeout(function(){
 							pricePlace.classList.remove('price-anim')
-							console.log('deleted')
 						},300)
 					})
 				}
@@ -276,7 +275,7 @@ document.addEventListener("DOMContentLoaded",function(){
 				}else {
 					form.reset()
 					modal.classList.add('d-none')
-					console.log(xhr.response)
+					notify('Спасибо, что выбрали нас',xhr.response,'#ae817e')
 				}
 			}
 			xhr.onerror = function(){
@@ -297,6 +296,27 @@ document.addEventListener("DOMContentLoaded",function(){
 			lazy: false
 		} 		
 		let mask = new IMask(element, maskOptions)
+	}
+	//notification
+	function notify(header,text,background){
+		let notify = document.querySelector('.notify'),
+			nHeader = document.createElement('h5'),
+			nText = document.createElement('p')
+
+		nHeader.innerHTML = header
+		nText.innerHTML = text
+		nHeader.classList.add('mb-1','text-white','fw-bold')
+		nText.classList.add('text-white','m-0')
+		notify.style.background = background
+		notify.style.borderColor = '#fff'
+		notify.append(nHeader)
+		notify.append(nText)
+		notify.classList.remove('notify-hide')
+
+		setTimeout(()=>{
+			notify.classList.add('notify-hide')
+			notify.removeChild(nHeader,nText)
+		},notify.dataset.timeout)
 	}
 })
 

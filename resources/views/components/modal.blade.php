@@ -68,4 +68,22 @@
         </div>
     </div>
 </div>
+<style>
+    .notify {
+    position: fixed;
+    padding: 15px 20px;
+    width: 400px;
+    top: 55px;
+    border-radius: 5px;
+    left: calc(50% - 200px);
+    display: block;
+    z-index: 9999;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+    .notify-hide{
+        top: -300px
+    }
+</style>
+<div class="notify notify-hide" data-timeout="3500"></div>
 
