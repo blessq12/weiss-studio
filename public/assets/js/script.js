@@ -315,7 +315,8 @@ document.addEventListener("DOMContentLoaded",function(){
 
 		setTimeout(()=>{
 			notify.classList.add('notify-hide')
-			notify.removeChild(nHeader,nText)
+			notify.removeChild(notify.querySelector('h5'))
+			notify.removeChild(notify.querySelector('p'))
 		},notify.dataset.timeout)
 	}
 })
