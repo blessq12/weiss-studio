@@ -30,10 +30,16 @@ document.addEventListener("DOMContentLoaded",function(){
 	let launcher = document.querySelector('.launcher')
 	let ctaList = document.querySelector('.cta-list')
 	let launchButton = document.querySelector('.launch-button')
-	launcher.addEventListener('click',()=>{
+	launcher.addEventListener('click',function(){
 		ctaList.classList.toggle('list-hide')
 		launchButton.querySelector('.touch').classList.toggle('d-none')
 		launchButton.querySelector('.closeBtn').classList.toggle('d-none')
+		
+		setTimeout(function(){
+			ctaList.classList.toggle('list-hide')
+			launchButton.querySelector('.touch').classList.toggle('d-none')
+			launchButton.querySelector('.closeBtn').classList.toggle('d-none')
+		},this.querySelector('.launch-button').dataset.timeout)
 	})
 	//sticky menu 
 	let topHeaderHeight = document.querySelector('.mad_top_header').offsetHeight
@@ -249,6 +255,8 @@ document.addEventListener("DOMContentLoaded",function(){
 					let input = form.querySelector('[name='+ item +']')
 					if (input.parentNode){
 						input.parentNode.removeChild(input)
+					} else {
+						continue
 					}
 				}
 				

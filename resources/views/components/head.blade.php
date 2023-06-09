@@ -56,7 +56,7 @@
                      </ul>
                   </div>
                   <div class="launcher position-relative">
-                     <div class="launch-button position-relative">
+                     <div class="launch-button position-relative" data-timeout="6000">
                         <span></span>
                         <object class="touch " data="{{ asset('/assets/icons/touch.svg') }}" type=""></object>
                         <object class="closeBtn d-none" data="{{ asset('/assets/icons/close-cta.svg') }}" type=""></object>
