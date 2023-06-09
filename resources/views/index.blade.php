@@ -46,7 +46,7 @@
                   К сожалению, возрастных изменений не удалось избежать еще никому, но все эти процессы можно замедлить и простимулировать молодость кожи лица как можно дольше.
                   В нашей студии аппаратной и эстетической косметологии есть всё необходимое для поддержания тонуса и молодости вашей кожи. 
                 </p>
-                <a href="#services3" class="mad_button style2">Перечень услуг для лица</a>
+                <a href="#services3" class="mad_button style2">Полный список услуг</a>
               </div>
               </div>
             <div class="col-12 col-md-6 col-lg-6 right-image d-none d-md-block d-lg-block" data-background="/assets/images/face-mask.jpg"></div>
@@ -63,10 +63,10 @@
               <div class="greeting-wrap greeting-last">
                 <h2>для тела</h2>
                 <p>
-                  Руки и ноги, живот и ягодицы, зона декольте и спина – каждая зона тела нуждается во внимании и профессиональном уходе.
-                  Студия аппаратной косметологии Weiss предоставляет полный  
+                  Наше тело нуждается в уходе и заботте, будь-то улучшение состояния кожи, тонуса, устранение конкретных проблем.
+                  Мы подберем курс в зависимости от показаний, возраста и индивидуальных особенностей организма и поможем выглядеть безупречно во всех отношениях.
                 </p>
-                <a href="#" class="mad_button style2">Перечень услуг</a>
+                <a href="#" class="mad_button style2">Полный список услуг</a>
               </div>
             </div>
           </div>
@@ -151,7 +151,7 @@
 
     {{-- Services --}}
     <div id="services">
-      <div class="paralax_image_bg2" style="background:url('https://velikorodnov.com/html/spa-construction/spa/multi-page/images/bg_image_1920x1419.jpg')">
+      <div class="paralax_image_bg2" style="background:url('{{ asset('/assets/images/promotion-background.jpg') }}')">
         <div class="paralax-layout"></div>
         <svg class="separator_type_5_path top" preserveAspectRatio="none" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0 L30 100 L100 0 L100 100 L0 100 Z" fill="#fff" stroke="#fff" stroke-width="-1"></path>

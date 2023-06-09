@@ -354,6 +354,13 @@ blockquote .mad_author .mad_title_style2 {
 /* service list */
 .service-list li{
     margin: 15px 0;
+    transition: all 0.3s ease-in-out;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid transparent
+}
+.service-list li:hover{
+    border: 1px solid var(--beige);
 }
 .service-list li span{
     color: #000;
@@ -946,7 +953,27 @@ blockquote .mad_author .mad_title_style2 {
     background: var(--beige);
 }
 /* end promotion items carousel */
+.notify {
+    position: fixed;
+    padding: 15px 20px;
+    width: 400px;
+    top: 55px;
+    border-radius: 5px;
+    left: calc(50% - 200px);
+    display: block;
+    z-index: 9999;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+    }
+    .notify-hide{
+        top: -300px
+    }
 @media (max-width:768px){
+    .notify{
+        width: 320px;
+        left: calc(50% - 160px);
+        top: 85px;
+    }
     .order-button{
         margin-top: 0;
         margin-left: 50px;
