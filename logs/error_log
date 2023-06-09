@@ -1,0 +1,4 @@
+[Thu Jun 08 12:55:08.791528 2023] [php:warn] [pid 1906] [client 127.0.0.1:58512] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0, referer: http://weiss-studio.dd/
+[Thu Jun 08 12:57:45.750872 2023] [php:warn] [pid 1922] [client 127.0.0.1:59163] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0, referer: http://weiss-studio.dd/
+[Thu Jun 08 13:04:49.896247 2023] [php:warn] [pid 1828] [client 127.0.0.1:60915] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0, referer: http://weiss-studio.dd/
+[Thu Jun 08 13:08:14.557323 2023] [php:warn] [pid 18913] [client 127.0.0.1:61753] PHP Warning:  Missing boundary in multipart/form-data POST data in Unknown on line 0, referer: http://weiss-studio.dd/

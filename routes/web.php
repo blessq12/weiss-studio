@@ -21,7 +21,7 @@ Route::domain(env('APP_URL'))->group(function(){
         Route::get('/','index')->name('index');
     };
     $actionRoutes = function(){
-        Route::get('/sendreq','send')->name('sendreq');
+        Route::post('/sendreq','send')->name('sendreq');
     };
     Route::controller(ActionController::class)->name('action.')->group($actionRoutes);
     Route::controller(MainController::class)->name('main.')->group($mainRoutes);

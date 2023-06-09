@@ -11,7 +11,6 @@
                             <div class="col-12"><div class="modal-content"><hr></div></div>
                             <div class="col-12">
                                 <form action="{{ route('action.sendreq') }}" method="get">
-                                    @csrf
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
                                         <input type="text" class="form-control form-input" name="name" required>
@@ -48,7 +47,6 @@
                             </div>
                             <div class="col-12">
                                 <form action="{{ route('action.sendreq') }}" method="get">
-                                    @csrf
                                     <div class="form-group mb-3">
                                         <label for="name">Имя:</label>
                                         <input type="text" class="form-control form-input" name="name" required>

@@ -257,7 +257,6 @@ document.addEventListener("DOMContentLoaded",function(){
 			
 		})
 	}
-
 	let forms = document.getElementsByTagName('form')
 	for (form of forms){
 		form.addEventListener('submit',function(e){
@@ -266,9 +265,24 @@ document.addEventListener("DOMContentLoaded",function(){
 			for (el of this.querySelectorAll('input')){
 				formData[el.name]=el.value
 			}
-			xhr.open('get','/sendreq',true)
-			console.log(xhr.status)
-			xhr.send('')
+			xhr.open('post','/sendreq',true)
+			xhr.setRequestHeader('X-CSRF-TOKEN',document.querySelector('meta[name=csrf-token]').content)
+			xhr.setRequestHeader("Content-type","application/json");
+			xhr.onload = function(){
+				if (xhr.status !== 200){
+					alert('Ошибка!'+xhr.status+':'+xhr.statusText)
+				}else {
+					console.log(xhr.response)
+				}
+			}
+			xhr.onerror = function(){
+				alert('Что-то пошло не так. Попробуйте снова.')
+			}
+			xhr.onprogress = function(event){
+				console.log('progress')
+			}
+			console.log(formData)
+			xhr.send(JSON.stringify(formData))
 		})
 	}
 })
