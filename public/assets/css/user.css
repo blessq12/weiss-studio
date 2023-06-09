@@ -580,7 +580,7 @@ blockquote .mad_author .mad_title_style2 {
 .footer-logo {
     padding: 30px 30px;
     position: absolute;
-    top: -100px;
+    top: -110px;
     background: var(--beige);
 }
 .footer-logo object{
@@ -937,6 +937,9 @@ blockquote .mad_author .mad_title_style2 {
     font-family: var(--title-first);
     font-size: 64px;
 
+}
+.promotion-item .promotion-content p{
+    font-size: 22px;
 }
 .order-button {
     background: transparent;
