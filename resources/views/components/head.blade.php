@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="RU-ru">
 <head>
-   <meta name="robots" content="noindex,nofollow">
+   <meta name="robots" content="index,follow">
+   <meta name="yandex-verification" content="793ff86e7d7e79ba" />
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ $title ?? 'Заголовок не задан' }} - {{ env('APP_NAME')}} </title>
   <meta charset="utf-8">

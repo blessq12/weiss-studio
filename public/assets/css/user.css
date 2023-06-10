@@ -61,6 +61,7 @@
 /* end annimation */
 :root{
     --beige: #ae817e;
+    --beige-dark:#8c6765;
     --pink: #ce3d5f;
     --whatsapp: #128C7E;
     --telegram: #0088cc;
@@ -582,6 +583,7 @@ blockquote .mad_author .mad_title_style2 {
     position: absolute;
     top: -110px;
     background: var(--beige);
+    z-index: 99;
 }
 .footer-logo object{
     width: 200px;
@@ -971,7 +973,63 @@ blockquote .mad_author .mad_title_style2 {
     .notify-hide{
         top: -300px
     }
+    .carousel_type_1 .owl-dot.active{
+        background: var(--beige)!important;
+    }
+    .owl-carousel .owl-nav > [class*="owl-"]:hover, .owl_custom_buttons button:hover, .mad_pagination_section a:hover, .quantity button:hover, .mad_button_red_hover:hover{
+        background: var(--beige)!important;
+        border-color: var(--beige)!important;
+        border-bottom: 2px solid var(--beige-dark)!important;
+    }
+    .carousel_type_1 .owl-dots{
+        margin-top: 10px!important;
+    }
+    .testimonials-links{
+        display: block;
+        width: 100%;
+    }
+    .testimonials-links .item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        border-radius: 5px;
+        border: 2px solid var(--beige-dark);
+        margin: 20px 0;
+        width: 100%;
+        padding: 10px 20px;
+        transition: all 0.3s ease-in-out;
+    }
+    .testimonials-links .item:hover{
+        background: rgba(174, 129, 126, 0.1);
+    }
+    .testimonials-links .item .img{
+        background-position: center center!important;
+        background-repeat: no-repeat!important;
+        background-size: cover!important;
+        height: 70px;
+        width: 70px;
+        margin-right: 15px;
+    }
+    .testimonials-links .item h4{
+        font-weight: 400;
+        color: var(--beige);
+        margin-bottom: 0;
+    }
+
 @media (max-width:768px){
+    .testimonials-links .item{
+        min-height: 50px;
+        margin: 10px 0;
+    }
+    .testimonials-links .item .img{
+        height: 40px;
+        width: 40px;
+    }
+    .testimonials-links .item h4{
+        font-size: 22px;
+        font-weight: 400;
+    }
     .notify{
         width: 320px;
         left: calc(50% - 160px);
@@ -1062,7 +1120,6 @@ blockquote .mad_author .mad_title_style2 {
         padding: 30px 30px;
         position: absolute;
         top: -80px;
-        background: #ce3d5f;
     }
     .footer-logo object {
     width: 80px;
@@ -1138,7 +1195,6 @@ blockquote .mad_author .mad_title_style2 {
         height: 55px;
         width: 100%;
         position: absolute;
-        bottom: -1px;
         left: 0;
         z-index: 4;
         padding: 0;

@@ -28,7 +28,10 @@ class AppServiceProvider extends ServiceProvider
             'waLink' => 'http://wa.me/79016080855',
             'tgLink' => 'https://t.me/weis_stydio',
             'vkGroup' => 'https://vk.com/club210928296',
-            'insta' => 'https://instagram.com/weiss_tomsk?igshid=NTc4MTIwNjQ2YQ=='
+            'insta' => 'https://instagram.com/weiss_tomsk?igshid=NTc4MTIwNjQ2YQ==',
+            'gisLink' => 'https://2gis.ru/tomsk/firm/70000001057077180',
+            'googleLink' => '',
+            'yandexLink' => '',
         ]);
     }
 }

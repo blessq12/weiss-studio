@@ -77,67 +77,55 @@
       {{-- Testimonials --}}
       <div class="mad_section" id="testimonials">
         <div class="container">
-          <div class="row">
-            <div class="col-md-6 d-none d-md-block d-lg-block">
-              <figure class="section_image align_right">
-                <img src="/assets/images/testimonials_img.png" alt="">
-              </figure>
+          <div class="row align-items-center">
+            <div class="col-md-4 d-block d-md-flex justify-content-center">
+              <div class="testimonials-links">
+                <a href="{{ $yandexLink ?? '#none'}}" target="_blank">
+                <div class="item yandex">
+                  <div class="img" style="background: url('{{ asset('/assets/images/yandex-logo.png') }}')"></div>
+                  <h4>Мы на Яндекс</h4>
+                </div>
+                </a>
+                <a href="{{ $gisLink ?? '#none'}}">
+                <div class="item double-gis">
+                  <div class="img" style="background: url('{{ asset('/assets/images/2gis-logo.png') }}')"></div>
+                  <h4>Мы на 2gis</h4>
+                </div>
+                </a>
+                <a href="{{ $googleLink ?? '#none'}}">
+                <div class="item google">
+                  <div class="img" style="background: url('{{ asset('/assets/images/google-logo.png') }}')"></div>
+                  <h4>Мы на Google</h4>
+                </div>
+                </a>
+              </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
               <div class="mad_section_container mad_testimonials">
                 <article>
                   <h3 class="mad_title_style1">Отзывы</h3>
                   <h2>Что о нас говорят</h2>
+                  <p>Просмотреть другие или оставить новый вы можете по ссылкам на Яндекс, Google или 2gis</p>
                   {{-- testimonial carousel --}}
                   <div class="carousel_type_1">
                     <div id="testimonialCarousel" class="owl-carousel" data-max-items="1" data-autoplay="true">
-                      <!-- Slide -->
+                      {{-- single slide --}}
+                      @foreach ($testimonials as $testimonial)
                       <div>
                         <!-- Carousel Item -->
                         <blockquote>
-                          <p>
-                            Я могу рекомендовать этот салон с полной уверенностью. Это место, где вам предоставят не только профессиональные услуги, здесь вас также ждет приветливый и заботливый персонал. 
-                            Здесь я нашла все, что мне нужно: уютная атмосфера, профессиональные мастера, которые являются настоящими экспертами в своем деле.
-                          </p>
+                          <p> {{ $testimonial['text'] }} </p>
                           <div class="mad_author style2">
-                            <h3 class="mad_title_style2">​Светлана Волженина</h3>
-                            <span>Клиент</span>
+                            <h3 class="mad_title_style2"> {{ $testimonial['name'] }} </h3>
+                            <span> {{ $testimonial['type'] }} </span>
                           </div>
                         </blockquote>
                         <!-- /Carousel Item -->
                       </div>
-                      <!-- /Slide -->
-                      <!-- Slide -->
-                      <div>
-                        <!-- Carousel Item -->
-                        <blockquote>
-                          <p>
-                            Хотела бы оставить свой отзыв, место чудесное, чисто, уютно, работают специалисты своего дела, всё подробно расскажут и объяснят, уже приобрела абонемент на ВР массаж, я с вами на долго 😉❤
-                            Кто ещё не был в этой студии, советую обязательно сходить...
-                          </p>
-                          <div class="mad_author style2">
-                            <h3 class="mad_title_style2">​Кристина Вострякова</h3>
-                            <span>Клиент</span>
-                          </div>
-                        </blockquote>
-                        <!-- /Carousel Item -->
-                      </div>
-                      <!-- /Slide -->
-                      <!-- Slide -->
-                      <div>
-                        <!-- Carousel Item -->
-                        <blockquote>
-                          <p>
-                            Ещё в 2019 году познакомилась с мастером Анастасией,ходила на вакуумный массаж тела,мне очень понравилась!В этом году в отпуске прошла курс рф лифтинг лица и осталась довольна!Хочу выразить огромную благодарность Анастасии ,она настоящий мастер своего дела,легкая,чуткая,аккуратная, мастер ,который постоянно обучается ,радует новинками!Рекомендую посетить эту студию без раздумий!
-                          </p>
-                          <div class="mad_author style2">
-                            <h3 class="mad_title_style2">Ольга Филонова</h3>
-                            <span> Клиент</span>
-                          </div>
-                        </blockquote>
-                        <!-- /Carousel Item -->
-                      </div>
-                      <!-- /Slide -->
+                      @endforeach
+                      
+                      {{-- /single slide --}}
+                     
                     </div>
                   </div>
                   {{-- end testimonial carousel --}}
@@ -473,26 +461,6 @@
                         <span><a href="mailto:{{ $emailAddress }}">{{ $emailAddress }}</a></span>
                       </li>
                     </ul>
-                    <div class="social_icon_list">
-                      <h5 class="mb-3 text-white">Мы в соц. сетях</h5>
-                      <div class="social-mobile">
-                        <a href="{{ $vkGroup }}" class="vk">
-                          <span></span>
-                          <object data="http://weiss-studio.dd/assets/icons/vk.svg" type=""></object>
-                        </a>
-                        <a href="{{ $insta }}" class="inst">
-                          <span></span>
-                          <object data="http://weiss-studio.dd/assets/icons/inst.svg" type=""></object>
-                        </a>
-                        <a href="{{ $waLink }}" class="wa">
-                          <span></span>
-                          <object data="http://weiss-studio.dd/assets/icons/wa.svg" type=""></object>
-                        </a>
-                        <a href="{{ $tgLink }}" class="tg">
-                          <span></span>
-                          <object data="http://weiss-studio.dd/assets/icons/telegram.svg" type=""></object>
-                        </a>
-                    </div>
                     </div>
                   </div>
                 </div>
@@ -500,7 +468,7 @@
             </div>
           </div>
         </div>
-        <svg class="separator_type_5_path" preserveAspectRatio="none" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <svg class="separator_type_5_path" style="bottom:99px" preserveAspectRatio="none" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0 L70 100 L100 0 L100 100 L0 100 Z" fill="#fff" stroke="#fff" stroke-width="-1"></path>
           <path d="M0 -1 L0 0 L50 100 L100 0 L100 -1 Z" fill="rgba(255,255,255,0.01)"></path>
         </svg>

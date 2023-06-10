@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Services\ServiceData;
+use App\Testimonials\TestimonialData;
 
 class MainController extends Controller
 {
@@ -30,12 +31,19 @@ class MainController extends Controller
         $services->prices = $servicesData->getPrices();
         // end service data section
 
+        // testimonials
+        $testimonialsData = new TestimonialData();
+        $testimonials = $testimonialsData->getTestimonials();
+        
+        // end testimonials
+
         return view('index',[
             'title' => 'Аппаратный массаж и коррекция фигуры',
             'description' => 'Описание для главной страницы',
             'image' => 'http://via.placeholder.com/1920x680',
             'galleryPairs' => $galleryPairs,
-            'services' => $services
+            'services' => $services,
+            'testimonials' => $testimonials
         ]);
     }
 }
