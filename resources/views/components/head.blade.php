@@ -6,7 +6,7 @@
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ $title ?? 'Заголовок не задан' }} - {{ env('APP_NAME')}} </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Andrew Korobkov (http://code-me.ru)">
   <meta name="keywords" content="">
   <meta name="description" content="{{ $description ?? 'Описание не задано' }}">
@@ -20,7 +20,7 @@
 <body id="index" class="wide_layout position-relative">
   <div class="loader">
      <div class="loader-logo">
-        <object data="{{ asset('/assets/icons/loader-icon.svg') }}" type=""></object>
+        <object data="{{ asset('/assets/icons/loader-icon.svg') }}" alt="Загрузчик {{ env('APP_NAME') }}" type=""></object>
         <hr>
      </div>
   </div>

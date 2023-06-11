@@ -24,16 +24,16 @@
           <div class="col">
               <ul class="list-unstyled cont-list">
                 <li>
-                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
-                    <a href="tel:{{$phone}}">{{$phone}}</a>
+                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" alt="Телефон" type=""></object>
+                    <a href="tel:{{$phone}}" aria-label="Телефон">{{$phone}}</a>
                 </li>
                 <li>
-                    <object data="{{ asset('/assets/icons/map-marker.svg') }}" type=""></object>
-                    <a href="javascript:void(0)">{{$address}}</a>
+                    <object data="{{ asset('/assets/icons/map-marker.svg') }}" alt="Адрес" type=""></object>
+                    <a href="javascript:void(0)" aria-label="Адрес">{{$address}}</a>
                 </li>
                 <li>
-                  <object data="{{ asset('/assets/icons/envelope.svg') }}" type=""></object>
-                  <a href="mailto:{{ $emailAddress }}">{{$emailAddress}}</a>
+                  <object data="{{ asset('/assets/icons/envelope.svg') }}" alt="Электронная почта" type=""></object>
+                  <a href="mailto:{{ $emailAddress }}" aria-label="Электронная почта">{{$emailAddress}}</a>
               </li>
               </ul>
           </div>
