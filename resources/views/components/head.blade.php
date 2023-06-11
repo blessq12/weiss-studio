@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="RU-ru">
+<html lang="ru-RU">
 <head>
    <meta name="robots" content="index,follow">
    <meta name="yandex-verification" content="793ff86e7d7e79ba" />
    <meta name="csrf-token" content="{{ csrf_token() }}">
   <title>{{ $title ?? 'Заголовок не задан' }} - {{ env('APP_NAME')}} </title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
   <meta name="author" content="Andrew Korobkov (http://code-me.ru)">
   <meta name="keywords" content="">
   <meta name="description" content="{{ $description ?? 'Описание не задано' }}">

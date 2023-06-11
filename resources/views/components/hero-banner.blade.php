@@ -5,7 +5,9 @@
         autoplay 
         muted 
         loop
-    ></video>
+    >
+    <track kind="captions" label="{{ env('APP_NAME') }}">
+</video>
     <div class="overlay"></div>
     <div class="container position-relative" style="z-index: 1">
         <div class="row">

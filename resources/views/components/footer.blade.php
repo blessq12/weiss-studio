@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-4 position-relative d-flex justify-content-center justify-content-md-start justify-content-lg-start">
           <div class="footer-logo">
-              <object data="{{ asset('/assets/icons/logo-text.svg') }}" type=""></object>
+              <object data="{{ asset('/assets/icons/logo-text.svg') }}" alt="{{ env('APP_NAME') }}" type=""></object>
           </div>
         </div>
         <div class="col-md-4 text-center text-md-start">

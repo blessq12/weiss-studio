@@ -93,21 +93,21 @@
                   <h5 class="text-white fw-normal">Подпишись на нас<br>в соцсетях!</h5>
                   <div class="social_icon_list">
                     <div class="social-mobile">
-                      <a href="{{ $vkGroup }}" class="vk">
+                      <a href="{{ $vkGroup }}" aria-label="Vkontakte" class="vk">
                         <span></span>
-                        <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
+                        <object data="{{ asset('/assets/icons/vk.svg') }}" alt="Vkontakte"  type=""></object>
                       </a>
-                      <a href="{{ $insta }}" class="inst">
+                      <a href="{{ $insta }}" aria-label="Instagram" class="inst">
                         <span></span>
-                        <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
+                        <object data="{{ asset('/assets/icons/inst.svg') }}" alt="Instagram"  type=""></object>
                       </a>
-                      <a href="{{ $waLink }}" class="wa">
+                      <a href="{{ $waLink }}" aria-label="WhatsApp" class="wa">
                         <span></span>
-                        <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                        <object data="{{ asset('/assets/icons/wa.svg') }}" alt="WhatsApp"  type=""></object>
                       </a>
-                      <a href="{{ $tgLink }}" class="tg">
+                      <a href="{{ $tgLink }}" aria-label="Telegram" class="tg">
                         <span></span>
-                        <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                        <object data="{{ asset('/assets/icons/telegram.svg') }}" alt="Telegram"  type=""></object>
                       </a>
                   </div>
                   </div>
@@ -115,15 +115,15 @@
                 <div class="head_phone">
                   <h5 class="text-white fw-normal">Контакты</h5>
                   <div class="d-flex align-items-center mb-1">
-                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type="" style="margin-right: 10px"></object>
+                    <object data="{{ asset('/assets/icons/phone-icon.svg') }}" alt="Телефон" type="" style="margin-right: 10px"></object>
                     <a href="tel:{{ $phone }}" class="text-white fw-normal">{{ $phone }}</a>
                   </div>
                   <div class="d-flex align-items-center mb-1">
-                    <object data="{{ '/assets/icons/map-marker.svg' }}" type="" style="margin-right: 10px"></object>
+                    <object data="{{ '/assets/icons/map-marker.svg' }}" alt="Адрес" type="" style="margin-right: 10px"></object>
                     <p class="m-0 fw-normal">{{ $address }}</p>
                   </div>
                   <div class="d-flex align-items-center mb-1">
-                    <object data="{{ '/assets/icons/envelope.svg' }}" type="" style="margin-right: 10px"></object>
+                    <object data="{{ '/assets/icons/envelope.svg' }}" alt="Электронная почта" type="" style="margin-right: 10px"></object>
                     <p class="m-0 fw-normal">{{ $emailAddress }}</p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@
               <button class="mobile-toggler d-flex align-items-center">
                 <div>
                   <span></span>
-                  <object data="{{ asset('/assets/icons/menu-button.svg') }}" type=""></object>
+                  <object data="{{ asset('/assets/icons/menu-button.svg') }}" alt="Меню" type=""></object>
                 </div>
               </button>
             </div>
