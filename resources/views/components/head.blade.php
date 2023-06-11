@@ -33,24 +33,24 @@
                <div class="position-relative launcher-obj">
                   <div class="cta-list list-hide" aria-hidden="true">
                      <ul class="list-unstyled cta-links">
-                        <a href="{{ $waLink }}" target="_blank" rel="nofollow">
+                        <a href="{{ $waLink }}" aria-label="WhatsApp" target="_blank" rel="nofollow">
                            <li>
                               <div class="list-item wa">
-                                 <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                                 <object data="{{ asset('/assets/icons/wa.svg') }}" alt="WhatsApp" type=""></object>
                               </div>
                            </li>
                         </a>
-                        <a href="{{ $tgLink }}" target="_blank" rel="nofollow">
+                        <a href="{{ $tgLink }}" aria-label="Telegram" target="_blank" rel="nofollow">
                            <li>
                               <div class="list-item tg">
-                                 <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                                 <object data="{{ asset('/assets/icons/telegram.svg') }}" alt="Telegram" type=""></object>
                               </div>
                            </li>
                         </a>
-                        <a href="tel:{{ $phone }}">
+                        <a href="tel:{{ $phone }}" aria-label="Phone">
                            <li>
                               <div class="list-item cell">
-                                 <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                                 <object data="{{ asset('/assets/icons/phone-icon.svg') }}" alt="Phone" type=""></object>
                               </div>
                            </li>
                         </a>
@@ -59,8 +59,8 @@
                   <div class="launcher position-relative">
                      <div class="launch-button position-relative" data-timeout="6000">
                         <span></span>
-                        <object class="touch " data="{{ asset('/assets/icons/touch.svg') }}" type=""></object>
-                        <object class="closeBtn d-none" data="{{ asset('/assets/icons/close-cta.svg') }}" type=""></object>
+                        <object class="touch " data="{{ asset('/assets/icons/touch.svg') }}" alt="Открыть быстрое меню" type=""></object>
+                        <object class="closeBtn d-none" data="{{ asset('/assets/icons/close-cta.svg') }}" alt="Закрыть быстрое меню" type=""></object>
                      </div>
                   </div>
                </div>

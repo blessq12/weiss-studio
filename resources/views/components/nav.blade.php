@@ -48,17 +48,17 @@
         <div class="row mb-3">
           <div class="col">
             <div class="social-mobile">
-                <a href="{{ $vkGroup }}" class="vk">
-                  <object data="{{ asset('/assets/icons/vk.svg') }}" type=""></object>
+                <a href="{{ $vkGroup }}" aria-label="Vkontakte" class="vk">
+                  <object data="{{ asset('/assets/icons/vk.svg') }}" alt="Vkontakte" type=""></object>
                 </a>
-                <a href="{{ $insta }}" class="inst">
-                  <object data="{{ asset('/assets/icons/inst.svg') }}" type=""></object>
+                <a href="{{ $insta }}" aria-label="Instagram" class="inst">
+                  <object data="{{ asset('/assets/icons/inst.svg') }}" alt="Instagram" type=""></object>
                 </a>
-                <a href="{{ $waLink }}" class="wa">
-                  <object data="{{ asset('/assets/icons/wa.svg') }}" type=""></object>
+                <a href="{{ $waLink }}" aria-label="WhatsApp" class="wa">
+                  <object data="{{ asset('/assets/icons/wa.svg') }}" alt="WhatsApp" type=""></object>
                 </a>
-                <a href="{{ $tgLink }}" class="tg">
-                  <object data="{{ asset('/assets/icons/telegram.svg') }}" type=""></object>
+                <a href="{{ $tgLink }}" aria-label="Telegram" class="tg">
+                  <object data="{{ asset('/assets/icons/telegram.svg') }}" alt="Telegram" type=""></object>
                 </a>
             </div>
           </div>
@@ -130,7 +130,7 @@
               </div>
             </div>
             <div class="col-md-8 col-6 d-flex d-md-none d-lg-none mt-0 justify-content-end">
-              <button class="mobile-toggler d-flex align-items-center">
+              <button class="mobile-toggler d-flex align-items-center" aria-label="Меню">
                 <div>
                   <span></span>
                   <object data="{{ asset('/assets/icons/menu-button.svg') }}" alt="Меню" type=""></object>

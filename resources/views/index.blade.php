@@ -446,19 +446,19 @@
                     <ul class="list-unstyled contact-list">
                       <li> 
                         <div class="icon">
-                          <object data="{{ asset('/assets/icons/map-marker.svg') }}" type=""></object>
+                          <object data="{{ asset('/assets/icons/map-marker.svg') }}" alt="Адрес" type=""></object>
                         </div>
                         <span>{{ $address }}</span>
                       <li> 
                         <div class="icon">
-                          <object data="{{ asset('/assets/icons/phone-icon.svg') }}" type=""></object>
+                          <object data="{{ asset('/assets/icons/phone-icon.svg') }}" alt="Телефон" type=""></object>
                         </div>
-                        <span><a href="tel:{{ $phone }}">{{ $phone }}</a></span>
+                        <span><a href="tel:{{ $phone }}" aria-label="Телефон">{{ $phone }}</a></span>
                       <li> 
                         <div class="icon">
-                          <object data="{{ asset('/assets/icons/envelope.svg') }}" type=""></object>
+                          <object data="{{ asset('/assets/icons/envelope.svg') }}" alt="Электронная почта" type=""></object>
                         </div>
-                        <span><a href="mailto:{{ $emailAddress }}">{{ $emailAddress }}</a></span>
+                        <span><a href="mailto:{{ $emailAddress }}" aria-label="Электронная почта">{{ $emailAddress }}</a></span>
                       </li>
                     </ul>
                     </div>
