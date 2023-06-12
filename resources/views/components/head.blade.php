@@ -5,31 +5,47 @@
    <meta name="robots" content="index,follow">
    <meta name="yandex-verification" content="793ff86e7d7e79ba" />
    <meta name="csrf-token" content="{{ csrf_token() }}">
-  <title>{{ $title ?? 'Заголовок не задан' }} - {{ env('APP_NAME')}} </title>
-  <meta name="description" content="{{ $description ?? 'Описание не задано' }}">
-  {{-- favicon --}}
-  <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/assets/images/favicon/apple-touch-icon.png') }}">
-  <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('/assets/images/favicon/android-chrome-192x192.png') }}">
-  <link rel="icon" type="image/png" sizes="512x512"  href="{{ asset('/assets/images/favicon/android-chrome-512x512.png') }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/images/favicon/favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/favicon/favicon-16x16.png') }}">
-  <link rel="manifest" href="{{ asset('/assets/images/favicon/site.webmanifest') }}">
-  <meta name="msapplication-TileColor" content="#272627">
-  <meta name="msapplication-TileImage" content="{{ asset('/assets/images/favicon/mstile-150x150.png') }}">
-  <meta name="theme-color" content="#272627">
-  {{-- end favicon --}}
-  {{-- HEY META tags --}}
+   <title>{{ $title ?? 'Заголовок не задан' }} - {{ env('APP_NAME')}} </title>
+   <meta name="description" content="{{ $description ?? 'Описание не задано' }}">
+   {{-- favicon --}}
+   <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/assets/images/favicon/apple-touch-icon.png') }}">
+   <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('/assets/images/favicon/android-chrome-192x192.png') }}">
+   <link rel="icon" type="image/png" sizes="512x512"  href="{{ asset('/assets/images/favicon/android-chrome-512x512.png') }}">
+   <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/images/favicon/favicon-32x32.png') }}">
+   <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/favicon/favicon-16x16.png') }}">
+   <link rel="manifest" href="{{ asset('/assets/images/favicon/site.webmanifest') }}">
+   <meta name="msapplication-TileColor" content="#272627">
+   <meta name="msapplication-TileImage" content="{{ asset('/assets/images/favicon/mstile-150x150.png') }}">
+   <meta name="theme-color" content="#272627">
+   {{-- end favicon --}}
+   {{-- HEY META tags --}}
+   <!-- Google / Search Engine Tags -->
+   <meta itemprop="name" content="{{ $title ?? 'Название не назначено' }}">
+   <meta itemprop="description" content="{{ $description ?? 'Описание страницы не задано' }}">
+   <meta itemprop="image" content="{{ $image ?? asset('/assets/images/favicon/android-chrome-512x512.png') }}">
 
-  {{-- end HEY META tags --}}
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <meta name="author" content="Andrew Korobkov (http://code-me.ru)">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css')}}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/owl.carousel.css')}}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/owl.theme.css')}}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/style.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
-  <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
+   <!-- Facebook Meta Tags -->
+   <meta property="og:url" content="http://weiss-studio.ru">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="{{ $title ?? 'Название не назначено' }}">
+   <meta property="og:description" content="{{ $description ?? 'Описание страницы не задано' }}">
+   <meta property="og:image" content="{{ $image ?? asset('/assets/images/favicon/android-chrome-512x512.png') }}">
+
+   <!-- Twitter Meta Tags -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="{{ $title ?? 'Название не назначено' }}">
+   <meta name="twitter:description" content="{{ $description ?? 'Описание страницы не задано' }}">
+   <meta name="twitter:image" content="{{ $image ?? asset('/assets/images/favicon/android-chrome-512x512.png') }}">
+   {{-- end HEY META tags --}}
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+   <meta name="author" content="Andrew Korobkov (http://code-me.ru)">
+   <meta name="keywords" content="">
+   <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
+   <link rel="stylesheet" href="{{ asset('/assets/css/responsive.css')}}">
+   <link rel="stylesheet" href="{{ asset('/assets/css/owl.carousel.css')}}">
+   <link rel="stylesheet" href="{{ asset('/assets/css/owl.theme.css')}}">
+   <link rel="stylesheet" href="{{ asset('/assets/css/style.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
+   <link rel="stylesheet" href="{{ asset('/assets/css/user.css')}}{{ '?ver='.env('ASSET_VERSION') ?? "ver=1.0" }}">
    <!-- Yandex.Metrika counter -->
       <script type="text/javascript" >
          (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
