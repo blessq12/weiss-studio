@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\ActionController;
+use App\Http\Middleware\CanonicalHeader;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,7 @@ use App\Http\Controllers\ActionController;
 Route::domain(env('APP_URL'))->group(function(){
 
     $mainRoutes = function(){
-        Route::get('/','index')->name('index');
+        Route::get('/','index')->middleware(CanonicalHeader::class)->name('index');
     };
     $actionRoutes = function(){
         Route::post('/sendreq','send')->name('sendreq');
