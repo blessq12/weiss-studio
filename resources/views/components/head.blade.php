@@ -65,12 +65,12 @@
    <!-- /Yandex.Metrika counter -->
 </head>
 <body id="index" class="wide_layout position-relative">
-  <div class="loader">
-     <div class="loader-logo">
-        <object data="{{ asset('/assets/icons/loader-icon.svg') }}" alt="Загрузчик {{ env('APP_NAME') }}" type=""></object>
-        <hr>
-     </div>
-  </div>
+   <div class="loader">
+      <div class="loader-logo">
+         <object data="{{ asset('/assets/icons/loader-icon.svg') }}" alt="Загрузчик {{ env('APP_NAME') }}" type=""></object>
+         <hr>
+      </div>
+   </div>
 
   {{-- cta bottom button --}}
   <div class="cta-claster">

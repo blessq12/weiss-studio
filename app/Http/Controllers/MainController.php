@@ -40,7 +40,7 @@ class MainController extends Controller
         return view('index',[
             'title' => 'Аппаратный массаж и коррекция фигуры',
             'description' => 'В наших силах вернуть естественный румянец, улучшить цвет и состояние кожи. Для натурального омоложения это самый приятный способ.',
-            'image' => 'http://via.placeholder.com/1920x680',
+            'image' => asset('/assets/images/og_image.jpg'),
             'galleryPairs' => $galleryPairs,
             'services' => $services,
             'testimonials' => $testimonials
