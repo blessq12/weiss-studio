@@ -11,15 +11,15 @@
   <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('/assets/images/favicon/apple-touch-icon.png') }}">
   <link rel="icon" type="image/png" sizes="192x192"  href="{{ asset('/assets/images/favicon/android-chrome-192x192.png') }}">
   <link rel="icon" type="image/png" sizes="512x512"  href="/assets/images/favicon/android-chrome-512x512.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ assset('/assets/images/favicon/favicon-32x32.png') }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ assset('/assets/images/favicon/favicon-16x16.png') }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/assets/images/favicon/favicon-32x32.png') }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/assets/images/favicon/favicon-16x16.png') }}">
   <link rel="manifest" href="{{ asset('/assets/images/favicon/site.webmanifest') }}">
   <meta name="msapplication-TileColor" content="#272627">
   <meta name="msapplication-TileImage" content="{{ asset('/assets/images/favicon/mstile-150x150.png') }}">
   <meta name="theme-color" content="#272627">
   {{-- end favicon --}}
   {{-- HEY META tags --}}
-  
+
   {{-- end HEY META tags --}}
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <meta name="author" content="Andrew Korobkov (http://code-me.ru)">
